@@ -1,0 +1,98 @@
+[gd_scene load_steps=8 format=3 uid="uid://crgpijq6qd0fq"]
+
+[ext_resource type="Texture2D" uid="uid://dmxldn4c3rwje" path="res://Assets/BIQ263V.png" id="1_qxrlw"]
+[ext_resource type="Texture2D" uid="uid://b8rsuabg7cfw6" path="res://PointLight/2d_lights_and_shadows_neutral_point_light.webp" id="3_3dryh"]
+[ext_resource type="PackedScene" uid="uid://b2hh3f5lh1u2v" path="res://Characters/kyle_player.tscn" id="3_wrm1d"]
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_wrm1d"]
+polygon = PackedVector2Array(-141, -143, -109, -143, -109, -48, -13, -48, -13, -16, -141, -16, -141, -48, -237, -48, -237, 80, -269, 80, -269, -79, -141, -79)
+
+[sub_resource type="Gradient" id="Gradient_wrm1d"]
+offsets = PackedFloat32Array(0, 0.181818, 0.948052)
+colors = PackedColorArray(1, 1, 1, 1, 0.857143, 0.857143, 0.857143, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_3dryh"]
+gradient = SubResource("Gradient_wrm1d")
+fill = 1
+fill_from = Vector2(0.486239, 0.522936)
+fill_to = Vector2(0.495413, 1)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_wowpa"]
+polygon = PackedVector2Array(-36, 67, -40, 67, -40, 59, -32, 59, -32, 57, -20, 57, -20, 59, -12, 59, -12, 67, -16, 67, -16, 64, -36, 64)
+
+[node name="Game" type="Node2D"]
+
+[node name="BackgroundSprite" type="Sprite2D" parent="."]
+texture = ExtResource("1_qxrlw")
+
+[node name="PlayerCam" type="Camera2D" parent="."]
+position = Vector2(5, -91)
+zoom = Vector2(5, 5)
+position_smoothing_enabled = true
+position_smoothing_speed = 2.0
+
+[node name="CollisionMapping" type="StaticBody2D" parent="."]
+
+[node name="Wall Segment_1" type="CollisionPolygon2D" parent="CollisionMapping"]
+light_mask = 3
+position = Vector2(-61, -161)
+polygon = PackedVector2Array(51, -15, 51, 16, -13, 16, -13, 48, -45, 48, -45, -15)
+
+[node name="Wall Segment_2" type="CollisionPolygon2D" parent="CollisionMapping"]
+light_mask = 3
+position = Vector2(73, -160)
+rotation = -3.14159
+polygon = PackedVector2Array(-13, -15, 51, -15, 51, 16, -45, 16, -45, -47, -13, -47)
+
+[node name="Wall Segment_3" type="CollisionPolygon2D" parent="CollisionMapping"]
+light_mask = 3
+position = Vector2(131, -33)
+polygon = PackedVector2Array(-13, -16, -45, -16, -45, -47, -13, -47)
+
+[node name="Wall Segment_4" type="CollisionPolygon2D" parent="CollisionMapping"]
+light_mask = 3
+position = Vector2(131, 31)
+polygon = PackedVector2Array(-13, 16, -77, 16, -77, -15, -45, -15, -45, -47, -13, -47)
+
+[node name="Wall Segment_5" type="CollisionPolygon2D" parent="CollisionMapping"]
+light_mask = 3
+position = Vector2(35, 63)
+polygon = PackedVector2Array(-109, -73.9999, -77.0001, -73.9999, -77.0001, -121, -13.0001, -121, -13.0001, -47, -13, -16, -141, -15.9999, -141, -17.9999, -206, -17.9998, -206, 17.0002, -217, 17.0002, -217, 49.0002, -237, 49.0002, -237, 80.0002, -269, 80.0003, -269, -78.9997, -141, -78.9999, -141, -143, -109, -143)
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="CollisionMapping/Wall Segment_5"]
+occluder = SubResource("OccluderPolygon2D_wrm1d")
+
+[node name="KylePlayer" parent="." instance=ExtResource("3_wrm1d")]
+position = Vector2(5, -91)
+
+[node name="RemoteTransform2D2" type="RemoteTransform2D" parent="KylePlayer"]
+remote_path = NodePath("../../PlayerCam")
+
+[node name="CanvasModulate" type="CanvasModulate" parent="."]
+color = Color(0.626785, 0.643001, 0.674093, 1)
+
+[node name="DirectionalLight2D" type="DirectionalLight2D" parent="."]
+color = Color(0.208268, 0.470994, 0.755325, 1)
+energy = 0.28
+height = 0.11
+
+[node name="PointLight2D" type="PointLight2D" parent="."]
+position = Vector2(-58, -2)
+energy = 0.71
+shadow_enabled = true
+shadow_filter = 1
+shadow_filter_smooth = 1.3
+texture = ExtResource("3_3dryh")
+height = 36.0
+
+[node name="PointLight2D2" type="PointLight2D" parent="."]
+position = Vector2(-26, 66)
+color = Color(0.364706, 1, 1, 1)
+energy = 0.39
+shadow_enabled = true
+texture = SubResource("GradientTexture2D_3dryh")
+texture_scale = 2.43
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="PointLight2D2"]
+position = Vector2(26, -66)
+occluder = SubResource("OccluderPolygon2D_wowpa")

@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://is02ebou0b1m"]
+
+[ext_resource type="Texture2D" uid="uid://7aohv5a6xlgf" path="res://Assets/Spritesheet/Untitled (3).png" id="1_1t02a"]
+[ext_resource type="Script" uid="uid://branp2ycnwkhy" path="res://Scripts/copySprite.gd" id="2_7ee5y"]
+
+[node name="Sprite2D" type="Sprite2D"]
+z_index = 2
+scale = Vector2(0.05, 0.05)
+texture = ExtResource("1_1t02a")
+hframes = 8
+vframes = 8
+frame = 1
+region_enabled = true
+region_rect = Rect2(-3, 0.771439, 10242.5, 10194.7)
+script = ExtResource("2_7ee5y")
+
+[node name="Silhouette" type="Sprite2D" parent="."]

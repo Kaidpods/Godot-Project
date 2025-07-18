@@ -1,0 +1,953 @@
+[gd_scene load_steps=164 format=3 uid="uid://bky5ic8rqpc14"]
+
+[ext_resource type="Script" uid="uid://vrdnxyynwtgi" path="res://Scripts/playercharacter.gd" id="1_0gdhu"]
+[ext_resource type="Texture2D" uid="uid://7aohv5a6xlgf" path="res://Assets/Spritesheet/Untitled (3).png" id="2_vtynu"]
+[ext_resource type="OccluderPolygon2D" uid="uid://bapp1f5g3ulpj" path="res://occluders/occluder_00.tres" id="3_lbtd5"]
+[ext_resource type="OccluderPolygon2D" uid="uid://dasl1rphx2ntd" path="res://occluders/occluder_01.tres" id="4_dswa5"]
+[ext_resource type="OccluderPolygon2D" uid="uid://ewrxf4ussfcp" path="res://occluders/occluder_02.tres" id="5_1pmmi"]
+[ext_resource type="OccluderPolygon2D" uid="uid://nvsnxfqx12v7" path="res://occluders/occluder_03.tres" id="6_qb116"]
+[ext_resource type="OccluderPolygon2D" uid="uid://drubp52vclt2j" path="res://occluders/occluder_04.tres" id="7_yory1"]
+[ext_resource type="OccluderPolygon2D" uid="uid://c2xrdxfkhxw8h" path="res://occluders/occluder_05.tres" id="8_aurad"]
+[ext_resource type="OccluderPolygon2D" uid="uid://ch56lgsvjn4n4" path="res://occluders/occluder_06.tres" id="9_sgkn2"]
+[ext_resource type="OccluderPolygon2D" uid="uid://rvajr4naigwl" path="res://occluders/occluder_07.tres" id="10_djli8"]
+[ext_resource type="OccluderPolygon2D" uid="uid://sai43xk6pi1y" path="res://occluders/occluder_41.tres" id="11_pf0xn"]
+[ext_resource type="OccluderPolygon2D" uid="uid://by6ssymbqg6oa" path="res://occluders/occluder_42.tres" id="12_il6g0"]
+[ext_resource type="OccluderPolygon2D" uid="uid://bki4anq7q3bfp" path="res://occluders/occluder_43.tres" id="13_7npw2"]
+[ext_resource type="OccluderPolygon2D" uid="uid://dhwxpcajd5jvx" path="res://occluders/occluder_44.tres" id="14_3khsl"]
+[ext_resource type="OccluderPolygon2D" uid="uid://ctxorsrl8o615" path="res://occluders/occluder_45.tres" id="15_5x0j8"]
+[ext_resource type="OccluderPolygon2D" uid="uid://cgnnfkocs4fff" path="res://occluders/occluder_46.tres" id="16_e14bp"]
+[ext_resource type="OccluderPolygon2D" uid="uid://c211uibvqd16w" path="res://occluders/occluder_47.tres" id="17_5mp00"]
+[ext_resource type="OccluderPolygon2D" uid="uid://buetmmhwxnh8g" path="res://occluders/occluder_08.tres" id="18_dey0v"]
+[ext_resource type="OccluderPolygon2D" uid="uid://cwx5jb3kvi2wy" path="res://occluders/occluder_09.tres" id="19_t353f"]
+[ext_resource type="OccluderPolygon2D" uid="uid://dvrye0s035ix3" path="res://occluders/occluder_10.tres" id="20_570hr"]
+[ext_resource type="OccluderPolygon2D" uid="uid://b76kib3s0vcyy" path="res://occluders/occluder_11.tres" id="21_prsvw"]
+[ext_resource type="OccluderPolygon2D" uid="uid://b4chf6jr1wsny" path="res://occluders/occluder_12.tres" id="22_84527"]
+[ext_resource type="OccluderPolygon2D" uid="uid://o274ucvwf2si" path="res://occluders/occluder_13.tres" id="23_7n0cs"]
+[ext_resource type="OccluderPolygon2D" uid="uid://c0vmm8sbcrg0h" path="res://occluders/occluder_14.tres" id="24_eclrn"]
+[ext_resource type="OccluderPolygon2D" uid="uid://de1kgqaanjg3i" path="res://occluders/occluder_48.tres" id="25_7mp4g"]
+[ext_resource type="OccluderPolygon2D" uid="uid://b0qmnunsbd2lh" path="res://occluders/occluder_49.tres" id="26_hsuao"]
+[ext_resource type="OccluderPolygon2D" uid="uid://ed2qnx0edwkc" path="res://occluders/occluder_50.tres" id="27_jybgq"]
+[ext_resource type="OccluderPolygon2D" uid="uid://b7lrhn5kguh0d" path="res://occluders/occluder_51.tres" id="28_bfmbe"]
+[ext_resource type="OccluderPolygon2D" uid="uid://spqbo1opod5k" path="res://occluders/occluder_52.tres" id="29_yj7at"]
+[ext_resource type="OccluderPolygon2D" uid="uid://bludgepifm7d5" path="res://occluders/occluder_53.tres" id="30_wiwcy"]
+[ext_resource type="OccluderPolygon2D" uid="uid://p0uryiyc8myj" path="res://occluders/occluder_54.tres" id="31_p61co"]
+[ext_resource type="OccluderPolygon2D" uid="uid://bo53pganmthd" path="res://occluders/occluder_55.tres" id="32_tccsc"]
+[ext_resource type="OccluderPolygon2D" uid="uid://drh0twr3146lt" path="res://occluders/occluder_16.tres" id="33_2l3o7"]
+[ext_resource type="OccluderPolygon2D" uid="uid://bsespriyqytj1" path="res://occluders/occluder_17.tres" id="34_1wfy6"]
+[ext_resource type="OccluderPolygon2D" uid="uid://dpv2mctae3ayi" path="res://occluders/occluder_18.tres" id="35_teho5"]
+[ext_resource type="OccluderPolygon2D" uid="uid://lmvw4pb23xqs" path="res://occluders/occluder_19.tres" id="36_y1fi8"]
+[ext_resource type="OccluderPolygon2D" uid="uid://wb8evd5wu2bq" path="res://occluders/occluder_20.tres" id="37_oet2q"]
+[ext_resource type="OccluderPolygon2D" uid="uid://c4fggdknaeoax" path="res://occluders/occluder_21.tres" id="38_ico1t"]
+[ext_resource type="OccluderPolygon2D" uid="uid://3kd7v8l3ddxy" path="res://occluders/occluder_22.tres" id="39_32bc7"]
+[ext_resource type="OccluderPolygon2D" uid="uid://rg7po816nooh" path="res://occluders/occluder_23.tres" id="40_egmju"]
+[ext_resource type="OccluderPolygon2D" uid="uid://cjc3r738i88sk" path="res://occluders/occluder_32.tres" id="41_qghdg"]
+[ext_resource type="OccluderPolygon2D" uid="uid://pu6dm0ids65k" path="res://occluders/occluder_33.tres" id="42_q2vqy"]
+[ext_resource type="OccluderPolygon2D" uid="uid://cc4qbmixf6l6x" path="res://occluders/occluder_34.tres" id="43_o45q7"]
+[ext_resource type="OccluderPolygon2D" uid="uid://drmxecdfk8fha" path="res://occluders/occluder_35.tres" id="44_0l8sy"]
+[ext_resource type="OccluderPolygon2D" uid="uid://c70jovvm23s4h" path="res://occluders/occluder_36.tres" id="45_t5cki"]
+[ext_resource type="OccluderPolygon2D" uid="uid://boq5qoty2kx8p" path="res://occluders/occluder_37.tres" id="46_pa4ou"]
+[ext_resource type="OccluderPolygon2D" uid="uid://drysw3t7v6mxd" path="res://occluders/occluder_38.tres" id="47_wkysk"]
+[ext_resource type="OccluderPolygon2D" uid="uid://dph08gbl8o0pm" path="res://occluders/occluder_39.tres" id="48_mfvhu"]
+[ext_resource type="OccluderPolygon2D" uid="uid://dp10ajgm7f31n" path="res://occluders/occluder_56.tres" id="49_w3ij5"]
+[ext_resource type="OccluderPolygon2D" uid="uid://b4uyks7wn0tyw" path="res://occluders/occluder_57.tres" id="50_1lr1n"]
+[ext_resource type="OccluderPolygon2D" uid="uid://b8mbijw1pkr52" path="res://occluders/occluder_58.tres" id="51_sswws"]
+[ext_resource type="OccluderPolygon2D" uid="uid://bxyuxxg50uu40" path="res://occluders/occluder_59.tres" id="52_c1nvb"]
+[ext_resource type="OccluderPolygon2D" uid="uid://b5aca6yw1cenx" path="res://occluders/occluder_60.tres" id="53_ybr6c"]
+[ext_resource type="OccluderPolygon2D" uid="uid://dpmfugvmxheu6" path="res://occluders/occluder_61.tres" id="54_lv0oe"]
+[ext_resource type="OccluderPolygon2D" uid="uid://brewxw5p4867n" path="res://occluders/occluder_62.tres" id="55_ua2oj"]
+[ext_resource type="OccluderPolygon2D" uid="uid://bd6wn8mrwf826" path="res://occluders/occluder_63.tres" id="56_qbchg"]
+[ext_resource type="OccluderPolygon2D" uid="uid://goc1h5e5ijr3" path="res://occluders/occluder_24.tres" id="57_rua6b"]
+[ext_resource type="OccluderPolygon2D" uid="uid://b2icr4d7n4qc3" path="res://occluders/occluder_25.tres" id="58_6eb8l"]
+[ext_resource type="OccluderPolygon2D" uid="uid://c6xuh2r3djsee" path="res://occluders/occluder_26.tres" id="59_ub882"]
+[ext_resource type="OccluderPolygon2D" uid="uid://2drq08kgtv71" path="res://occluders/occluder_27.tres" id="60_4x5sb"]
+[ext_resource type="OccluderPolygon2D" uid="uid://dwbjlor8kb186" path="res://occluders/occluder_28.tres" id="61_xh8or"]
+[ext_resource type="OccluderPolygon2D" uid="uid://bc45s0gn26vn6" path="res://occluders/occluder_29.tres" id="62_0iy08"]
+[ext_resource type="OccluderPolygon2D" uid="uid://bvunp5x3imrep" path="res://occluders/occluder_30.tres" id="63_0kn2h"]
+[ext_resource type="OccluderPolygon2D" uid="uid://3bk585gbhu3e" path="res://occluders/occluder_31.tres" id="64_w4uim"]
+[ext_resource type="Script" uid="uid://cgepg5hwxtpoo" path="res://Characters/bone_lookat.gd" id="65_axxhx"]
+[ext_resource type="Texture2D" uid="uid://ca6fsq7f3efkw" path="res://Assets/hands.png" id="66_5yet8"]
+
+[sub_resource type="Animation" id="Animation_4ttxe"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame_coords")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2i(1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("LightOccluder2D:occluder")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("3_lbtd5")]
+}
+
+[sub_resource type="Animation" id="Animation_h04rr"]
+resource_name = "idle_down"
+length = 2.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame_coords")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.133333, 0.266667, 0.4, 0.533333, 0.666667, 0.8, 0.933333, 1.06667, 1.2, 1.33333, 1.46667, 1.6, 1.73333, 1.86667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [Vector2i(0, 0), Vector2i(1, 0), Vector2i(2, 0), Vector2i(3, 0), Vector2i(4, 0), Vector2i(5, 0), Vector2i(6, 0), Vector2i(7, 0), Vector2i(6, 0), Vector2i(5, 0), Vector2i(4, 0), Vector2i(3, 0), Vector2i(2, 0), Vector2i(1, 0), Vector2i(0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("LightOccluder2D:occluder")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.133333, 0.266667, 0.401409, 0.535892, 0.672412, 0.806894, 0.933333, 1.07178, 1.2083, 1.34075, 1.47116, 1.61175, 1.74012, 1.86667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("3_lbtd5"), ExtResource("4_dswa5"), ExtResource("5_1pmmi"), ExtResource("6_qb116"), ExtResource("7_yory1"), ExtResource("8_aurad"), ExtResource("9_sgkn2"), ExtResource("10_djli8"), ExtResource("9_sgkn2"), ExtResource("8_aurad"), ExtResource("7_yory1"), ExtResource("6_qb116"), ExtResource("5_1pmmi"), ExtResource("4_dswa5"), ExtResource("3_lbtd5")]
+}
+
+[sub_resource type="Animation" id="Animation_5jqr8"]
+resource_name = "idle_down_left"
+length = 1.9
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame_coords")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(1.49012e-08, 0.133333, 0.266667, 0.4, 0.533333, 0.666667, 0.8, 0.933333, 1.06667, 1.2, 1.33333, 1.46667, 1.6, 1.73333),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [Vector2i(1, 5), Vector2i(2, 5), Vector2i(3, 5), Vector2i(4, 5), Vector2i(5, 5), Vector2i(6, 5), Vector2i(7, 5), Vector2i(7, 5), Vector2i(6, 5), Vector2i(5, 5), Vector2i(4, 5), Vector2i(3, 5), Vector2i(2, 5), Vector2i(1, 5)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("LightOccluder2D:occluder")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.133333, 0.266667, 0.4, 0.533333, 0.666667, 0.8, 1.06667, 1.2, 1.33333, 1.46667, 1.6, 1.73333),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("11_pf0xn"), ExtResource("12_il6g0"), ExtResource("13_7npw2"), ExtResource("14_3khsl"), ExtResource("15_5x0j8"), ExtResource("16_e14bp"), ExtResource("17_5mp00"), ExtResource("16_e14bp"), ExtResource("15_5x0j8"), ExtResource("14_3khsl"), ExtResource("13_7npw2"), ExtResource("12_il6g0"), ExtResource("11_pf0xn")]
+}
+
+[sub_resource type="Animation" id="Animation_hd01w"]
+resource_name = "idle_down_right"
+length = 1.9
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame_coords")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.133333, 0.266667, 0.4, 0.533333, 0.666667, 0.8, 0.933333, 1.06667, 1.2, 1.33333, 1.46667, 1.6, 1.73333),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [Vector2i(0, 1), Vector2i(1, 1), Vector2i(2, 1), Vector2i(3, 1), Vector2i(4, 1), Vector2i(5, 1), Vector2i(6, 1), Vector2i(6, 1), Vector2i(5, 1), Vector2i(4, 1), Vector2i(3, 1), Vector2i(2, 1), Vector2i(1, 1), Vector2i(0, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("LightOccluder2D:occluder")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.133333, 0.266667, 0.4, 0.533333, 0.666667, 0.8, 0.933333, 1.06667, 1.2, 1.33333, 1.46667, 1.6, 1.73333),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("18_dey0v"), ExtResource("19_t353f"), ExtResource("20_570hr"), ExtResource("21_prsvw"), ExtResource("22_84527"), ExtResource("23_7n0cs"), ExtResource("24_eclrn"), ExtResource("24_eclrn"), ExtResource("23_7n0cs"), ExtResource("22_84527"), ExtResource("21_prsvw"), ExtResource("20_570hr"), ExtResource("19_t353f"), ExtResource("18_dey0v")]
+}
+
+[sub_resource type="Animation" id="Animation_7nlab"]
+resource_name = "idle_left"
+length = 2.1
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame_coords")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.133333, 0.266667, 0.4, 0.533333, 0.666667, 0.8, 0.933333, 1.06667, 1.2, 1.33333, 1.46667, 1.6, 1.73333, 1.86667, 2),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [Vector2i(0, 6), Vector2i(1, 6), Vector2i(2, 6), Vector2i(3, 6), Vector2i(4, 6), Vector2i(5, 6), Vector2i(6, 6), Vector2i(7, 6), Vector2i(7, 6), Vector2i(6, 6), Vector2i(5, 6), Vector2i(4, 6), Vector2i(3, 6), Vector2i(2, 6), Vector2i(1, 6), Vector2i(0, 6)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("LightOccluder2D:occluder")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.133333, 0.266667, 0.4, 0.533333, 0.666667, 0.8, 0.933333, 1.2, 1.33333, 1.46667, 1.6, 1.73333, 1.86667, 2),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("25_7mp4g"), ExtResource("26_hsuao"), ExtResource("27_jybgq"), ExtResource("28_bfmbe"), ExtResource("29_yj7at"), ExtResource("30_wiwcy"), ExtResource("31_p61co"), ExtResource("32_tccsc"), ExtResource("31_p61co"), ExtResource("30_wiwcy"), ExtResource("29_yj7at"), ExtResource("28_bfmbe"), ExtResource("27_jybgq"), ExtResource("26_hsuao"), ExtResource("25_7mp4g")]
+}
+
+[sub_resource type="Animation" id="Animation_0qjct"]
+resource_name = "idle_right"
+length = 2.1
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame_coords")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.133333, 0.266667, 0.4, 0.533333, 0.666667, 0.8, 0.933333, 1.06667, 1.2, 1.33333, 1.46667, 1.6, 1.73333, 1.86667, 2),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [Vector2i(0, 2), Vector2i(1, 2), Vector2i(2, 2), Vector2i(3, 2), Vector2i(4, 2), Vector2i(5, 2), Vector2i(6, 2), Vector2i(7, 2), Vector2i(7, 2), Vector2i(6, 2), Vector2i(5, 2), Vector2i(4, 2), Vector2i(3, 2), Vector2i(2, 2), Vector2i(1, 2), Vector2i(0, 2)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("LightOccluder2D:occluder")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.133333, 0.266667, 0.4, 0.533333, 0.666667, 0.8, 0.933333, 1.06667, 1.2, 1.33333, 1.46667, 1.6, 1.73333, 1.86667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("33_2l3o7"), ExtResource("34_1wfy6"), ExtResource("35_teho5"), ExtResource("36_y1fi8"), ExtResource("37_oet2q"), ExtResource("38_ico1t"), ExtResource("39_32bc7"), ExtResource("40_egmju"), ExtResource("40_egmju"), ExtResource("39_32bc7"), ExtResource("38_ico1t"), ExtResource("37_oet2q"), ExtResource("36_y1fi8"), ExtResource("35_teho5"), ExtResource("34_1wfy6")]
+}
+
+[sub_resource type="Animation" id="Animation_xrour"]
+resource_name = "idle_up"
+length = 2.1
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame_coords")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.133333, 0.266667, 0.4, 0.533333, 0.666667, 0.8, 0.933333, 1.06667, 1.2, 1.33333, 1.46667, 1.6, 1.73333, 1.86667, 2),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [Vector2i(0, 4), Vector2i(1, 4), Vector2i(2, 4), Vector2i(3, 4), Vector2i(4, 4), Vector2i(5, 4), Vector2i(6, 4), Vector2i(7, 4), Vector2i(7, 4), Vector2i(6, 4), Vector2i(5, 4), Vector2i(4, 4), Vector2i(3, 4), Vector2i(2, 4), Vector2i(1, 4), Vector2i(0, 4)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("LightOccluder2D:occluder")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.133333, 0.266667, 0.4, 0.533333, 0.666667, 0.8, 0.933333, 1.2, 1.33333, 1.46667, 1.6, 1.73333, 1.86667, 2),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("41_qghdg"), ExtResource("42_q2vqy"), ExtResource("43_o45q7"), ExtResource("44_0l8sy"), ExtResource("45_t5cki"), ExtResource("46_pa4ou"), ExtResource("47_wkysk"), ExtResource("48_mfvhu"), ExtResource("47_wkysk"), ExtResource("46_pa4ou"), ExtResource("45_t5cki"), ExtResource("44_0l8sy"), ExtResource("43_o45q7"), ExtResource("42_q2vqy"), ExtResource("41_qghdg")]
+}
+
+[sub_resource type="Animation" id="Animation_5j7b6"]
+resource_name = "idle_up_left"
+length = 2.1
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame_coords")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.133333, 0.266667, 0.4, 0.533333, 0.666667, 0.8, 0.933333, 1.06667, 1.2, 1.33333, 1.46667, 1.6, 1.73333, 1.86667, 2),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [Vector2i(0, 7), Vector2i(1, 7), Vector2i(2, 7), Vector2i(3, 7), Vector2i(4, 7), Vector2i(5, 7), Vector2i(6, 7), Vector2i(7, 7), Vector2i(7, 7), Vector2i(6, 7), Vector2i(5, 7), Vector2i(4, 7), Vector2i(3, 7), Vector2i(2, 7), Vector2i(1, 7), Vector2i(0, 7)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("LightOccluder2D:occluder")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.133333, 0.266667, 0.4, 0.533333, 0.666667, 0.8, 0.933333, 1.2, 1.33333, 1.46667, 1.6, 1.73333, 1.86667, 2),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("49_w3ij5"), ExtResource("50_1lr1n"), ExtResource("51_sswws"), ExtResource("52_c1nvb"), ExtResource("53_ybr6c"), ExtResource("54_lv0oe"), ExtResource("55_ua2oj"), ExtResource("56_qbchg"), ExtResource("55_ua2oj"), ExtResource("54_lv0oe"), ExtResource("53_ybr6c"), ExtResource("52_c1nvb"), ExtResource("51_sswws"), ExtResource("50_1lr1n"), ExtResource("49_w3ij5")]
+}
+
+[sub_resource type="Animation" id="Animation_flkf7"]
+resource_name = "idle_up_right"
+length = 2.1
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame_coords")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.133333, 0.266667, 0.4, 0.533333, 0.666667, 0.8, 0.933333, 1.06667, 1.2, 1.33333, 1.46667, 1.6, 1.73333, 1.86667, 2),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [Vector2i(0, 3), Vector2i(1, 3), Vector2i(2, 3), Vector2i(3, 3), Vector2i(4, 3), Vector2i(5, 3), Vector2i(6, 3), Vector2i(7, 3), Vector2i(7, 3), Vector2i(6, 3), Vector2i(5, 3), Vector2i(4, 3), Vector2i(3, 3), Vector2i(2, 3), Vector2i(1, 3), Vector2i(0, 3)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("LightOccluder2D:occluder")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.133333, 0.266667, 0.4, 0.533333, 0.666667, 0.8, 0.933333, 1.2, 1.33333, 1.46667, 1.6, 1.73333, 1.86667, 2),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("57_rua6b"), ExtResource("58_6eb8l"), ExtResource("59_ub882"), ExtResource("60_4x5sb"), ExtResource("61_xh8or"), ExtResource("62_0iy08"), ExtResource("63_0kn2h"), ExtResource("64_w4uim"), ExtResource("63_0kn2h"), ExtResource("62_0iy08"), ExtResource("61_xh8or"), ExtResource("60_4x5sb"), ExtResource("59_ub882"), ExtResource("58_6eb8l"), ExtResource("57_rua6b")]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_jnn6o"]
+_data = {
+&"RESET": SubResource("Animation_4ttxe"),
+&"idle_down": SubResource("Animation_h04rr"),
+&"idle_down_left": SubResource("Animation_5jqr8"),
+&"idle_down_right": SubResource("Animation_hd01w"),
+&"idle_left": SubResource("Animation_7nlab"),
+&"idle_right": SubResource("Animation_0qjct"),
+&"idle_up": SubResource("Animation_xrour"),
+&"idle_up_left": SubResource("Animation_5j7b6"),
+&"idle_up_right": SubResource("Animation_flkf7")
+}
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_ys7yh"]
+animation = &"idle_down"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_tiu3d"]
+animation = &"idle_up"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_i4r1w"]
+animation = &"idle_left"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_gjxb5"]
+animation = &"idle_right"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_g203t"]
+animation = &"idle_down_right"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_cs4k1"]
+animation = &"idle_down_left"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_pf2hj"]
+animation = &"idle_up_left"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_1ot23"]
+animation = &"idle_up_right"
+
+[sub_resource type="AnimationNodeBlendSpace2D" id="AnimationNodeBlendSpace2D_3ibbd"]
+blend_point_0/node = SubResource("AnimationNodeAnimation_ys7yh")
+blend_point_0/pos = Vector2(0, 1)
+blend_point_1/node = SubResource("AnimationNodeAnimation_tiu3d")
+blend_point_1/pos = Vector2(0, -1)
+blend_point_2/node = SubResource("AnimationNodeAnimation_i4r1w")
+blend_point_2/pos = Vector2(-1, 0)
+blend_point_3/node = SubResource("AnimationNodeAnimation_gjxb5")
+blend_point_3/pos = Vector2(1, 0)
+blend_point_4/node = SubResource("AnimationNodeAnimation_g203t")
+blend_point_4/pos = Vector2(0.6, 0.6)
+blend_point_5/node = SubResource("AnimationNodeAnimation_cs4k1")
+blend_point_5/pos = Vector2(-0.6, 0.6)
+blend_point_6/node = SubResource("AnimationNodeAnimation_pf2hj")
+blend_point_6/pos = Vector2(-0.6, -0.6)
+blend_point_7/node = SubResource("AnimationNodeAnimation_1ot23")
+blend_point_7/pos = Vector2(0.6, -0.6)
+blend_mode = 1
+
+[sub_resource type="AnimationNodeBlendSpace2D" id="AnimationNodeBlendSpace2D_jxjsx"]
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_3wdq7"]
+animation = &"walk_down"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_v2qcs"]
+animation = &"walk_right"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_gtftm"]
+animation = &"walk_up"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_jcdjw"]
+animation = &"walk_left"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_kssie"]
+animation = &"walk_down_left"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_4i0ni"]
+animation = &"walk_down_right"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_lrwsu"]
+animation = &"walk_up_right"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_n43pr"]
+animation = &"walk_up_left"
+
+[sub_resource type="AnimationNodeBlendSpace2D" id="AnimationNodeBlendSpace2D_7h813"]
+blend_point_0/node = SubResource("AnimationNodeAnimation_3wdq7")
+blend_point_0/pos = Vector2(0, 1)
+blend_point_1/node = SubResource("AnimationNodeAnimation_v2qcs")
+blend_point_1/pos = Vector2(1, 0)
+blend_point_2/node = SubResource("AnimationNodeAnimation_gtftm")
+blend_point_2/pos = Vector2(0, -1)
+blend_point_3/node = SubResource("AnimationNodeAnimation_jcdjw")
+blend_point_3/pos = Vector2(-1, 0)
+blend_point_4/node = SubResource("AnimationNodeAnimation_kssie")
+blend_point_4/pos = Vector2(-0.7, 0.6)
+blend_point_5/node = SubResource("AnimationNodeAnimation_4i0ni")
+blend_point_5/pos = Vector2(0.7, 0.6)
+blend_point_6/node = SubResource("AnimationNodeAnimation_lrwsu")
+blend_point_6/pos = Vector2(0.7, -0.6)
+blend_point_7/node = SubResource("AnimationNodeAnimation_n43pr")
+blend_point_7/pos = Vector2(-0.7, -0.6)
+blend_mode = 1
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_m0yi4"]
+animation = &"walk_up"
+
+[sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_ekfra"]
+states/Idle/node = SubResource("AnimationNodeBlendSpace2D_3ibbd")
+states/Idle/position = Vector2(304, 100)
+states/MousePos/node = SubResource("AnimationNodeBlendSpace2D_jxjsx")
+states/MousePos/position = Vector2(275, 26)
+states/Walk/node = SubResource("AnimationNodeBlendSpace2D_7h813")
+states/Walk/position = Vector2(417, 100)
+states/walk_up/node = SubResource("AnimationNodeAnimation_m0yi4")
+states/walk_up/position = Vector2(464, -198)
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_vca0p"]
+radius = 7.0
+height = 32.0
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_flkf7"]
+cull_mode = 1
+polygon = PackedVector2Array(-67, -429, -67, -427, -69.7, -425, -73.8, -425, -85, -413.8, -85, -413.1, -131.6, -380, -133.7, -380, -162.7, -356, -164.8, -356, -277.7, -257, -279.8, -257, -337, -202.9, -337, -202.3, -350.5, -195, -352.8, -195, -370.7, -179, -372.8, -179, -415.8, -136, -417, -136, -431, -116, -432.4, -116, -438.4, -101, -440, -101, -440, -88.3, -436, -83, -434.2, -83, -435, -72.1, -435, -67.6, -422, -62.6, -422, -60, -412.8, -64, -411.8, -63, -410.9, -63, -322, 45.6, -322, 47.7, -259, 120.7, -259, 122.8, -212, 172.8, -212, 174.9, -173, 211.9, -173, 212.9, -105.7, 271, -103.9, 271, -78, 298.8, -78, 300.2, -68, 305.2, -68, 307, -44.3, 307, -19.3, 288, -17.2, 288, 14, 256.8, 14, 255.9, 78.7, 201, 80.8, 201, 109.8, 173, 111.8, 173, 172, 112.8, 172, 111.8, 224.7, 64, 226.9, 64, 294.9, -9, 297, -9, 297, -21.4, 306, -32.3, 306, -39.5, 299, -51.5, 299, -53.7, 281, -75.7, 281, -77.8, 220, -143.9, 220, -145.8, 61.8, -306, 60.9, -306, -9.09998, -381, -10, -381, -26, -403, -26.8, -403, -27.8, -405.1, -25, -406.9, -25, -411.9, -32, -417.9, -32, -420.2, -45, -427.3, -45, -429)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_enbwh"]
+polygon = PackedVector2Array(-4471.25, -4963.65, -4471.25, -4961.35, -4473.95, -4959.35, -4475.95, -4959.35, -4477.05, -4953.25, -4478.25, -4953.75, -4478.25, -4956.05, -4490.55, -4952.35, -4493.75, -4952.35, -4598.85, -4894.35, -4600.95, -4894.35, -4623.95, -4877.35, -4626.25, -4877.35, -4633.25, -4867.35, -4635.35, -4867.35, -4632.15, -4780.35, -4631.25, -4780.35, -4632.25, -4691.35, -4632.25, -4641.55, -4635.25, -4602.45, -4635.25, -4589.25, -4626.25, -4583.25, -4626.25, -4581.65, -4589.35, -4576.35, -4585.55, -4576.35, -4595.75, -4570.35, -4597.75, -4570.35, -4601.75, -4557.35, -4603.55, -4557.35, -4599.05, -4524.35, -4598.25, -4524.35, -4598.25, -4459.55, -4603.25, -4398.45, -4603.25, -4344.75, -4599.25, -4338.75, -4599.25, -4336.15, -4577.15, -4338.25, -4584.75, -4334.35, -4587.05, -4334.35, -4601.05, -4320.35, -4603.25, -4320.35, -4603.25, -4234.35, -4599.25, -4231.35, -4599.25, -4229.65, -4585.25, -4227.65, -4585.25, -4226.15, -4573.05, -4227.35, -4467.15, -4227.35, -4419.15, -4233.45, -4413.75, -4230.35, -4409.45, -4230.35, -4404.45, -4235.35, -4402.05, -4235.35, -4402.25, -4236.55, -4398.05, -4232.35, -4393.45, -4232.35, -4387.45, -4238.35, -4385.15, -4238.35, -4387.25, -4299.45, -4387.25, -4321.85, -4389.25, -4325.85, -4389.25, -4330.25, -4399.25, -4339.25, -4399.25, -4341.35, -4390.25, -4341.35, -4387.25, -4345.35, -4383.95, -4345.35, -4388.65, -4354.55, -4385.25, -4361.95, -4385.25, -4366.15, -4390.25, -4371.15, -4386.35, -4487.35, -4385.15, -4487.35, -4389.35, -4557.25, -4388.25, -4558.75, -4388.25, -4561.75, -4394.25, -4574.75, -4394.25, -4578.15, -4400.25, -4584.15, -4367.15, -4592.35, -4361.45, -4592.35, -4355.45, -4598.35, -4353.35, -4598.35, -4348.25, -4680.25, -4348.25, -4715.95, -4351.15, -4720.35, -4356.25, -4786.15, -4350.25, -4775.95, -4350.25, -4774.05, -4347.75, -4772.95, -4343.45, -4777.35, -4341.25, -4777.35, -4339.25, -4884.35, -4339.25, -4888.45, -4439.25, -4952.55, -4439.25, -4953.75, -4454.25, -4959.75, -4454.25, -4961.05)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_f25p5"]
+polygon = PackedVector2Array(-3191.25, -4963.65, -3191.25, -4961.35, -3193.95, -4959.35, -3195.95, -4959.35, -3197.05, -4953.25, -3198.25, -4953.75, -3198.25, -4956.05, -3210.55, -4952.35, -3213.75, -4952.35, -3318.85, -4894.35, -3320.95, -4894.35, -3343.95, -4877.35, -3346.25, -4877.35, -3353.25, -4867.35, -3355.35, -4867.35, -3352.15, -4780.35, -3351.25, -4780.35, -3352.25, -4691.35, -3352.25, -4641.55, -3355.25, -4602.45, -3355.25, -4589.25, -3346.25, -4583.25, -3346.25, -4581.55, -3300.15, -4575.65, -3309.65, -4571.35, -3313.35, -4571.35, -3319.35, -4562.35, -3321.05, -4562.35, -3322.05, -4554.35, -3323.55, -4554.35, -3319.05, -4521.35, -3318.25, -4521.35, -3318.25, -4456.55, -3323.25, -4395.45, -3323.25, -4341.75, -3319.25, -4335.75, -3319.25, -4333.25, -3298.85, -4334.35, -3304.75, -4331.35, -3307.05, -4331.35, -3321.05, -4317.35, -3323.25, -4317.35, -3323.25, -4231.35, -3319.25, -4228.35, -3319.25, -4226.65, -3305.25, -4224.65, -3305.25, -4223.15, -3293.05, -4224.35, -3187.15, -4224.35, -3139.15, -4230.45, -3133.75, -4227.35, -3129.45, -4227.35, -3124.45, -4232.35, -3122.05, -4232.35, -3122.25, -4233.55, -3118.05, -4229.35, -3113.45, -4229.35, -3107.45, -4235.35, -3105.15, -4235.35, -3107.25, -4296.45, -3107.25, -4318.85, -3109.25, -4322.85, -3109.25, -4327.25, -3119.25, -4336.25, -3119.25, -4338.35, -3110.25, -4338.35, -3107.25, -4342.35, -3103.95, -4342.35, -3108.65, -4351.55, -3105.25, -4358.95, -3105.25, -4363.15, -3110.25, -4368.15, -3106.25, -4494.35, -3106.25, -4526.45, -3109.35, -4554.15, -3108.25, -4555.75, -3108.25, -4558.75, -3114.25, -4571.75, -3114.25, -4575.15, -3122.25, -4583.15, -3122.25, -4583.95, -3086.75, -4592.35, -3081.45, -4592.35, -3075.45, -4598.35, -3073.35, -4598.35, -3068.25, -4680.25, -3068.25, -4715.95, -3071.15, -4720.35, -3076.25, -4786.15, -3070.25, -4775.95, -3070.25, -4774.05, -3067.75, -4772.95, -3063.45, -4777.35, -3061.25, -4777.35, -3059.25, -4884.35, -3059.25, -4888.45, -3159.25, -4952.55, -3159.25, -4953.75, -3174.25, -4959.75, -3174.25, -4961.05)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_noagd"]
+polygon = PackedVector2Array(-1910.25, -4951.65, -1910.25, -4949.35, -1912.95, -4947.35, -1914.95, -4947.35, -1916.05, -4941.25, -1917.25, -4941.75, -1917.25, -4944.05, -1929.55, -4940.35, -1932.75, -4940.35, -2037.85, -4882.35, -2039.95, -4882.35, -2062.95, -4865.35, -2065.25, -4865.35, -2072.25, -4855.35, -2074.35, -4855.35, -2071.15, -4768.35, -2070.25, -4768.35, -2071.25, -4679.35, -2071.25, -4629.55, -2074.25, -4590.45, -2074.25, -4577.25, -2065.25, -4571.25, -2065.25, -4569.55, -2033.55, -4565.65, -2038.15, -4560.35, -2039.85, -4560.35, -2041.95, -4550.35, -2043.55, -4550.35, -2039.05, -4517.35, -2038.25, -4517.35, -2038.25, -4452.55, -2043.25, -4391.45, -2043.25, -4337.75, -2039.25, -4331.75, -2039.25, -4329.15, -2017.15, -4331.25, -2024.75, -4327.35, -2027.05, -4327.35, -2041.05, -4313.35, -2043.25, -4313.35, -2043.25, -4227.35, -2039.25, -4224.35, -2039.25, -4222.65, -2025.25, -4220.65, -2025.25, -4219.15, -2013.05, -4220.35, -1907.15, -4220.35, -1859.15, -4226.45, -1853.75, -4223.35, -1849.45, -4223.35, -1844.45, -4228.35, -1842.05, -4228.35, -1842.25, -4229.55, -1838.05, -4225.35, -1833.45, -4225.35, -1827.45, -4231.35, -1825.15, -4231.35, -1827.25, -4292.45, -1827.25, -4314.85, -1829.25, -4318.85, -1829.25, -4323.25, -1839.25, -4332.25, -1839.25, -4334.35, -1830.25, -4334.35, -1827.25, -4338.35, -1823.95, -4338.35, -1828.65, -4347.55, -1825.25, -4354.95, -1825.25, -4359.15, -1830.25, -4364.15, -1826.25, -4490.35, -1826.25, -4522.45, -1829.35, -4550.15, -1828.25, -4551.75, -1828.25, -4554.85, -1836.85, -4572.85, -1805.75, -4580.35, -1800.45, -4580.35, -1794.45, -4586.35, -1792.35, -4586.35, -1787.25, -4668.25, -1787.25, -4703.95, -1790.15, -4708.35, -1795.25, -4774.15, -1789.25, -4763.95, -1789.25, -4762.05, -1786.75, -4760.95, -1782.45, -4765.35, -1780.25, -4765.35, -1778.25, -4872.35, -1778.25, -4876.45, -1878.25, -4940.55, -1878.25, -4941.75, -1893.25, -4947.75, -1893.25, -4949.05)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_8lhb0"]
+polygon = PackedVector2Array(-642.25, -4924.65, -642.25, -4922.35, -644.95, -4920.35, -646.95, -4920.35, -648.05, -4914.25, -649.25, -4914.75, -649.25, -4917.05, -661.55, -4913.35, -664.75, -4913.35, -769.85, -4855.35, -771.95, -4855.35, -794.95, -4838.35, -797.25, -4838.35, -804.25, -4828.35, -806.35, -4828.35, -803.15, -4741.35, -802.25, -4741.35, -803.25, -4652.35, -803.25, -4602.55, -806.25, -4563.45, -806.25, -4550.25, -797.25, -4544.25, -797.25, -4542.55, -763.35, -4538.35, -758.95, -4512.35, -758.25, -4512.35, -758.25, -4447.55, -763.25, -4386.45, -763.25, -4332.75, -759.25, -4326.75, -759.25, -4324.15, -737.15, -4326.25, -744.75, -4322.35, -747.05, -4322.35, -761.05, -4308.35, -763.25, -4308.35, -763.25, -4222.35, -759.25, -4219.35, -759.25, -4217.65, -745.25, -4215.65, -745.25, -4214.15, -733.05, -4215.35, -627.15, -4215.35, -579.15, -4221.45, -573.75, -4218.35, -569.45, -4218.35, -564.45, -4223.35, -562.05, -4223.35, -562.25, -4224.55, -558.05, -4220.35, -553.45, -4220.35, -547.45, -4226.35, -545.15, -4226.35, -547.25, -4287.45, -547.25, -4309.85, -549.25, -4313.85, -549.25, -4318.25, -559.25, -4327.25, -559.25, -4329.35, -550.25, -4329.35, -547.25, -4333.35, -543.95, -4333.35, -548.65, -4342.55, -545.25, -4349.95, -545.25, -4354.15, -550.25, -4359.15, -546.35, -4475.35, -545.05, -4475.35, -550.25, -4544.45, -550.25, -4546.05, -548.45, -4551.65, -537.95, -4553.35, -532.45, -4553.35, -526.45, -4559.35, -524.35, -4559.35, -519.25, -4641.25, -519.25, -4676.95, -522.15, -4681.35, -527.25, -4747.15, -521.25, -4736.95, -521.25, -4735.05, -518.75, -4733.95, -514.45, -4738.35, -512.25, -4738.35, -510.25, -4845.35, -510.25, -4849.45, -610.25, -4913.55, -610.25, -4914.75, -625.25, -4920.75, -625.25, -4922.05)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_peifi"]
+polygon = PackedVector2Array(628.75, -4914.65, 628.75, -4912.35, 626.05, -4910.35, 624.05, -4910.35, 622.95, -4904.25, 621.75, -4904.75, 621.75, -4907.05, 609.45, -4903.35, 606.25, -4903.35, 501.15, -4845.35, 499.05, -4845.35, 476.05, -4828.35, 473.75, -4828.35, 466.75, -4818.35, 464.65, -4818.35, 467.85, -4731.35, 468.75, -4731.35, 467.75, -4642.35, 467.75, -4592.55, 464.75, -4553.45, 464.75, -4540.25, 473.75, -4534.25, 473.75, -4532.65, 510.65, -4527.35, 517.65, -4527.35, 520.65, -4522.35, 521.75, -4508.25, 521.75, -4444.55, 516.75, -4383.45, 516.75, -4329.75, 520.75, -4323.75, 520.75, -4321.15, 542.85, -4323.25, 535.25, -4319.35, 532.95, -4319.35, 518.95, -4305.35, 516.75, -4305.35, 516.75, -4219.35, 520.75, -4216.35, 520.75, -4214.65, 534.75, -4212.65, 534.75, -4211.15, 546.95, -4212.35, 652.85, -4212.35, 700.85, -4218.45, 706.25, -4215.35, 710.55, -4215.35, 715.55, -4220.35, 717.95, -4220.35, 717.75, -4221.55, 721.95, -4217.35, 726.55, -4217.35, 732.55, -4223.35, 734.85, -4223.35, 732.75, -4284.45, 732.75, -4306.85, 730.75, -4310.85, 730.75, -4315.25, 720.75, -4324.25, 720.75, -4326.35, 729.75, -4326.35, 732.75, -4330.35, 736.05, -4330.35, 731.35, -4339.55, 734.75, -4346.95, 734.75, -4351.15, 729.75, -4356.15, 733.65, -4472.35, 734.95, -4472.35, 729.75, -4541.05, 738.25, -4544.35, 740.75, -4544.35, 744.75, -4549.35, 746.65, -4549.35, 747.65, -4565.35, 748.65, -4565.35, 751.75, -4631.35, 751.75, -4666.95, 748.85, -4671.35, 743.75, -4737.15, 749.75, -4726.95, 749.75, -4725.05, 752.25, -4723.95, 756.55, -4728.35, 758.75, -4728.35, 760.75, -4835.35, 760.75, -4839.45, 660.75, -4903.55, 660.75, -4904.75, 645.75, -4910.75, 645.75, -4912.05)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_wgfgn"]
+polygon = PackedVector2Array(3185.75, -4910.65, 3185.75, -4908.35, 3183.05, -4906.35, 3181.05, -4906.35, 3179.95, -4900.25, 3178.75, -4900.75, 3178.75, -4903.05, 3166.45, -4899.35, 3163.25, -4899.35, 3058.15, -4841.35, 3056.05, -4841.35, 3033.05, -4824.35, 3030.75, -4824.35, 3023.75, -4814.35, 3021.65, -4814.35, 3024.85, -4727.35, 3025.75, -4727.35, 3024.75, -4638.35, 3024.75, -4588.55, 3021.75, -4549.45, 3021.75, -4536.25, 3030.75, -4530.25, 3030.75, -4528.65, 3067.65, -4523.35, 3077.55, -4523.35, 3080.55, -4517.35, 3081.75, -4503.25, 3081.75, -4439.55, 3076.75, -4378.45, 3076.75, -4324.75, 3080.75, -4318.75, 3080.75, -4316.15, 3102.85, -4318.25, 3095.25, -4314.35, 3092.95, -4314.35, 3078.95, -4300.35, 3076.75, -4300.35, 3076.75, -4214.35, 3080.75, -4211.35, 3080.75, -4209.65, 3094.75, -4207.65, 3094.75, -4206.15, 3106.95, -4207.35, 3212.85, -4207.35, 3260.85, -4213.45, 3266.25, -4210.35, 3270.55, -4210.35, 3275.55, -4215.35, 3277.95, -4215.35, 3277.75, -4216.55, 3281.95, -4212.35, 3286.55, -4212.35, 3292.55, -4218.35, 3294.85, -4218.35, 3292.75, -4279.45, 3292.75, -4301.85, 3290.75, -4305.85, 3290.75, -4310.25, 3280.75, -4319.25, 3280.75, -4321.35, 3289.75, -4321.35, 3292.75, -4325.35, 3296.05, -4325.35, 3291.35, -4334.55, 3294.75, -4341.95, 3294.75, -4346.15, 3289.75, -4351.15, 3293.65, -4467.35, 3294.95, -4467.35, 3289.75, -4536.45, 3289.75, -4537.35, 3301.45, -4545.35, 3303.65, -4545.35, 3304.65, -4561.35, 3305.65, -4561.35, 3308.75, -4627.35, 3308.75, -4662.95, 3305.85, -4667.35, 3300.75, -4733.15, 3306.75, -4722.95, 3306.75, -4721.05, 3309.25, -4719.95, 3313.55, -4724.35, 3315.75, -4724.35, 3317.75, -4831.35, 3317.75, -4835.45, 3217.75, -4899.55, 3217.75, -4900.75, 3202.75, -4906.75, 3202.75, -4908.05)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_o5jol"]
+polygon = PackedVector2Array(4465.75, -4910.65, 4465.75, -4908.35, 4463.05, -4906.35, 4461.05, -4906.35, 4459.95, -4900.25, 4458.75, -4900.75, 4458.75, -4903.05, 4446.45, -4899.35, 4443.25, -4899.35, 4338.15, -4841.35, 4336.05, -4841.35, 4313.05, -4824.35, 4310.75, -4824.35, 4303.75, -4814.35, 4301.65, -4814.35, 4304.85, -4727.35, 4305.75, -4727.35, 4304.75, -4638.35, 4304.75, -4588.55, 4301.75, -4549.45, 4301.75, -4536.25, 4310.75, -4530.25, 4310.75, -4528.65, 4347.65, -4523.35, 4357.45, -4523.35, 4360.45, -4516.35, 4361.75, -4502.25, 4361.75, -4438.55, 4356.75, -4377.45, 4356.75, -4323.75, 4360.75, -4317.75, 4360.75, -4315.15, 4382.85, -4317.25, 4375.25, -4313.35, 4372.95, -4313.35, 4358.95, -4299.35, 4356.75, -4299.35, 4356.75, -4213.35, 4360.75, -4210.35, 4360.75, -4208.65, 4374.75, -4206.65, 4374.75, -4205.15, 4386.95, -4206.35, 4492.85, -4206.35, 4540.85, -4212.45, 4546.25, -4209.35, 4550.55, -4209.35, 4555.55, -4214.35, 4557.95, -4214.35, 4557.75, -4215.55, 4561.95, -4211.35, 4566.55, -4211.35, 4572.55, -4217.35, 4574.85, -4217.35, 4572.75, -4278.45, 4572.75, -4300.85, 4570.75, -4304.85, 4570.75, -4309.25, 4560.75, -4318.25, 4560.75, -4320.35, 4569.75, -4320.35, 4572.75, -4324.35, 4576.05, -4324.35, 4571.35, -4333.55, 4574.75, -4340.95, 4574.75, -4345.15, 4569.75, -4350.15, 4573.65, -4466.35, 4574.95, -4466.35, 4569.75, -4535.45, 4569.75, -4536.45, 4581.45, -4545.35, 4583.65, -4545.35, 4584.65, -4561.35, 4585.65, -4561.35, 4588.75, -4627.35, 4588.75, -4662.95, 4585.85, -4667.35, 4580.75, -4733.15, 4586.75, -4722.95, 4586.75, -4721.05, 4589.25, -4719.95, 4593.55, -4724.35, 4595.75, -4724.35, 4597.75, -4831.35, 4597.75, -4835.45, 4497.75, -4899.55, 4497.75, -4900.75, 4482.75, -4906.75, 4482.75, -4908.05)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_88qmy"]
+polygon = PackedVector2Array(1905.75, -4908.65, 1905.75, -4906.35, 1903.05, -4904.35, 1901.05, -4904.35, 1899.95, -4898.25, 1898.75, -4898.75, 1898.75, -4901.05, 1886.45, -4897.35, 1883.25, -4897.35, 1778.15, -4839.35, 1776.05, -4839.35, 1753.05, -4822.35, 1750.75, -4822.35, 1743.75, -4812.35, 1741.65, -4812.35, 1744.85, -4725.35, 1745.75, -4725.35, 1744.75, -4636.35, 1744.75, -4586.55, 1741.75, -4547.45, 1741.75, -4534.25, 1750.75, -4528.25, 1750.75, -4526.65, 1800.85, -4519.55, 1801.75, -4505.25, 1801.75, -4441.55, 1796.75, -4380.45, 1796.75, -4326.75, 1800.75, -4320.75, 1800.75, -4318.15, 1822.85, -4320.25, 1815.25, -4316.35, 1812.95, -4316.35, 1798.95, -4302.35, 1796.75, -4302.35, 1796.75, -4216.35, 1800.75, -4213.35, 1800.75, -4211.65, 1814.75, -4209.65, 1814.75, -4208.15, 1826.95, -4209.35, 1932.85, -4209.35, 1980.85, -4215.45, 1986.25, -4212.35, 1990.55, -4212.35, 1995.55, -4217.35, 1997.95, -4217.35, 1997.75, -4218.55, 2001.95, -4214.35, 2006.55, -4214.35, 2012.55, -4220.35, 2014.85, -4220.35, 2012.75, -4281.45, 2012.75, -4303.85, 2010.75, -4307.85, 2010.75, -4312.25, 2000.75, -4321.25, 2000.75, -4323.35, 2009.75, -4323.35, 2012.75, -4327.35, 2016.05, -4327.35, 2011.35, -4336.55, 2014.75, -4343.95, 2014.75, -4348.15, 2009.75, -4353.15, 2013.65, -4469.35, 2014.85, -4469.35, 2010.75, -4534.45, 2010.75, -4536.95, 2015.05, -4538.35, 2017.75, -4538.35, 2021.75, -4543.35, 2023.65, -4543.35, 2027.65, -4623.35, 2028.75, -4623.35, 2028.75, -4660.95, 2025.85, -4665.35, 2020.75, -4731.15, 2026.75, -4720.95, 2026.75, -4719.05, 2029.25, -4717.95, 2033.55, -4722.35, 2035.75, -4722.35, 2037.75, -4829.35, 2037.75, -4833.45, 1937.75, -4897.55, 1937.75, -4898.75, 1922.75, -4904.75, 1922.75, -4906.05)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_j5845"]
+polygon = PackedVector2Array(-4608.25, -3688.35, -4608.25, -3686.35, -4610.95, -3684.35, -4613.25, -3684.35, -4613.25, -3632.65, -4618.25, -3593.45, -4618.25, -3559.55, -4627.05, -3483.35, -4628.15, -3483.35, -4634.25, -3383.45, -4634.25, -3340.75, -4613.25, -3308.75, -4613.25, -3306.55, -4603.35, -3305.35, -4598.65, -3305.35, -4582.25, -3299.65, -4603.45, -3297.35, -4615.35, -3297.35, -4621.35, -3288.35, -4623.45, -3288.35, -4621.25, -3262.15, -4621.25, -3253.55, -4632.15, -3111.35, -4633.55, -3109.25, -4631.25, -3105.75, -4631.25, -3094.25, -4628.25, -3092.25, -4628.25, -3084.45, -4629.95, -3083.35, -4631.95, -3083.35, -4634.25, -3067.45, -4634.25, -3058.65, -4628.25, -3051.65, -4628.25, -3050.05, -4619.25, -3046.15, -4619.25, -3044.65, -4606.25, -3042.25, -4630.75, -3036.35, -4635.55, -3036.35, -4639.55, -3027.35, -4640.55, -3027.35, -4641.65, -3024.85, -4638.25, -3021.55, -4638.25, -3013.35, -4655.25, -2945.55, -4655.25, -2940.65, -4645.25, -2927.75, -4645.25, -2926.15, -4622.25, -2914.15, -4622.25, -2912.25, -4599.15, -2913.35, -4589.95, -2913.35, -4578.25, -2916.85, -4578.25, -2917.65, -4479.25, -2934.65, -4479.25, -2935.55, -4452.15, -2937.35, -4442.85, -2937.35, -4426.25, -2945.05, -4411.15, -2946.35, -4405.45, -2946.35, -4397.55, -2953.35, -4395.45, -2953.35, -4386.45, -3032.35, -4384.25, -3032.35, -4387.25, -3039.85, -4387.25, -3042.15, -4395.25, -3051.15, -4395.25, -3052.65, -4412.25, -3059.75, -4412.25, -3061.05, -4433.25, -3064.15, -4433.25, -3065.35, -4451.95, -3065.35, -4417.95, -3071.35, -4410.75, -3071.35, -4401.65, -3076.35, -4394.25, -3076.35, -4390.25, -3081.35, -4388.65, -3081.35, -4386.75, -3089.35, -4385.25, -3089.35, -4385.25, -3125.95, -4381.55, -3145.35, -4380.35, -3145.35, -4379.25, -3178.35, -4379.25, -3194.05, -4372.55, -3238.35, -4371.15, -3238.35, -4372.25, -3288.35, -4372.25, -3299.05, -4377.25, -3305.05, -4377.25, -3307.15, -4389.25, -3308.75, -4347.75, -3330.35, -4345.25, -3330.35, -4341.25, -3335.35, -4339.25, -3335.35, -4339.25, -3343.55, -4342.75, -3345.35, -4337.95, -3347.35, -4335.35, -3347.35, -4328.35, -3442.35, -4327.35, -3442.35, -4322.35, -3566.35, -4321.15, -3566.35, -4322.25, -3602.45, -4322.25, -3620.35, -4323.25, -3620.35, -4323.25, -3625.55, -4329.25, -3628.65, -4329.25, -3629.55, -4331.35, -3630.65, -4334.85, -3628.35, -4335.65, -3628.35, -4353.25, -3635.75, -4353.25, -3636.85, -4433.25, -3661.85, -4433.25, -3662.95, -4488.05, -3674.35, -4492.85, -3674.35, -4509.25, -3681.65, -4509.25, -3683.65, -4518.55, -3682.35, -4522.45, -3682.35, -4524.45, -3678.35, -4525.95, -3678.35, -4578.25, -3687.15, -4578.25, -3688.35)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_hqeap"]
+polygon = PackedVector2Array(-3335.25, -3680.35, -3335.25, -3678.35, -3337.95, -3676.35, -3340.25, -3676.35, -3340.25, -3624.65, -3345.25, -3585.45, -3345.25, -3551.55, -3354.05, -3475.35, -3355.15, -3475.35, -3361.25, -3375.45, -3361.25, -3332.75, -3340.25, -3300.75, -3340.25, -3298.75, -3320.25, -3294.35, -3327.45, -3293.35, -3339.35, -3293.35, -3345.35, -3284.35, -3347.45, -3284.35, -3345.25, -3258.15, -3345.25, -3249.55, -3356.15, -3107.35, -3357.55, -3105.25, -3355.25, -3101.75, -3355.25, -3090.25, -3352.25, -3088.25, -3352.25, -3080.45, -3353.95, -3079.35, -3355.95, -3079.35, -3358.25, -3063.45, -3358.25, -3054.65, -3352.25, -3047.65, -3352.25, -3046.05, -3343.25, -3042.15, -3343.25, -3040.65, -3328.85, -3038.05, -3354.65, -3032.35, -3359.55, -3032.35, -3363.55, -3023.35, -3364.55, -3023.35, -3365.65, -3020.85, -3362.25, -3017.55, -3362.25, -3009.35, -3379.25, -2941.55, -3379.25, -2936.65, -3369.25, -2923.75, -3369.25, -2922.15, -3346.25, -2910.15, -3346.25, -2908.25, -3323.15, -2909.35, -3313.95, -2909.35, -3302.25, -2912.85, -3302.25, -2913.65, -3203.25, -2930.65, -3203.25, -2931.55, -3176.15, -2933.35, -3166.85, -2933.35, -3150.25, -2941.05, -3135.15, -2942.35, -3129.45, -2942.35, -3121.55, -2949.35, -3119.45, -2949.35, -3110.45, -3028.35, -3108.25, -3028.35, -3111.25, -3035.85, -3111.25, -3038.15, -3119.25, -3047.15, -3119.25, -3048.65, -3136.25, -3055.75, -3136.25, -3057.05, -3157.25, -3060.15, -3157.25, -3061.35, -3175.95, -3061.35, -3141.95, -3067.35, -3134.75, -3067.35, -3125.65, -3072.35, -3118.25, -3072.35, -3114.25, -3077.35, -3112.65, -3077.35, -3110.75, -3085.35, -3109.25, -3085.35, -3109.25, -3121.95, -3105.55, -3141.35, -3104.35, -3141.35, -3101.25, -3198.25, -3101.25, -3212.95, -3099.25, -3222.15, -3099.25, -3228.95, -3095.25, -3235.85, -3095.25, -3238.35, -3096.25, -3284.35, -3096.25, -3295.05, -3101.25, -3301.05, -3101.25, -3303.15, -3109.65, -3304.05, -3074.75, -3322.35, -3072.25, -3322.35, -3068.25, -3327.35, -3066.25, -3327.35, -3066.25, -3335.55, -3069.55, -3337.25, -3068.95, -3337.35, -3064.85, -3337.35, -3062.85, -3343.35, -3061.35, -3343.35, -3049.35, -3558.35, -3048.15, -3558.35, -3049.25, -3594.45, -3049.25, -3612.35, -3050.25, -3612.35, -3050.25, -3617.55, -3056.25, -3620.65, -3056.25, -3621.55, -3058.35, -3622.65, -3061.85, -3620.35, -3062.65, -3620.35, -3080.25, -3627.75, -3080.25, -3628.85, -3160.25, -3653.85, -3160.25, -3654.95, -3215.05, -3666.35, -3219.85, -3666.35, -3236.25, -3673.65, -3236.25, -3675.65, -3245.55, -3674.35, -3249.45, -3674.35, -3251.45, -3670.35, -3252.95, -3670.35, -3305.25, -3679.15, -3305.25, -3680.35)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_62he6"]
+polygon = PackedVector2Array(-2070.25, -3669.35, -2070.25, -3667.35, -2072.95, -3665.35, -2075.25, -3665.35, -2075.25, -3613.65, -2080.25, -3574.45, -2080.25, -3540.55, -2089.05, -3464.35, -2090.15, -3464.35, -2096.25, -3364.45, -2096.25, -3321.75, -2075.25, -3289.75, -2075.25, -3287.55, -2065.35, -3286.35, -2060.85, -3286.35, -2045.55, -3280.05, -2047.55, -3279.35, -2059.35, -3279.35, -2065.35, -3270.35, -2067.45, -3270.35, -2065.25, -3244.15, -2065.25, -3235.55, -2076.15, -3093.35, -2077.55, -3091.25, -2075.25, -3087.75, -2075.25, -3076.25, -2072.25, -3074.25, -2072.25, -3066.45, -2073.95, -3065.35, -2075.95, -3065.35, -2078.25, -3049.45, -2078.25, -3040.65, -2072.25, -3033.65, -2072.25, -3032.05, -2063.25, -3028.15, -2063.25, -3026.65, -2050.25, -3024.25, -2074.75, -3018.35, -2079.55, -3018.35, -2083.55, -3009.35, -2084.55, -3009.35, -2085.65, -3006.85, -2082.25, -3003.55, -2082.25, -2995.35, -2099.25, -2927.55, -2099.25, -2922.65, -2089.25, -2909.75, -2089.25, -2908.15, -2066.25, -2896.15, -2066.25, -2894.25, -2043.15, -2895.35, -2033.95, -2895.35, -2022.25, -2898.85, -2022.25, -2899.65, -1923.25, -2916.65, -1923.25, -2917.55, -1896.15, -2919.35, -1886.85, -2919.35, -1870.25, -2927.05, -1855.15, -2928.35, -1849.45, -2928.35, -1841.55, -2935.35, -1839.45, -2935.35, -1830.45, -3014.35, -1828.25, -3014.35, -1831.25, -3021.85, -1831.25, -3024.15, -1839.25, -3033.15, -1839.25, -3034.65, -1856.25, -3041.75, -1856.25, -3043.05, -1877.25, -3046.15, -1877.25, -3047.35, -1895.95, -3047.35, -1861.95, -3053.35, -1854.75, -3053.35, -1845.65, -3058.35, -1838.25, -3058.35, -1834.25, -3063.35, -1832.65, -3063.35, -1830.75, -3071.35, -1829.25, -3071.35, -1829.25, -3107.95, -1825.55, -3127.35, -1824.35, -3127.35, -1823.25, -3160.35, -1823.25, -3176.05, -1816.55, -3220.35, -1815.15, -3220.35, -1816.25, -3270.35, -1816.25, -3281.25, -1824.25, -3288.25, -1824.25, -3290.25, -1846.85, -3292.05, -1809.75, -3311.35, -1807.25, -3311.35, -1803.25, -3316.35, -1801.25, -3316.35, -1801.25, -3324.55, -1804.75, -3326.35, -1799.95, -3328.35, -1797.35, -3328.35, -1790.35, -3423.35, -1789.35, -3423.35, -1784.35, -3547.35, -1783.15, -3547.35, -1784.25, -3583.45, -1784.25, -3601.35, -1785.25, -3601.35, -1785.25, -3606.55, -1791.25, -3609.65, -1791.25, -3610.55, -1793.35, -3611.65, -1796.85, -3609.35, -1797.65, -3609.35, -1815.25, -3616.75, -1815.25, -3617.85, -1895.25, -3642.85, -1895.25, -3643.95, -1950.05, -3655.35, -1954.85, -3655.35, -1971.25, -3662.65, -1971.25, -3664.65, -1980.55, -3663.35, -1984.45, -3663.35, -1986.45, -3659.35, -1987.95, -3659.35, -2040.25, -3668.15, -2040.25, -3669.35)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_4v6tj"]
+polygon = PackedVector2Array(-797.25, -3644.35, -797.25, -3642.35, -799.95, -3640.35, -802.25, -3640.35, -802.25, -3588.65, -807.25, -3549.45, -807.25, -3515.55, -816.05, -3439.35, -817.15, -3439.35, -823.25, -3339.45, -823.25, -3296.75, -804.25, -3267.75, -804.25, -3264.85, -785.55, -3259.35, -796.15, -3093.35, -797.55, -3091.25, -795.25, -3087.75, -795.25, -3076.25, -792.25, -3074.25, -792.25, -3066.45, -793.95, -3065.35, -795.95, -3065.35, -798.25, -3049.45, -798.25, -3040.65, -792.25, -3033.65, -792.25, -3032.05, -783.25, -3028.15, -783.25, -3026.65, -770.25, -3024.25, -794.75, -3018.35, -799.55, -3018.35, -803.55, -3009.35, -804.55, -3009.35, -805.65, -3006.85, -802.25, -3003.55, -802.25, -2995.35, -819.25, -2927.55, -819.25, -2922.65, -809.25, -2909.75, -809.25, -2908.15, -786.25, -2896.15, -786.25, -2894.25, -763.15, -2895.35, -753.95, -2895.35, -742.25, -2898.85, -742.25, -2899.65, -643.25, -2916.65, -643.25, -2917.55, -616.15, -2919.35, -606.85, -2919.35, -590.25, -2927.05, -575.15, -2928.35, -569.45, -2928.35, -561.55, -2935.35, -559.45, -2935.35, -550.45, -3014.35, -548.25, -3014.35, -551.25, -3021.85, -551.25, -3024.15, -559.25, -3033.15, -559.25, -3034.65, -576.25, -3041.75, -576.25, -3043.05, -597.25, -3046.15, -597.25, -3047.35, -615.95, -3047.35, -581.95, -3053.35, -574.75, -3053.35, -565.65, -3058.35, -558.25, -3058.35, -554.25, -3063.35, -552.65, -3063.35, -550.75, -3071.35, -549.25, -3071.35, -549.25, -3107.95, -545.55, -3127.35, -544.35, -3127.35, -543.25, -3160.35, -543.25, -3176.05, -536.55, -3220.35, -535.15, -3220.35, -536.25, -3270.35, -536.25, -3281.05, -538.95, -3284.65, -530.45, -3291.35, -528.25, -3291.35, -528.25, -3299.55, -531.55, -3301.25, -530.95, -3301.35, -526.85, -3301.35, -524.85, -3307.35, -523.35, -3307.35, -511.35, -3522.35, -510.15, -3522.35, -511.25, -3558.45, -511.25, -3576.35, -512.25, -3576.35, -512.25, -3581.55, -518.25, -3584.65, -518.25, -3585.55, -520.35, -3586.65, -523.85, -3584.35, -524.65, -3584.35, -542.25, -3591.75, -542.25, -3592.85, -622.25, -3617.85, -622.25, -3618.95, -677.05, -3630.35, -681.85, -3630.35, -698.25, -3637.65, -698.25, -3639.65, -707.55, -3638.35, -711.45, -3638.35, -713.45, -3634.35, -714.95, -3634.35, -767.25, -3643.15, -767.25, -3644.35)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_3wgcx"]
+polygon = PackedVector2Array(479.75, -3636.35, 479.75, -3634.35, 477.05, -3632.35, 474.75, -3632.35, 474.75, -3580.65, 469.75, -3541.45, 469.75, -3507.55, 460.95, -3431.35, 459.85, -3431.35, 453.75, -3331.45, 453.75, -3288.75, 472.75, -3259.75, 472.75, -3256.75, 482.55, -3254.35, 484.15, -3249.35, 473.85, -3081.35, 472.45, -3079.25, 474.75, -3075.75, 474.75, -3064.25, 477.75, -3062.25, 477.75, -3054.45, 476.05, -3053.35, 474.05, -3053.35, 471.75, -3037.45, 471.75, -3028.65, 477.75, -3021.65, 477.75, -3020.05, 486.75, -3016.15, 486.75, -3014.65, 499.75, -3012.25, 475.25, -3006.35, 470.45, -3006.35, 466.45, -2997.35, 465.45, -2997.35, 464.35, -2994.85, 467.75, -2991.55, 467.75, -2983.35, 450.75, -2915.55, 450.75, -2910.65, 460.75, -2897.75, 460.75, -2896.15, 483.75, -2884.15, 483.75, -2882.25, 506.85, -2883.35, 516.05, -2883.35, 527.75, -2886.85, 527.75, -2887.65, 626.75, -2904.65, 626.75, -2905.55, 653.85, -2907.35, 663.15, -2907.35, 679.75, -2915.05, 694.85, -2916.35, 700.55, -2916.35, 708.45, -2923.35, 710.55, -2923.35, 719.55, -3002.35, 721.75, -3002.35, 718.75, -3009.85, 718.75, -3012.15, 710.75, -3021.15, 710.75, -3022.65, 693.75, -3029.75, 693.75, -3031.05, 672.75, -3034.15, 672.75, -3035.35, 654.05, -3035.35, 688.05, -3041.35, 695.25, -3041.35, 704.35, -3046.35, 711.75, -3046.35, 715.75, -3051.35, 717.35, -3051.35, 719.25, -3059.35, 720.75, -3059.35, 720.75, -3095.95, 724.45, -3115.35, 725.65, -3115.35, 726.75, -3148.35, 726.75, -3164.05, 733.45, -3208.35, 734.85, -3208.35, 733.75, -3258.35, 733.75, -3269.05, 731.05, -3272.65, 746.35, -3283.35, 748.75, -3283.35, 748.75, -3291.55, 745.45, -3293.25, 746.05, -3293.35, 750.15, -3293.35, 752.15, -3299.35, 753.65, -3299.35, 765.65, -3514.35, 766.85, -3514.35, 765.75, -3550.45, 765.75, -3568.35, 764.75, -3568.35, 764.75, -3573.55, 758.75, -3576.65, 758.75, -3577.55, 756.65, -3578.65, 753.15, -3576.35, 752.35, -3576.35, 734.75, -3583.75, 734.75, -3584.85, 654.75, -3609.85, 654.75, -3610.95, 599.95, -3622.35, 595.15, -3622.35, 578.75, -3629.65, 578.75, -3631.65, 569.45, -3630.35, 565.55, -3630.35, 563.55, -3626.35, 562.05, -3626.35, 509.75, -3635.15, 509.75, -3636.35)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_pvdhh"]
+polygon = PackedVector2Array(1762.75, -3634.35, 1762.75, -3632.35, 1760.05, -3630.35, 1757.75, -3630.35, 1757.75, -3578.55, 1743.95, -3429.35, 1742.85, -3429.35, 1737.85, -3331.35, 1736.75, -3331.35, 1736.75, -3286.75, 1755.75, -3257.75, 1755.75, -3255.25, 1764.55, -3249.75, 1753.85, -3081.35, 1752.45, -3079.25, 1754.75, -3075.75, 1754.75, -3064.25, 1757.75, -3062.25, 1757.75, -3054.45, 1756.05, -3053.35, 1754.05, -3053.35, 1751.75, -3037.45, 1751.75, -3028.65, 1757.75, -3021.65, 1757.75, -3020.05, 1766.75, -3016.15, 1766.75, -3014.65, 1779.75, -3012.25, 1755.25, -3006.35, 1750.45, -3006.35, 1746.45, -2997.35, 1745.45, -2997.35, 1744.35, -2994.85, 1747.75, -2991.55, 1747.75, -2983.35, 1730.75, -2915.55, 1730.75, -2910.65, 1740.75, -2897.75, 1740.75, -2896.15, 1763.75, -2884.15, 1763.75, -2882.25, 1786.85, -2883.35, 1796.05, -2883.35, 1807.75, -2886.85, 1807.75, -2887.65, 1906.75, -2904.65, 1906.75, -2905.55, 1933.85, -2907.35, 1943.15, -2907.35, 1959.75, -2915.05, 1974.85, -2916.35, 1980.55, -2916.35, 1988.45, -2923.35, 1990.55, -2923.35, 1999.55, -3002.35, 2001.75, -3002.35, 1998.75, -3009.85, 1998.75, -3012.15, 1990.75, -3021.15, 1990.75, -3022.65, 1973.75, -3029.75, 1973.75, -3031.05, 1952.75, -3034.15, 1952.75, -3035.35, 1934.05, -3035.35, 1968.05, -3041.35, 1975.25, -3041.35, 1984.35, -3046.35, 1991.75, -3046.35, 1995.75, -3051.35, 1997.35, -3051.35, 1999.25, -3059.35, 2000.75, -3059.35, 2000.75, -3095.95, 2004.45, -3115.35, 2005.65, -3115.35, 2006.75, -3148.35, 2006.75, -3164.05, 2013.45, -3208.35, 2014.85, -3208.35, 2011.75, -3269.45, 2011.75, -3270.15, 2019.35, -3274.35, 2022.55, -3274.35, 2029.55, -3281.35, 2031.75, -3281.35, 2031.75, -3289.55, 2028.45, -3291.25, 2029.05, -3291.35, 2033.15, -3291.35, 2035.15, -3297.35, 2036.65, -3297.35, 2048.65, -3512.35, 2049.85, -3512.35, 2048.75, -3548.45, 2048.75, -3566.35, 2047.75, -3566.35, 2047.75, -3571.55, 2041.75, -3574.65, 2041.75, -3575.55, 2039.65, -3576.65, 2036.15, -3574.35, 2035.35, -3574.35, 2017.75, -3581.75, 2017.75, -3582.85, 1937.75, -3607.85, 1937.75, -3608.95, 1882.95, -3620.35, 1878.15, -3620.35, 1861.75, -3627.65, 1861.75, -3629.65, 1852.45, -3628.35, 1848.55, -3628.35, 1846.55, -3624.35, 1845.05, -3624.35, 1792.75, -3633.15, 1792.75, -3634.35)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_axgas"]
+polygon = PackedVector2Array(3042.75, -3632.35, 3042.75, -3630.35, 3040.05, -3628.35, 3037.75, -3628.35, 3037.75, -3576.55, 3023.95, -3427.35, 3022.85, -3427.35, 3017.85, -3329.35, 3016.75, -3329.35, 3016.75, -3284.75, 3035.75, -3255.75, 3035.75, -3253.25, 3042.15, -3249.35, 3044.65, -3249.35, 3033.85, -3081.35, 3032.45, -3079.25, 3034.75, -3075.75, 3034.75, -3064.25, 3037.75, -3062.25, 3037.75, -3054.45, 3036.05, -3053.35, 3034.05, -3053.35, 3031.75, -3037.45, 3031.75, -3028.65, 3037.75, -3021.65, 3037.75, -3020.05, 3046.75, -3016.15, 3046.75, -3014.65, 3059.75, -3012.25, 3035.25, -3006.35, 3030.45, -3006.35, 3026.45, -2997.35, 3025.45, -2997.35, 3024.35, -2994.85, 3027.75, -2991.55, 3027.75, -2983.35, 3010.75, -2915.55, 3010.75, -2910.65, 3020.75, -2897.75, 3020.75, -2896.15, 3043.75, -2884.15, 3043.75, -2882.25, 3066.85, -2883.35, 3076.05, -2883.35, 3087.75, -2886.85, 3087.75, -2887.65, 3186.75, -2904.65, 3186.75, -2905.55, 3213.85, -2907.35, 3223.15, -2907.35, 3239.75, -2915.05, 3254.85, -2916.35, 3260.55, -2916.35, 3268.45, -2923.35, 3270.55, -2923.35, 3279.55, -3002.35, 3281.75, -3002.35, 3278.75, -3009.85, 3278.75, -3012.15, 3270.75, -3021.15, 3270.75, -3022.65, 3253.75, -3029.75, 3253.75, -3031.05, 3232.75, -3034.15, 3232.75, -3035.35, 3214.05, -3035.35, 3248.05, -3041.35, 3255.25, -3041.35, 3264.35, -3046.35, 3271.75, -3046.35, 3275.75, -3051.35, 3277.35, -3051.35, 3279.25, -3059.35, 3280.75, -3059.35, 3280.75, -3095.95, 3284.45, -3115.35, 3285.65, -3115.35, 3286.75, -3148.35, 3286.75, -3164.05, 3293.45, -3208.35, 3294.85, -3208.35, 3292.75, -3268.35, 3309.45, -3279.35, 3311.75, -3279.35, 3311.75, -3287.55, 3308.45, -3289.25, 3309.05, -3289.35, 3313.15, -3289.35, 3315.15, -3295.35, 3316.65, -3295.35, 3328.65, -3510.35, 3329.85, -3510.35, 3328.75, -3546.45, 3328.75, -3564.35, 3327.75, -3564.35, 3327.75, -3569.55, 3321.75, -3572.65, 3321.75, -3573.55, 3319.65, -3574.65, 3316.15, -3572.35, 3315.35, -3572.35, 3297.75, -3579.75, 3297.75, -3580.85, 3217.75, -3605.85, 3217.75, -3606.95, 3162.95, -3618.35, 3158.15, -3618.35, 3141.75, -3625.65, 3141.75, -3627.65, 3132.45, -3626.35, 3128.55, -3626.35, 3126.55, -3622.35, 3125.05, -3622.35, 3072.75, -3631.15, 3072.75, -3632.35)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_wa8xa"]
+polygon = PackedVector2Array(4472.75, -3292.35, 4472.75, -3291.25, 4454.55, -3289.35, 4444.45, -3289.35, 4398.65, -3276.35, 4394.25, -3276.35, 4376.15, -3266.35, 4373.75, -3266.35, 4366.75, -3257.35, 4365.35, -3257.35, 4364.35, -3254.75, 4372.05, -3248.35, 4391.75, -3194.95, 4391.75, -3191.75, 4398.65, -3181.35, 4403.75, -3154.05, 4403.75, -3150.05, 4425.75, -3083.15, 4425.75, -3076.85, 4437.85, -3056.45, 4433.35, -3055.35, 4429.75, -3055.35, 4426.75, -3051.35, 4425.35, -3051.35, 4415.35, -3025.35, 4413.65, -3025.35, 4414.75, -3006.25, 4414.75, -2990.15, 4423.75, -2946.95, 4423.75, -2943.55, 4428.75, -2938.55, 4428.75, -2936.65, 4466.55, -2930.35, 4477.35, -2930.35, 4479.35, -2925.35, 4485.45, -2925.35, 4497.45, -2935.35, 4499.25, -2935.35, 4501.75, -2944.05, 4501.75, -2946.75, 4526.85, -2987.35, 4528.15, -2987.35, 4539.75, -3015.95, 4539.75, -3021.75, 4535.75, -3031.85, 4535.75, -3034.25, 4529.75, -3039.35, 4529.75, -3040.95, 4461.95, -3055.35, 4459.55, -3055.35, 4462.75, -3057.15, 4462.75, -3057.85, 4516.75, -3071.75, 4516.75, -3072.85, 4518.85, -3073.35, 4519.75, -3073.35, 4521.75, -3070.75, 4521.75, -3069.05, 4524.25, -3067.95, 4528.55, -3072.35, 4531.05, -3072.35, 4520.75, -3144.65, 4520.75, -3149.65, 4515.25, -3167.35, 4514.45, -3167.35, 4504.75, -3231.65, 4504.75, -3238.65, 4483.32, -3291.44, 4551.26, -3279.79, 4564.2, -3284.97, 4581.67, -3292.73, 4593.31, -3327.67, 4589.43, -3341.26, 4593.96, -3370.37, 4606.9, -3384.6, 4616.6, -3435.72, 4621.78, -3480.36, 4621.13, -3516.59, 4625.66, -3525, 4639.25, -3583.87, 4624.37, -3612.34, 4403.75, -3699.68, 4384.34, -3697.74, 4374.63, -3511.41, 4377.87, -3383.31, 4377.98, -3331.1)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_caubg"]
+polygon = PackedVector2Array(-4584.25, -2417.65, -4584.25, -2415.45, -4588.05, -2412.35, -4589.95, -2412.35, -4590.95, -2406.35, -4592.15, -2406.35, -4600.15, -2235.35, -4601.25, -2235.35, -4598.25, -2052.35, -4598.25, -2047.65, -4590.25, -2037.65, -4590.25, -2036.15, -4579.25, -2030.15, -4579.25, -2028.35, -4564.75, -2028.35, -4546.25, -2021.05, -4546.25, -2019.75, -4496.65, -2007.45, -4524.65, -2002.35, -4529.55, -2002.35, -4565.55, -1991.35, -4568.85, -1991.35, -4583.75, -1982.35, -4586.25, -1982.35, -4593.25, -1973.35, -4594.65, -1973.35, -4595.65, -1970.75, -4587.95, -1964.35, -4568.25, -1910.95, -4568.25, -1907.75, -4561.35, -1897.35, -4556.25, -1870.05, -4556.25, -1866.05, -4534.25, -1799.15, -4534.25, -1792.85, -4522.15, -1772.45, -4526.65, -1771.35, -4530.25, -1771.35, -4533.25, -1767.35, -4534.65, -1767.35, -4544.65, -1741.35, -4546.45, -1741.35, -4542.25, -1692.15, -4542.25, -1686.05, -4536.25, -1663.35, -4536.25, -1659.55, -4531.25, -1654.55, -4531.25, -1652.65, -4493.45, -1646.35, -4482.45, -1646.35, -4481.25, -1643.85, -4481.25, -1639.95, -4467.65, -1647.35, -4465.05, -1647.35, -4451.25, -1672.85, -4451.25, -1675.75, -4433.15, -1703.35, -4431.95, -1703.35, -4422.85, -1725.35, -4421.25, -1725.35, -4421.25, -1741.85, -4424.25, -1747.85, -4424.25, -1750.25, -4430.25, -1755.35, -4430.25, -1756.95, -4498.05, -1771.35, -4500.45, -1771.35, -4497.25, -1773.15, -4497.25, -1773.85, -4443.25, -1787.75, -4443.25, -1788.85, -4441.15, -1789.35, -4440.25, -1789.35, -4438.25, -1786.75, -4438.25, -1785.05, -4435.75, -1783.95, -4431.45, -1788.35, -4428.95, -1788.35, -4439.25, -1860.65, -4439.25, -1865.65, -4444.75, -1883.35, -4445.55, -1883.35, -4455.25, -1947.65, -4455.25, -1954.65, -4470.25, -1996.85, -4470.25, -2001.15, -4423.25, -1989.75, -4423.25, -1987.25, -4386.95, -2003.35, -4384.75, -2003.35, -4375.75, -2035.35, -4374.55, -2035.35, -4373.25, -2043.15, -4373.25, -2054.35, -4377.25, -2057.35, -4377.25, -2060.15, -4372.25, -2077.05, -4372.25, -2081.95, -4368.25, -2088.85, -4365.05, -2089.35, -4361.15, -2096.35, -4359.35, -2096.35, -4358.25, -2117.25, -4358.25, -2125.35, -4352.75, -2145.35, -4351.45, -2145.35, -4346.45, -2187.35, -4345.15, -2187.35, -4346.25, -2216.45, -4346.25, -2230.55, -4341.45, -2235.35, -4339.55, -2235.35, -4328.55, -2291.35, -4326.55, -2291.35, -4329.25, -2300.65, -4329.25, -2304.95, -4334.95, -2306.35, -4337.65, -2313.35, -4319.95, -2313.35, -4318.85, -2315.85, -4323.25, -2320.25, -4323.25, -2321.65, -4352.25, -2333.75, -4352.25, -2334.95, -4368.05, -2338.35, -4371.85, -2338.35, -4411.85, -2353.35, -4414.65, -2353.35, -4556.25, -2412.75, -4556.25, -2414.15)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_kw03w"]
+polygon = PackedVector2Array(-3304.25, -2417.65, -3304.25, -2415.45, -3308.05, -2412.35, -3309.95, -2412.35, -3310.95, -2406.35, -3312.15, -2406.35, -3320.15, -2235.35, -3321.25, -2235.35, -3318.25, -2052.35, -3318.25, -2047.65, -3310.25, -2037.65, -3310.25, -2036.15, -3299.25, -2030.15, -3299.25, -2028.35, -3284.75, -2028.35, -3266.25, -2021.05, -3266.25, -2019.75, -3216.65, -2007.45, -3244.65, -2002.35, -3249.55, -2002.35, -3285.55, -1991.35, -3288.85, -1991.35, -3303.75, -1982.35, -3306.25, -1982.35, -3313.25, -1973.35, -3314.65, -1973.35, -3315.65, -1970.75, -3307.95, -1964.35, -3288.25, -1910.95, -3288.25, -1907.75, -3281.35, -1897.35, -3276.25, -1870.05, -3276.25, -1866.05, -3254.25, -1799.15, -3254.25, -1792.85, -3242.15, -1772.45, -3246.65, -1771.35, -3250.25, -1771.35, -3253.25, -1767.35, -3254.65, -1767.35, -3264.65, -1741.35, -3266.45, -1741.35, -3262.25, -1692.15, -3262.25, -1686.05, -3256.25, -1663.35, -3256.25, -1659.55, -3251.25, -1654.55, -3251.25, -1652.65, -3213.45, -1646.35, -3202.45, -1646.35, -3201.25, -1643.85, -3201.25, -1639.95, -3187.65, -1647.35, -3185.05, -1647.35, -3171.25, -1672.85, -3171.25, -1675.75, -3153.15, -1703.35, -3151.95, -1703.35, -3142.85, -1725.35, -3141.25, -1725.35, -3141.25, -1741.85, -3144.25, -1747.85, -3144.25, -1750.25, -3150.25, -1755.35, -3150.25, -1756.95, -3218.05, -1771.35, -3220.45, -1771.35, -3217.25, -1773.15, -3217.25, -1773.85, -3163.25, -1787.75, -3163.25, -1788.85, -3161.15, -1789.35, -3160.25, -1789.35, -3158.25, -1786.75, -3158.25, -1785.05, -3155.75, -1783.95, -3151.45, -1788.35, -3148.95, -1788.35, -3159.25, -1860.65, -3159.25, -1865.65, -3164.75, -1883.35, -3165.55, -1883.35, -3175.25, -1947.65, -3175.25, -1954.65, -3190.25, -1996.85, -3190.25, -2001.15, -3143.25, -1989.75, -3143.25, -1987.25, -3106.95, -2003.35, -3104.75, -2003.35, -3095.75, -2035.35, -3094.55, -2035.35, -3093.25, -2043.15, -3093.25, -2054.35, -3097.25, -2057.35, -3097.25, -2060.15, -3092.25, -2077.05, -3092.25, -2081.95, -3088.25, -2088.85, -3085.05, -2089.35, -3081.15, -2096.35, -3079.35, -2096.35, -3078.25, -2117.25, -3078.25, -2125.35, -3072.75, -2145.35, -3071.45, -2145.35, -3066.45, -2187.35, -3065.15, -2187.35, -3066.25, -2216.45, -3066.25, -2230.55, -3061.45, -2235.35, -3059.55, -2235.35, -3048.55, -2291.35, -3046.55, -2291.35, -3049.25, -2300.65, -3049.25, -2304.95, -3054.95, -2306.35, -3057.65, -2313.35, -3039.95, -2313.35, -3038.85, -2315.85, -3043.25, -2320.25, -3043.25, -2321.65, -3072.25, -2333.75, -3072.25, -2334.95, -3088.05, -2338.35, -3091.85, -2338.35, -3131.85, -2353.35, -3134.65, -2353.35, -3276.25, -2412.75, -3276.25, -2414.15)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_xcmio"]
+polygon = PackedVector2Array(-762.25, -2392.65, -762.25, -2390.45, -766.05, -2387.35, -767.95, -2387.35, -768.95, -2381.35, -770.15, -2381.35, -778.15, -2210.35, -779.25, -2210.35, -776.25, -2027.35, -776.25, -2022.65, -768.25, -2012.65, -768.25, -2011.15, -757.25, -2005.15, -757.25, -2003.35, -742.75, -2003.35, -724.25, -1996.05, -724.25, -1994.75, -699.65, -1988.85, -745.35, -1976.35, -748.85, -1976.35, -763.75, -1967.35, -766.25, -1967.35, -773.25, -1958.35, -774.65, -1958.35, -775.65, -1955.75, -767.95, -1949.35, -748.25, -1895.95, -748.25, -1892.75, -741.35, -1882.35, -736.25, -1855.05, -736.25, -1851.05, -714.25, -1784.15, -714.25, -1777.85, -702.15, -1757.45, -706.65, -1756.35, -710.25, -1756.35, -713.25, -1752.35, -714.65, -1752.35, -724.65, -1726.35, -726.45, -1726.35, -722.25, -1677.15, -722.25, -1671.05, -716.25, -1648.35, -716.25, -1644.55, -711.25, -1639.55, -711.25, -1637.65, -673.45, -1631.35, -662.45, -1631.35, -661.25, -1628.85, -661.25, -1624.95, -647.65, -1632.35, -645.05, -1632.35, -631.25, -1657.85, -631.25, -1660.75, -613.15, -1688.35, -611.95, -1688.35, -602.85, -1710.35, -601.25, -1710.35, -601.25, -1726.85, -604.25, -1732.85, -604.25, -1735.25, -610.25, -1740.35, -610.25, -1741.95, -678.05, -1756.35, -680.45, -1756.35, -677.25, -1758.15, -677.25, -1758.85, -623.25, -1772.75, -623.25, -1773.85, -621.15, -1774.35, -620.25, -1774.35, -618.25, -1771.75, -618.25, -1770.05, -615.75, -1768.95, -611.45, -1773.35, -608.95, -1773.35, -619.25, -1845.65, -619.25, -1850.65, -624.75, -1868.35, -625.55, -1868.35, -635.25, -1932.65, -635.25, -1939.65, -647.55, -1975.65, -599.55, -1963.35, -594.45, -1963.35, -589.25, -1968.65, -588.75, -1968.35, -583.75, -1968.35, -564.75, -1978.35, -562.75, -1978.35, -553.75, -2010.35, -552.55, -2010.35, -551.25, -2018.15, -551.25, -2029.35, -555.25, -2032.35, -555.25, -2035.15, -550.25, -2052.05, -550.25, -2056.95, -546.25, -2063.85, -543.05, -2064.35, -539.15, -2071.35, -537.35, -2071.35, -536.25, -2092.25, -536.25, -2100.35, -530.75, -2120.35, -529.45, -2120.35, -524.45, -2162.35, -523.15, -2162.35, -524.25, -2191.45, -524.25, -2205.55, -519.45, -2210.35, -517.55, -2210.35, -506.55, -2266.35, -504.55, -2266.35, -507.25, -2275.65, -507.25, -2279.95, -512.95, -2281.35, -515.65, -2288.35, -497.95, -2288.35, -496.85, -2290.85, -501.25, -2295.25, -501.25, -2296.65, -530.25, -2308.75, -530.25, -2309.95, -546.05, -2313.35, -549.85, -2313.35, -589.85, -2328.35, -592.65, -2328.35, -734.25, -2387.75, -734.25, -2389.15)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_4k8uv"]
+polygon = PackedVector2Array(500.75, -2385.65, 500.75, -2383.45, 496.95, -2380.35, 495.05, -2380.35, 494.05, -2374.35, 492.85, -2374.35, 484.85, -2203.35, 483.75, -2203.35, 486.75, -2020.35, 486.75, -2015.65, 494.75, -2005.65, 494.75, -2004.15, 505.75, -1998.15, 505.75, -1996.35, 520.25, -1996.35, 538.75, -1989.05, 538.75, -1987.75, 565.85, -1981.05, 525.45, -1968.35, 522.05, -1968.35, 514.05, -1962.35, 511.75, -1962.35, 504.75, -1953.35, 503.35, -1953.35, 502.35, -1950.75, 510.05, -1944.35, 529.75, -1890.95, 529.75, -1887.75, 536.65, -1877.35, 541.75, -1850.05, 541.75, -1846.05, 563.75, -1779.15, 563.75, -1772.85, 575.85, -1752.45, 571.35, -1751.35, 567.75, -1751.35, 564.75, -1747.35, 563.35, -1747.35, 553.35, -1721.35, 551.55, -1721.35, 555.75, -1672.15, 555.75, -1666.05, 561.75, -1643.35, 561.75, -1639.55, 566.75, -1634.55, 566.75, -1632.65, 604.55, -1626.35, 615.55, -1626.35, 616.75, -1623.85, 616.75, -1619.95, 630.35, -1627.35, 632.95, -1627.35, 646.75, -1652.85, 646.75, -1655.75, 664.85, -1683.35, 666.05, -1683.35, 675.15, -1705.35, 676.75, -1705.35, 676.75, -1721.85, 673.75, -1727.85, 673.75, -1730.25, 667.75, -1735.35, 667.75, -1736.95, 615.75, -1748.05, 615.75, -1749.15, 595.75, -1750.95, 600.75, -1753.05, 600.75, -1753.85, 656.95, -1768.35, 660.95, -1764.35, 664.95, -1764.35, 666.95, -1768.35, 669.05, -1768.35, 658.75, -1840.65, 658.75, -1845.65, 653.25, -1863.35, 652.45, -1863.35, 642.75, -1927.65, 642.75, -1934.65, 633.05, -1963.75, 663.55, -1956.35, 668.55, -1956.35, 673.75, -1961.65, 674.25, -1961.35, 679.25, -1961.35, 698.25, -1971.35, 700.25, -1971.35, 709.25, -2003.35, 710.45, -2003.35, 711.75, -2011.15, 711.75, -2022.35, 707.75, -2025.35, 707.75, -2028.15, 712.75, -2045.05, 712.75, -2049.95, 716.75, -2056.85, 719.95, -2057.35, 723.85, -2064.35, 725.65, -2064.35, 726.75, -2085.25, 726.75, -2093.35, 732.25, -2113.35, 733.55, -2113.35, 738.55, -2155.35, 739.85, -2155.35, 738.75, -2184.45, 738.75, -2198.55, 743.55, -2203.35, 745.45, -2203.35, 756.45, -2259.35, 758.45, -2259.35, 755.75, -2268.65, 755.75, -2272.95, 750.05, -2274.35, 747.35, -2281.35, 765.05, -2281.35, 766.15, -2283.85, 761.75, -2288.25, 761.75, -2289.65, 732.75, -2301.75, 732.75, -2302.95, 716.95, -2306.35, 713.15, -2306.35, 673.15, -2321.35, 670.35, -2321.35, 528.75, -2380.75, 528.75, -2382.15)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_qhgyh"]
+polygon = PackedVector2Array(1780.75, -2385.65, 1780.75, -2383.45, 1776.95, -2380.35, 1775.05, -2380.35, 1774.05, -2374.35, 1772.85, -2374.35, 1764.85, -2203.35, 1763.75, -2203.35, 1766.75, -2020.35, 1766.75, -2015.65, 1774.75, -2005.65, 1774.75, -2004.15, 1785.75, -1998.15, 1785.75, -1996.35, 1800.25, -1996.35, 1818.75, -1989.05, 1818.75, -1987.75, 1845.85, -1981.05, 1805.45, -1968.35, 1802.05, -1968.35, 1794.05, -1962.35, 1791.75, -1962.35, 1784.75, -1953.35, 1783.35, -1953.35, 1782.35, -1950.75, 1790.05, -1944.35, 1809.75, -1890.95, 1809.75, -1887.75, 1816.65, -1877.35, 1821.75, -1850.05, 1821.75, -1846.05, 1843.75, -1779.15, 1843.75, -1772.85, 1855.85, -1752.45, 1851.35, -1751.35, 1847.75, -1751.35, 1844.75, -1747.35, 1843.35, -1747.35, 1833.35, -1721.35, 1831.55, -1721.35, 1835.75, -1672.15, 1835.75, -1666.05, 1841.75, -1643.35, 1841.75, -1639.55, 1846.75, -1634.55, 1846.75, -1632.65, 1884.55, -1626.35, 1895.55, -1626.35, 1896.75, -1623.85, 1896.75, -1619.95, 1910.35, -1627.35, 1912.95, -1627.35, 1926.75, -1652.85, 1926.75, -1655.75, 1944.85, -1683.35, 1946.05, -1683.35, 1955.15, -1705.35, 1956.75, -1705.35, 1956.75, -1721.85, 1953.75, -1727.85, 1953.75, -1730.25, 1947.75, -1735.35, 1947.75, -1736.95, 1895.75, -1748.05, 1895.75, -1749.15, 1875.75, -1750.95, 1880.75, -1753.05, 1880.75, -1753.85, 1936.95, -1768.35, 1940.95, -1764.35, 1944.95, -1764.35, 1946.95, -1768.35, 1949.05, -1768.35, 1938.75, -1840.65, 1938.75, -1845.65, 1933.25, -1863.35, 1932.45, -1863.35, 1922.75, -1927.65, 1922.75, -1934.65, 1913.05, -1963.75, 1943.55, -1956.35, 1948.55, -1956.35, 1953.75, -1961.65, 1954.25, -1961.35, 1959.25, -1961.35, 1978.25, -1971.35, 1980.25, -1971.35, 1989.25, -2003.35, 1990.45, -2003.35, 1991.75, -2011.15, 1991.75, -2022.35, 1987.75, -2025.35, 1987.75, -2028.15, 1992.75, -2045.05, 1992.75, -2049.95, 1996.75, -2056.85, 1999.95, -2057.35, 2003.85, -2064.35, 2005.65, -2064.35, 2006.75, -2085.25, 2006.75, -2093.35, 2012.25, -2113.35, 2013.55, -2113.35, 2018.55, -2155.35, 2019.85, -2155.35, 2018.75, -2184.45, 2018.75, -2198.55, 2023.55, -2203.35, 2025.45, -2203.35, 2036.45, -2259.35, 2038.45, -2259.35, 2035.75, -2268.65, 2035.75, -2272.95, 2030.05, -2274.35, 2027.35, -2281.35, 2045.05, -2281.35, 2046.15, -2283.85, 2041.75, -2288.25, 2041.75, -2289.65, 2012.75, -2301.75, 2012.75, -2302.95, 1996.95, -2306.35, 1993.15, -2306.35, 1953.15, -2321.35, 1950.35, -2321.35, 1808.75, -2380.75, 1808.75, -2382.15)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_xsvy8"]
+polygon = PackedVector2Array(3060.75, -2383.65, 3060.75, -2381.45, 3056.95, -2378.35, 3055.05, -2378.35, 3054.05, -2372.35, 3052.85, -2372.35, 3044.85, -2201.35, 3043.75, -2201.35, 3046.75, -2018.35, 3046.75, -2013.65, 3054.75, -2003.65, 3054.75, -2002.15, 3065.75, -1996.15, 3065.75, -1994.35, 3080.25, -1994.35, 3098.75, -1987.05, 3098.75, -1985.75, 3127.75, -1978.55, 3092.45, -1968.35, 3089.15, -1968.35, 3074.25, -1959.35, 3071.85, -1959.35, 3062.75, -1949.15, 3062.75, -1946.25, 3070.15, -1941.35, 3089.75, -1887.95, 3089.75, -1884.75, 3096.65, -1874.35, 3101.75, -1847.05, 3101.75, -1843.05, 3123.75, -1776.15, 3123.75, -1769.85, 3135.85, -1749.45, 3131.35, -1748.35, 3127.75, -1748.35, 3124.75, -1744.35, 3123.35, -1744.35, 3113.35, -1718.35, 3111.65, -1718.35, 3112.75, -1699.25, 3112.75, -1683.15, 3121.75, -1639.95, 3121.75, -1636.55, 3126.75, -1631.55, 3126.75, -1629.65, 3158.55, -1624.35, 3189.75, -1623.65, 3195.55, -1628.35, 3197.25, -1628.35, 3199.75, -1637.05, 3199.75, -1639.75, 3224.85, -1680.35, 3226.05, -1680.35, 3233.05, -1696.35, 3234.25, -1696.35, 3237.75, -1709.05, 3237.75, -1714.75, 3233.75, -1724.85, 3233.75, -1727.45, 3224.75, -1733.45, 3224.75, -1736.15, 3219.45, -1734.35, 3217.05, -1734.35, 3211.75, -1736.65, 3211.75, -1738.05, 3175.75, -1745.05, 3175.75, -1746.15, 3155.75, -1747.95, 3160.75, -1750.05, 3160.75, -1750.85, 3216.95, -1765.35, 3220.95, -1761.35, 3224.95, -1761.35, 3226.95, -1765.35, 3229.05, -1765.35, 3218.75, -1837.65, 3218.75, -1842.65, 3213.25, -1860.35, 3212.45, -1860.35, 3202.75, -1924.65, 3202.75, -1931.65, 3192.75, -1961.65, 3223.55, -1954.35, 3228.55, -1954.35, 3233.75, -1959.65, 3234.25, -1959.35, 3239.25, -1959.35, 3258.25, -1969.35, 3260.25, -1969.35, 3269.25, -2001.35, 3270.45, -2001.35, 3271.75, -2009.15, 3271.75, -2020.35, 3267.75, -2023.35, 3267.75, -2026.15, 3272.75, -2043.05, 3272.75, -2047.95, 3276.75, -2054.85, 3279.95, -2055.35, 3283.85, -2062.35, 3285.65, -2062.35, 3286.75, -2083.25, 3286.75, -2091.35, 3292.25, -2111.35, 3293.55, -2111.35, 3298.55, -2153.35, 3299.85, -2153.35, 3298.75, -2182.45, 3298.75, -2196.55, 3303.55, -2201.35, 3305.45, -2201.35, 3316.45, -2257.35, 3318.45, -2257.35, 3315.75, -2266.65, 3315.75, -2270.95, 3310.05, -2272.35, 3307.35, -2279.35, 3325.05, -2279.35, 3326.15, -2281.85, 3321.75, -2286.25, 3321.75, -2287.65, 3292.75, -2299.75, 3292.75, -2300.95, 3276.95, -2304.35, 3273.15, -2304.35, 3233.15, -2319.35, 3230.35, -2319.35, 3088.75, -2378.75, 3088.75, -2380.15)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_1qnpr"]
+polygon = PackedVector2Array(4340.75, -2383.65, 4340.75, -2381.45, 4336.95, -2378.35, 4335.05, -2378.35, 4334.05, -2372.35, 4332.85, -2372.35, 4324.85, -2201.35, 4323.75, -2201.35, 4326.75, -2018.35, 4326.75, -2013.65, 4334.75, -2003.65, 4334.75, -2002.15, 4345.75, -1996.15, 4345.75, -1994.35, 4360.25, -1994.35, 4378.75, -1987.05, 4378.75, -1985.75, 4407.75, -1978.55, 4372.45, -1968.35, 4369.15, -1968.35, 4354.25, -1959.35, 4351.85, -1959.35, 4342.75, -1949.15, 4342.75, -1946.25, 4350.15, -1941.35, 4369.75, -1887.95, 4369.75, -1884.75, 4376.65, -1874.35, 4381.75, -1847.05, 4381.75, -1843.05, 4403.75, -1776.15, 4403.75, -1769.85, 4415.85, -1749.45, 4411.35, -1748.35, 4407.75, -1748.35, 4404.75, -1744.35, 4403.35, -1744.35, 4393.35, -1718.35, 4391.65, -1718.35, 4392.75, -1699.25, 4392.75, -1683.15, 4401.75, -1639.95, 4401.75, -1636.55, 4406.75, -1631.55, 4406.75, -1629.65, 4438.55, -1624.35, 4469.75, -1623.65, 4475.55, -1628.35, 4477.25, -1628.35, 4479.75, -1637.05, 4479.75, -1639.75, 4504.85, -1680.35, 4506.05, -1680.35, 4513.05, -1696.35, 4514.25, -1696.35, 4517.75, -1709.05, 4517.75, -1714.75, 4513.75, -1724.85, 4513.75, -1727.45, 4504.75, -1733.45, 4504.75, -1736.15, 4499.45, -1734.35, 4497.05, -1734.35, 4491.75, -1736.65, 4491.75, -1738.05, 4455.75, -1745.05, 4455.75, -1746.15, 4435.75, -1747.95, 4440.75, -1750.05, 4440.75, -1750.85, 4496.95, -1765.35, 4500.95, -1761.35, 4504.95, -1761.35, 4506.95, -1765.35, 4509.05, -1765.35, 4498.75, -1837.65, 4498.75, -1842.65, 4493.25, -1860.35, 4492.45, -1860.35, 4482.75, -1924.65, 4482.75, -1931.65, 4472.75, -1961.65, 4503.55, -1954.35, 4508.55, -1954.35, 4513.75, -1959.65, 4514.25, -1959.35, 4519.25, -1959.35, 4538.25, -1969.35, 4540.25, -1969.35, 4549.25, -2001.35, 4550.45, -2001.35, 4551.75, -2009.15, 4551.75, -2020.35, 4547.75, -2023.35, 4547.75, -2026.15, 4552.75, -2043.05, 4552.75, -2047.95, 4556.75, -2054.85, 4559.95, -2055.35, 4563.85, -2062.35, 4565.65, -2062.35, 4566.75, -2083.25, 4566.75, -2091.35, 4572.25, -2111.35, 4573.55, -2111.35, 4578.55, -2153.35, 4579.85, -2153.35, 4578.75, -2182.45, 4578.75, -2196.55, 4583.55, -2201.35, 4585.45, -2201.35, 4596.45, -2257.35, 4598.45, -2257.35, 4595.75, -2266.65, 4595.75, -2270.95, 4590.05, -2272.35, 4587.35, -2279.35, 4605.05, -2279.35, 4606.15, -2281.85, 4601.75, -2286.25, 4601.75, -2287.65, 4572.75, -2299.75, 4572.75, -2300.95, 4556.95, -2304.35, 4553.15, -2304.35, 4513.15, -2319.35, 4510.35, -2319.35, 4368.75, -2378.75, 4368.75, -2380.15)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_pd1vb"]
+polygon = PackedVector2Array(-2018.53, -2029.72, -2010.08, -2030.62, -1937.25, -2001.25, -1955.45, -1999.35, -1965.55, -1999.35, -2011.35, -1986.35, -2015.75, -1986.35, -2033.85, -1976.35, -2036.25, -1976.35, -2043.25, -1967.35, -2044.65, -1967.35, -2045.65, -1964.75, -2037.95, -1958.35, -2018.25, -1904.95, -2018.25, -1901.75, -2011.35, -1891.35, -2006.25, -1864.05, -2006.25, -1860.05, -1984.25, -1793.15, -1984.25, -1786.85, -1972.15, -1766.45, -1976.65, -1765.35, -1980.25, -1765.35, -1983.25, -1761.35, -1984.65, -1761.35, -1994.65, -1735.35, -1996.35, -1735.35, -1995.25, -1716.25, -1995.25, -1700.15, -1986.25, -1656.95, -1986.25, -1653.55, -1981.25, -1648.55, -1981.25, -1646.65, -1943.45, -1640.35, -1932.65, -1640.35, -1930.65, -1635.35, -1924.55, -1635.35, -1912.55, -1645.35, -1910.75, -1645.35, -1908.25, -1654.05, -1908.25, -1656.75, -1883.15, -1697.35, -1881.85, -1697.35, -1870.25, -1725.95, -1870.25, -1731.75, -1874.25, -1741.85, -1874.25, -1744.25, -1880.25, -1749.35, -1880.25, -1750.95, -1948.05, -1765.35, -1950.45, -1765.35, -1947.25, -1767.15, -1947.25, -1767.85, -1893.25, -1781.75, -1893.25, -1782.85, -1891.15, -1783.35, -1890.25, -1783.35, -1888.25, -1780.75, -1888.25, -1779.05, -1885.75, -1777.95, -1881.45, -1782.35, -1878.95, -1782.35, -1889.25, -1854.65, -1889.25, -1859.65, -1894.75, -1877.35, -1895.55, -1877.35, -1905.25, -1941.65, -1905.25, -1948.65, -1920.25, -1990.85, -1920.25, -1995.45, -1928.25, -2000.55, -1863.2, -1990.38, -1850.91, -1995.56, -1833.44, -2003.32, -1820.5, -2042.14, -1824.38, -2053.14, -1823.09, -2075.13, -1814.68, -2091.96, -1808.21, -2092.6, -1806.91, -2116.54, -1797.85, -2156.01, -1792.03, -2206.47, -1794.62, -2232.35, -1789.44, -2236.23, -1776.29, -2293.97, -1793.3, -2327.03, -1838.02, -2339.66, -1908.5, -2367.86, -1995.51, -2404.31, -2016.9, -2412.09, -2031.82, -2406.55, -2042.52, -2182.51, -2037.55, -2084.04, -2037.85, -2044.2)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_ywwca"]
+polygon = PackedVector2Array(-4583.25, -1159.65, -4583.25, -1157.35, -4589.95, -1152.35, -4591.35, -1152.35, -4598.25, -1140.95, -4598.25, -1138.15, -4611.15, -1123.35, -4613.15, -1123.35, -4618.15, -1056.35, -4619.25, -1056.35, -4619.25, -1011.95, -4615.55, -1003.35, -4614.25, -917.35, -4613.25, -917.35, -4613.25, -861.55, -4617.25, -822.45, -4617.25, -801.25, -4613.25, -761.15, -4613.25, -753.65, -4608.35, -747.85, -4615.55, -745.35, -4618.95, -745.35, -4626.25, -739.25, -4626.25, -733.25, -4623.25, -693.15, -4623.25, -676.75, -4620.25, -671.85, -4620.25, -603.15, -4615.25, -581.85, -4615.25, -550.95, -4608.25, -532.95, -4608.25, -516.55, -4602.25, -510.55, -4602.25, -508.35, -4594.75, -508.35, -4582.25, -501.25, -4582.25, -499.55, -4580.25, -499.35, -4582.15, -499.35, -4596.15, -484.35, -4597.45, -484.35, -4598.55, -482.25, -4596.25, -478.75, -4596.25, -477.65, -4599.75, -466.35, -4602.65, -466.35, -4594.45, -451.35, -4594.25, -411.45, -4582.25, -400.45, -4582.25, -398.95, -4535.25, -381.95, -4535.25, -380.75, -4517.45, -376.35, -4509.55, -376.35, -4484.25, -367.95, -4484.25, -366.55, -4455.25, -362.65, -4455.25, -361.35, -4443.45, -361.35, -4437.45, -367.35, -4432.95, -367.35, -4399.25, -378.95, -4399.25, -379.65, -4394.95, -380.35, -4391.05, -380.35, -4388.05, -377.35, -4385.45, -377.35, -4379.45, -383.35, -4377.35, -383.35, -4375.25, -415.25, -4375.25, -432.45, -4378.25, -454.35, -4378.25, -462.25, -4392.25, -474.25, -4392.25, -475.85, -4399.25, -477.95, -4391.95, -480.35, -4387.25, -480.35, -4383.25, -485.35, -4381.65, -485.35, -4375.65, -512.35, -4374.35, -512.35, -4369.25, -584.25, -4369.25, -600.85, -4366.25, -606.85, -4366.25, -689.25, -4363.25, -691.25, -4363.25, -706.35, -4358.25, -710.35, -4358.25, -713.75, -4380.05, -721.05, -4376.95, -722.35, -4374.15, -722.35, -4370.15, -728.35, -4368.65, -728.35, -4363.65, -749.35, -4361.45, -749.35, -4364.25, -757.75, -4364.25, -759.05, -4355.25, -828.25, -4355.25, -839.95, -4341.55, -915.35, -4340.35, -915.35, -4332.35, -1014.35, -4331.25, -1014.35, -4331.25, -1044.95, -4348.25, -1071.05, -4348.25, -1072.65, -4371.25, -1082.65, -4371.25, -1083.85, -4411.95, -1095.35, -4415.85, -1095.35, -4488.25, -1128.65, -4488.25, -1129.75, -4553.25, -1154.75, -4553.25, -1156.15)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_d2fks"]
+polygon = PackedVector2Array(-3303.25, -1154.65, -3303.25, -1152.35, -3309.95, -1147.35, -3311.35, -1147.35, -3318.25, -1135.95, -3318.25, -1133.15, -3331.15, -1118.35, -3333.15, -1118.35, -3338.15, -1051.35, -3339.25, -1051.35, -3339.25, -1006.95, -3335.55, -998.35, -3334.25, -912.35, -3333.25, -912.35, -3333.25, -856.55, -3337.25, -817.45, -3337.25, -796.25, -3333.25, -756.15, -3333.25, -748.65, -3328.25, -742.65, -3328.25, -741.05, -3321.95, -738.35, -3341.65, -729.35, -3345.05, -729.35, -3350.05, -724.35, -3352.75, -724.35, -3351.25, -716.95, -3351.25, -688.15, -3349.25, -676.95, -3349.25, -660.75, -3346.25, -655.85, -3346.25, -587.15, -3341.25, -565.85, -3341.25, -534.95, -3334.25, -516.95, -3334.25, -500.55, -3328.25, -494.55, -3328.25, -492.35, -3320.75, -492.35, -3308.25, -485.25, -3308.25, -483.55, -3306.25, -483.35, -3308.15, -483.35, -3322.15, -468.35, -3323.45, -468.35, -3324.55, -466.25, -3322.25, -462.75, -3322.25, -461.85, -3327.25, -448.75, -3327.25, -446.75, -3320.35, -435.35, -3320.25, -395.45, -3308.25, -384.45, -3308.25, -382.95, -3279.35, -372.35, -3150.45, -354.25, -3125.25, -362.95, -3112.35, -362.35, -3108.05, -362.35, -3104.05, -370.35, -3102.35, -370.35, -3101.25, -399.35, -3101.25, -416.45, -3104.25, -438.35, -3104.25, -446.25, -3118.25, -458.25, -3118.25, -459.85, -3125.25, -461.95, -3117.95, -464.35, -3113.25, -464.35, -3107.25, -472.35, -3105.55, -472.35, -3103.55, -483.35, -3102.45, -483.35, -3095.25, -568.25, -3095.25, -584.85, -3092.25, -590.85, -3092.25, -673.25, -3089.25, -675.25, -3089.25, -690.55, -3086.45, -693.35, -3084.95, -693.35, -3083.85, -695.85, -3086.25, -698.25, -3086.25, -699.85, -3104.25, -704.85, -3104.25, -705.95, -3131.95, -712.75, -3110.35, -710.35, -3106.45, -710.35, -3103.25, -713.55, -3103.25, -714.95, -3096.85, -717.35, -3094.15, -717.35, -3090.15, -723.35, -3088.65, -723.35, -3083.65, -744.35, -3081.45, -744.35, -3084.25, -752.75, -3084.25, -754.05, -3075.25, -823.25, -3075.25, -834.95, -3061.55, -910.35, -3060.45, -910.35, -3051.25, -1011.25, -3051.25, -1039.95, -3065.25, -1062.05, -3065.25, -1064.55, -3086.25, -1075.65, -3086.25, -1076.85, -3131.95, -1090.35, -3135.85, -1090.35, -3208.25, -1123.65, -3208.25, -1124.75, -3273.25, -1149.75, -3273.25, -1151.15)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_0s3ng"]
+polygon = PackedVector2Array(-2026.25, -1149.65, -2026.25, -1147.35, -2032.95, -1142.35, -2034.35, -1142.35, -2041.25, -1130.95, -2041.25, -1128.15, -2054.15, -1113.35, -2056.15, -1113.35, -2060.15, -1060.35, -2061.15, -1060.35, -2062.25, -1044.45, -2062.25, -1001.95, -2058.55, -993.35, -2057.25, -907.35, -2056.25, -907.35, -2056.25, -851.55, -2060.25, -812.45, -2060.25, -791.25, -2056.25, -751.15, -2056.25, -743.45, -2047.25, -735.45, -2061.85, -729.35, -2065.05, -729.35, -2070.05, -724.35, -2072.35, -724.35, -2069.25, -677.25, -2069.25, -660.75, -2066.25, -655.85, -2066.25, -587.15, -2061.25, -565.85, -2061.25, -534.95, -2054.25, -516.95, -2054.25, -500.55, -2048.25, -494.55, -2048.25, -492.35, -2040.75, -492.35, -2028.25, -485.25, -2028.25, -483.55, -2026.25, -483.35, -2028.15, -483.35, -2042.15, -468.35, -2043.45, -468.35, -2044.55, -466.25, -2042.25, -462.75, -2042.25, -461.85, -2047.25, -448.75, -2047.25, -446.75, -2040.35, -435.35, -2040.25, -395.45, -2028.25, -384.45, -2028.25, -382.95, -1999.35, -372.35, -1870.45, -354.25, -1845.25, -362.95, -1832.35, -362.35, -1828.05, -362.35, -1824.05, -370.35, -1822.35, -370.35, -1821.25, -399.35, -1821.25, -416.45, -1824.25, -438.35, -1824.25, -446.25, -1838.25, -458.25, -1838.25, -459.85, -1845.25, -461.95, -1837.95, -464.35, -1833.25, -464.35, -1827.25, -472.35, -1825.55, -472.35, -1823.55, -483.35, -1822.45, -483.35, -1815.25, -568.25, -1815.25, -584.85, -1812.25, -590.85, -1812.25, -673.25, -1809.25, -675.25, -1809.25, -690.35, -1804.25, -694.35, -1804.25, -697.85, -1829.35, -705.55, -1826.25, -708.55, -1826.25, -709.95, -1819.85, -712.35, -1817.15, -712.35, -1813.15, -718.35, -1811.65, -718.35, -1807.75, -734.35, -1806.05, -734.35, -1807.25, -747.35, -1807.25, -749.05, -1798.25, -818.25, -1798.25, -829.95, -1784.55, -905.35, -1783.45, -905.35, -1774.25, -1006.25, -1774.25, -1034.95, -1788.25, -1057.05, -1788.25, -1059.55, -1809.25, -1070.65, -1809.25, -1071.85, -1854.95, -1085.35, -1858.85, -1085.35, -1931.25, -1118.65, -1931.25, -1119.75, -1996.25, -1144.75, -1996.25, -1146.15)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_fsjtg"]
+polygon = PackedVector2Array(-749.25, -1145.65, -749.25, -1143.35, -755.95, -1138.35, -757.35, -1138.35, -764.25, -1126.95, -764.25, -1124.15, -777.15, -1109.35, -779.15, -1109.35, -784.15, -1042.35, -785.25, -1042.35, -785.25, -997.95, -781.55, -989.35, -780.25, -903.35, -779.25, -903.35, -779.25, -847.55, -783.25, -808.45, -783.25, -787.25, -779.25, -747.15, -779.25, -739.55, -772.45, -732.75, -787.85, -726.35, -791.05, -726.35, -796.05, -721.35, -798.35, -721.35, -795.25, -674.25, -795.25, -657.75, -792.25, -652.85, -792.25, -584.15, -787.25, -562.85, -787.25, -531.95, -780.25, -513.95, -780.25, -497.55, -774.25, -491.55, -774.25, -489.35, -766.75, -489.35, -754.25, -482.25, -754.25, -480.55, -752.25, -480.35, -754.15, -480.35, -768.15, -465.35, -769.45, -465.35, -770.55, -463.25, -768.25, -459.75, -768.25, -458.85, -773.25, -445.75, -773.25, -443.75, -766.35, -432.35, -766.25, -392.45, -754.25, -381.45, -754.25, -380.05, -735.75, -372.05, -590.05, -353.75, -571.25, -359.95, -558.35, -359.35, -554.05, -359.35, -550.05, -367.35, -548.35, -367.35, -547.25, -396.35, -547.25, -413.45, -550.25, -435.35, -550.25, -443.25, -564.25, -455.25, -564.25, -456.85, -571.25, -458.95, -563.95, -461.35, -559.25, -461.35, -553.25, -469.35, -551.55, -469.35, -549.55, -480.35, -548.45, -480.35, -541.25, -565.25, -541.25, -581.85, -538.25, -587.85, -538.25, -670.25, -535.25, -672.25, -535.25, -687.35, -530.25, -691.35, -530.25, -694.85, -552.25, -701.65, -549.25, -704.55, -549.25, -705.95, -542.85, -708.35, -540.15, -708.35, -536.15, -714.35, -534.65, -714.35, -530.75, -730.35, -529.05, -730.35, -530.25, -743.35, -530.25, -745.05, -521.25, -814.25, -521.25, -825.95, -507.55, -901.35, -506.45, -901.35, -497.25, -1002.25, -497.25, -1030.95, -511.25, -1053.05, -511.25, -1055.55, -532.25, -1066.65, -532.25, -1067.85, -577.95, -1081.35, -581.85, -1081.35, -654.25, -1114.65, -654.25, -1115.75, -719.25, -1140.75, -719.25, -1142.15)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_nnjox"]
+polygon = PackedVector2Array(521.75, -1137.65, 521.75, -1135.35, 515.05, -1130.35, 513.65, -1130.35, 506.75, -1118.95, 506.75, -1116.15, 493.85, -1101.35, 491.85, -1101.35, 487.85, -1048.35, 486.85, -1048.35, 485.75, -1032.45, 485.75, -989.95, 489.45, -981.35, 490.75, -895.35, 491.75, -895.35, 491.75, -839.55, 487.75, -800.45, 487.75, -779.25, 491.75, -739.15, 491.75, -731.65, 495.05, -727.35, 488.35, -724.35, 485.65, -724.35, 483.65, -721.35, 481.25, -721.35, 482.75, -713.95, 482.75, -685.15, 484.75, -673.95, 484.75, -657.75, 487.75, -652.85, 487.75, -584.15, 492.75, -562.85, 492.75, -531.95, 499.75, -513.95, 499.75, -497.55, 505.75, -491.55, 505.75, -489.35, 513.25, -489.35, 525.75, -482.25, 525.75, -480.55, 527.75, -480.35, 525.85, -480.35, 511.85, -465.35, 510.55, -465.35, 509.45, -463.25, 511.75, -459.75, 511.75, -458.85, 506.75, -445.75, 506.75, -443.75, 513.65, -432.35, 513.75, -392.45, 525.75, -381.45, 525.75, -379.95, 546.25, -372.35, 689.95, -353.75, 708.75, -359.95, 721.65, -359.35, 725.95, -359.35, 729.95, -367.35, 731.65, -367.35, 732.75, -396.35, 732.75, -413.45, 729.75, -435.35, 729.75, -443.25, 715.75, -455.25, 715.75, -456.85, 708.75, -458.95, 716.05, -461.35, 720.75, -461.35, 724.75, -466.35, 726.35, -466.35, 732.35, -493.35, 733.65, -493.35, 738.75, -565.25, 738.75, -581.85, 741.75, -587.85, 741.75, -670.25, 744.75, -672.25, 744.75, -687.35, 749.75, -691.35, 749.75, -694.75, 729.85, -701.75, 734.55, -706.35, 736.35, -706.35, 741.35, -727.35, 743.55, -727.35, 740.75, -735.75, 740.75, -737.05, 749.75, -806.25, 749.75, -817.95, 763.45, -893.35, 764.65, -893.35, 772.65, -992.35, 773.85, -992.35, 772.75, -1022.45, 772.75, -1025.95, 756.75, -1049.05, 756.75, -1050.65, 738.75, -1058.65, 738.75, -1059.85, 693.05, -1073.35, 689.15, -1073.35, 616.75, -1106.65, 616.75, -1107.75, 551.75, -1132.75, 551.75, -1134.15)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_iamtt"]
+polygon = PackedVector2Array(1792.75, -1127.65, 1792.75, -1125.35, 1786.05, -1120.35, 1784.65, -1120.35, 1777.75, -1108.95, 1777.75, -1106.15, 1764.85, -1091.35, 1762.85, -1091.35, 1757.85, -1024.35, 1756.75, -1024.35, 1756.75, -979.95, 1760.45, -971.35, 1761.75, -885.35, 1762.75, -885.35, 1762.75, -829.55, 1758.75, -790.45, 1758.75, -769.25, 1764.65, -719.65, 1757.75, -714.35, 1757.75, -708.25, 1760.75, -668.15, 1760.75, -651.75, 1763.75, -646.85, 1763.75, -578.15, 1768.75, -556.85, 1768.75, -526.05, 1775.35, -506.35, 1776.75, -492.25, 1776.75, -489.15, 1796.75, -478.15, 1796.75, -476.75, 1807.75, -474.55, 1801.85, -474.35, 1787.85, -459.35, 1786.55, -459.35, 1785.45, -457.25, 1787.75, -453.75, 1787.75, -452.65, 1784.25, -441.35, 1781.35, -441.35, 1789.55, -426.35, 1789.75, -386.55, 1798.75, -377.55, 1798.75, -376.05, 1812.95, -369.45, 1973.75, -350.85, 1984.75, -353.85, 1997.65, -353.35, 2001.95, -353.35, 2005.95, -361.35, 2007.65, -361.35, 2008.75, -390.35, 2008.75, -407.45, 2005.75, -429.35, 2005.75, -437.25, 1991.75, -449.25, 1991.75, -450.85, 1984.75, -452.95, 1992.05, -455.35, 1996.75, -455.35, 2000.75, -460.35, 2002.35, -460.35, 2008.35, -487.35, 2009.65, -487.35, 2014.75, -559.25, 2014.75, -575.85, 2017.75, -581.85, 2017.75, -664.25, 2020.75, -666.25, 2020.75, -681.35, 2025.75, -685.35, 2025.75, -688.75, 2005.75, -695.85, 2005.75, -697.15, 2012.25, -717.35, 2014.55, -717.35, 2011.75, -725.75, 2011.75, -727.05, 2020.75, -796.25, 2020.75, -807.95, 2034.45, -883.35, 2035.65, -883.35, 2043.65, -982.35, 2044.85, -982.35, 2043.75, -1012.45, 2043.75, -1015.95, 2027.75, -1039.05, 2027.75, -1040.65, 2009.75, -1048.65, 2009.75, -1049.85, 1964.05, -1063.35, 1960.15, -1063.35, 1887.75, -1096.65, 1887.75, -1097.75, 1822.75, -1122.75, 1822.75, -1124.15)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_igpak"]
+polygon = PackedVector2Array(3067.75, -1124.65, 3067.75, -1122.35, 3061.05, -1117.35, 3059.65, -1117.35, 3052.75, -1105.95, 3052.75, -1103.15, 3039.85, -1088.35, 3037.95, -1088.35, 3031.75, -1019.45, 3031.75, -976.95, 3035.45, -968.35, 3036.75, -882.35, 3037.75, -882.35, 3037.75, -826.55, 3033.75, -787.45, 3033.75, -766.25, 3039.95, -714.35, 3038.75, -706.55, 3038.75, -677.15, 3040.75, -665.95, 3040.75, -649.75, 3043.75, -644.85, 3043.75, -576.15, 3048.75, -554.85, 3048.75, -524.05, 3055.35, -504.35, 3056.75, -490.25, 3056.75, -487.15, 3076.75, -476.15, 3076.75, -474.75, 3087.75, -472.55, 3081.85, -472.35, 3067.85, -457.35, 3066.55, -457.35, 3065.45, -455.25, 3067.75, -451.75, 3067.75, -450.65, 3064.25, -439.35, 3061.35, -439.35, 3069.55, -424.35, 3069.75, -384.55, 3078.75, -375.55, 3078.75, -374.15, 3089.75, -368.65, 3254.05, -349.05, 3264.75, -351.85, 3277.65, -351.35, 3281.95, -351.35, 3285.95, -359.35, 3287.65, -359.35, 3288.75, -388.35, 3288.75, -405.45, 3285.75, -427.35, 3285.75, -435.25, 3271.75, -447.25, 3271.75, -448.85, 3264.75, -450.95, 3272.05, -453.35, 3276.75, -453.35, 3280.75, -458.35, 3282.35, -458.35, 3288.35, -485.35, 3289.65, -485.35, 3294.75, -557.25, 3294.75, -573.85, 3297.75, -579.85, 3297.75, -662.25, 3300.75, -664.25, 3300.75, -679.35, 3305.75, -683.35, 3305.75, -686.75, 3281.75, -694.85, 3287.25, -714.35, 3289.55, -714.35, 3286.75, -722.75, 3286.75, -724.05, 3295.75, -793.25, 3295.75, -804.95, 3309.45, -880.35, 3310.65, -880.35, 3318.65, -979.35, 3319.85, -979.35, 3318.75, -1009.45, 3318.75, -1012.95, 3302.75, -1036.05, 3302.75, -1037.65, 3284.75, -1045.65, 3284.75, -1046.85, 3239.05, -1060.35, 3235.15, -1060.35, 3162.75, -1093.65, 3162.75, -1094.75, 3097.75, -1119.75, 3097.75, -1121.15)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_7bby6"]
+polygon = PackedVector2Array(4345.75, -1120.65, 4345.75, -1118.35, 4339.05, -1113.35, 4337.65, -1113.35, 4330.75, -1101.95, 4330.75, -1099.15, 4317.85, -1084.35, 4315.95, -1084.35, 4309.75, -1015.45, 4309.75, -972.95, 4313.45, -964.35, 4314.75, -878.35, 4315.75, -878.35, 4315.75, -822.55, 4311.75, -783.45, 4311.75, -762.25, 4317.95, -710.35, 4318.85, -710.35, 4320.75, -666.25, 4320.75, -649.75, 4323.75, -644.85, 4323.75, -576.15, 4328.75, -554.85, 4328.75, -524.05, 4335.35, -504.35, 4336.75, -490.25, 4336.75, -487.15, 4356.75, -476.15, 4356.75, -474.75, 4367.75, -472.55, 4361.85, -472.35, 4347.85, -457.35, 4346.55, -457.35, 4345.45, -455.25, 4347.75, -451.75, 4347.75, -450.65, 4344.25, -439.35, 4341.35, -439.35, 4349.55, -424.35, 4349.75, -384.55, 4358.75, -375.55, 4358.75, -374.15, 4369.75, -368.65, 4534.05, -349.05, 4544.75, -351.85, 4557.65, -351.35, 4561.95, -351.35, 4565.95, -359.35, 4567.65, -359.35, 4568.75, -388.35, 4568.75, -405.45, 4565.75, -427.35, 4565.75, -435.25, 4551.75, -447.25, 4551.75, -448.85, 4544.75, -450.95, 4552.05, -453.35, 4556.75, -453.35, 4560.75, -458.35, 4562.35, -458.35, 4568.35, -485.35, 4569.65, -485.35, 4574.75, -557.25, 4574.75, -573.85, 4577.75, -579.85, 4577.75, -662.25, 4580.75, -664.25, 4580.75, -679.35, 4585.75, -683.35, 4585.75, -686.75, 4560.85, -695.75, 4565.25, -710.35, 4567.55, -710.35, 4564.75, -718.75, 4564.75, -720.05, 4573.75, -789.25, 4573.75, -800.95, 4587.45, -876.35, 4588.65, -876.35, 4596.65, -975.35, 4597.85, -975.35, 4596.75, -1005.45, 4596.75, -1008.95, 4580.75, -1032.05, 4580.75, -1033.65, 4562.75, -1041.65, 4562.75, -1042.85, 4517.05, -1056.35, 4513.15, -1056.35, 4440.75, -1089.65, 4440.75, -1090.75, 4375.75, -1115.75, 4375.75, -1117.15)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_o16lc"]
+polygon = PackedVector2Array(-4470.25, 157.25, -4470.25, 159.25, -4506.65, 173.65, -4509.75, 173.65, -4559.75, 197.65, -4561.85, 197.65, -4618.85, 232.65, -4620.95, 232.65, -4649.95, 257.65, -4652.45, 257.65, -4647.15, 322.65, -4646.15, 322.65, -4643.25, 404.75, -4643.25, 448.75, -4636.25, 516.85, -4636.25, 518.45, -4627.25, 527.45, -4627.25, 528.95, -4620.25, 531.85, -4620.25, 533.05, -4567.55, 550.65, -4589.65, 555.65, -4593.55, 555.65, -4601.55, 572.65, -4603.05, 572.65, -4610.05, 641.65, -4611.25, 641.65, -4610.25, 757.65, -4610.25, 762.55, -4604.25, 767.55, -4604.25, 768.95, -4574.25, 781.85, -4574.25, 782.65, -4583.55, 782.65, -4598.35, 786.65, -4604.95, 786.65, -4610.95, 791.65, -4612.95, 791.65, -4617.25, 815.45, -4617.25, 835.25, -4620.55, 842.65, -4623.05, 842.65, -4616.25, 862.05, -4616.25, 874.35, -4610.25, 881.35, -4610.25, 882.85, -4596.25, 889.85, -4596.25, 891.15, -4584.55, 894.65, -4576.35, 894.65, -4575.25, 896.25, -4575.25, 898.65, -4446.25, 896.65, -4441.75, 896.65, -4436.85, 899.65, -4422.95, 899.65, -4405.95, 894.65, -4400.85, 894.65, -4398.85, 889.65, -4397.35, 889.65, -4394.35, 825.65, -4393.25, 825.65, -4393.25, 799.35, -4396.25, 788.65, -4396.25, 785.65, -4401.25, 781.55, -4401.25, 779.75, -4423.65, 778.95, -4403.35, 759.65, -4401.55, 759.65, -4400.55, 752.65, -4399.35, 752.65, -4392.25, 616.75, -4392.25, 573.45, -4398.25, 549.65, -4398.25, 545.65, -4402.25, 542.65, -4402.25, 540.85, -4415.25, 539.05, -4380.55, 513.65, -4378.15, 513.65, -4372.15, 503.65, -4369.65, 503.65, -4371.25, 497.65, -4371.25, 494.95, -4367.85, 484.65, -4366.45, 484.65, -4363.45, 458.65, -4362.45, 458.65, -4343.25, 262.75, -4343.25, 253.85, -4339.25, 251.85, -4339.25, 240.65, -4441.25, 169.65, -4441.25, 168.45, -4454.25, 161.35, -4454.25, 159.95)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_pihoe"]
+polygon = PackedVector2Array(-3190.25, 161.25, -3190.25, 163.25, -3226.65, 177.65, -3229.75, 177.65, -3279.75, 201.65, -3281.85, 201.65, -3338.85, 236.65, -3340.95, 236.65, -3369.95, 261.65, -3372.45, 261.65, -3367.15, 326.65, -3366.15, 326.65, -3363.25, 408.75, -3363.25, 452.75, -3356.25, 520.85, -3356.25, 522.45, -3347.25, 531.45, -3347.25, 532.95, -3340.25, 535.85, -3340.25, 537.05, -3288.65, 554.25, -3309.65, 558.65, -3313.55, 558.65, -3321.55, 575.65, -3323.05, 575.65, -3330.05, 644.65, -3331.25, 644.65, -3330.25, 760.65, -3330.25, 765.55, -3324.25, 770.55, -3324.25, 771.95, -3294.25, 784.85, -3294.25, 785.65, -3303.55, 785.65, -3318.35, 789.65, -3324.95, 789.65, -3330.95, 794.65, -3332.95, 794.65, -3337.25, 818.45, -3337.25, 838.25, -3340.55, 845.65, -3343.05, 845.65, -3336.25, 865.05, -3336.25, 877.35, -3330.25, 884.35, -3330.25, 885.85, -3316.25, 892.85, -3316.25, 894.15, -3304.55, 897.65, -3296.35, 897.65, -3295.25, 899.25, -3295.25, 901.65, -3166.25, 899.65, -3161.75, 899.65, -3156.85, 902.65, -3142.95, 902.65, -3125.95, 897.65, -3120.85, 897.65, -3118.85, 892.65, -3117.35, 892.65, -3114.35, 828.65, -3113.25, 828.65, -3113.25, 802.35, -3116.25, 791.65, -3116.25, 788.65, -3121.25, 784.55, -3121.25, 782.75, -3143.65, 781.95, -3123.35, 762.65, -3121.55, 762.65, -3120.55, 755.65, -3119.35, 755.65, -3112.25, 619.75, -3112.25, 576.45, -3118.25, 552.65, -3118.25, 548.65, -3122.25, 545.65, -3122.25, 543.95, -3133.35, 542.15, -3100.55, 517.65, -3098.15, 517.65, -3092.15, 507.65, -3089.65, 507.65, -3091.25, 501.65, -3091.25, 498.95, -3087.85, 488.65, -3086.45, 488.65, -3083.45, 462.65, -3082.45, 462.65, -3063.25, 266.75, -3063.25, 257.85, -3059.25, 255.85, -3059.25, 244.65, -3161.25, 173.65, -3161.25, 172.45, -3174.25, 165.35, -3174.25, 163.95)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_4ct6d"]
+polygon = PackedVector2Array(-1910.25, 164.25, -1910.25, 166.25, -1946.65, 180.65, -1949.75, 180.65, -1999.75, 204.65, -2001.85, 204.65, -2058.85, 239.65, -2060.95, 239.65, -2089.95, 264.65, -2092.45, 264.65, -2087.15, 329.65, -2086.15, 329.65, -2083.25, 411.75, -2083.25, 455.75, -2076.25, 523.85, -2076.25, 525.45, -2067.25, 534.45, -2067.25, 535.95, -2060.25, 538.85, -2060.25, 540.05, -2046.25, 545.05, -2046.25, 546.45, -2029.35, 548.65, -2028.65, 548.65, -2013.85, 555.25, -2029.65, 558.65, -2033.55, 558.65, -2041.55, 575.65, -2043.05, 575.65, -2050.05, 644.65, -2051.25, 644.65, -2050.25, 760.65, -2050.25, 765.55, -2044.25, 770.55, -2044.25, 771.95, -2014.25, 784.85, -2014.25, 785.65, -2023.55, 785.65, -2038.35, 789.65, -2044.95, 789.65, -2050.95, 794.65, -2052.95, 794.65, -2057.25, 818.45, -2057.25, 838.25, -2060.55, 845.65, -2063.05, 845.65, -2056.25, 865.05, -2056.25, 877.35, -2050.25, 884.35, -2050.25, 885.85, -2036.25, 892.85, -2036.25, 894.15, -2024.55, 897.65, -2016.35, 897.65, -2015.25, 899.25, -2015.25, 901.65, -1886.25, 899.65, -1881.75, 899.65, -1876.85, 902.65, -1862.95, 902.65, -1845.95, 897.65, -1840.85, 897.65, -1838.85, 892.65, -1837.35, 892.65, -1834.35, 828.65, -1833.25, 828.65, -1833.25, 802.35, -1836.25, 791.65, -1836.25, 788.65, -1841.25, 784.55, -1841.25, 782.75, -1863.65, 781.95, -1843.35, 762.65, -1841.55, 762.65, -1840.55, 755.65, -1839.35, 755.65, -1832.25, 619.75, -1832.25, 576.45, -1838.25, 552.65, -1838.25, 548.65, -1842.25, 545.65, -1842.25, 543.85, -1849.45, 542.95, -1820.55, 520.65, -1818.15, 520.65, -1812.15, 510.65, -1809.65, 510.65, -1811.25, 504.65, -1811.25, 501.95, -1807.85, 491.65, -1806.45, 491.65, -1803.45, 465.65, -1802.45, 465.65, -1783.25, 269.75, -1783.25, 260.85, -1779.25, 258.85, -1779.25, 247.65, -1881.25, 176.65, -1881.25, 175.45, -1894.25, 168.35, -1894.25, 166.95)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_44125"]
+polygon = PackedVector2Array(-639.25, 175.25, -639.25, 177.25, -675.65, 191.65, -678.75, 191.65, -728.75, 215.65, -730.85, 215.65, -787.85, 250.65, -789.95, 250.65, -818.95, 275.65, -821.45, 275.65, -816.15, 340.65, -815.15, 340.65, -812.25, 422.75, -812.25, 466.75, -805.25, 534.85, -805.25, 536.45, -796.25, 545.45, -796.25, 546.95, -789.25, 549.85, -789.25, 551.05, -775.25, 556.05, -775.25, 557.45, -758.35, 559.65, -748.75, 564.55, -754.75, 567.65, -756.75, 567.65, -763.75, 591.65, -765.05, 591.65, -770.05, 650.65, -771.25, 650.65, -770.25, 766.65, -770.25, 771.55, -764.25, 776.55, -764.25, 777.95, -734.25, 790.85, -734.25, 791.65, -743.55, 791.65, -758.35, 795.65, -764.95, 795.65, -770.95, 800.65, -772.95, 800.65, -777.25, 824.45, -777.25, 844.25, -780.55, 851.65, -783.05, 851.65, -776.25, 871.05, -776.25, 883.35, -770.25, 890.35, -770.25, 891.85, -756.25, 898.85, -756.25, 900.15, -744.55, 903.65, -736.35, 903.65, -735.25, 905.25, -735.25, 907.65, -606.25, 905.65, -601.75, 905.65, -596.85, 908.65, -582.95, 908.65, -565.95, 903.65, -560.85, 903.65, -558.85, 898.65, -557.35, 898.65, -554.35, 834.65, -553.25, 834.65, -553.25, 808.35, -556.25, 797.65, -556.25, 794.65, -561.25, 790.55, -561.25, 788.75, -583.65, 787.95, -563.35, 768.65, -561.55, 768.65, -560.55, 761.65, -559.35, 761.65, -552.25, 625.75, -552.25, 582.45, -558.25, 558.65, -558.25, 554.65, -562.25, 551.65, -562.25, 549.95, -571.45, 548.25, -549.55, 531.65, -547.15, 531.65, -541.15, 521.65, -538.65, 521.65, -540.25, 515.65, -540.25, 512.95, -536.85, 502.65, -535.45, 502.65, -532.45, 476.65, -531.45, 476.65, -512.25, 280.75, -512.25, 271.85, -508.25, 269.85, -508.25, 258.65, -610.25, 187.65, -610.25, 186.45, -623.25, 179.35, -623.25, 177.95)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_ihwia"]
+polygon = PackedVector2Array(637.75, 187.25, 637.75, 189.25, 601.35, 203.65, 598.25, 203.65, 548.25, 227.65, 546.15, 227.65, 489.15, 262.65, 487.05, 262.65, 458.05, 287.65, 455.55, 287.65, 460.85, 352.65, 461.85, 352.65, 464.75, 434.75, 464.75, 478.75, 471.75, 546.85, 471.75, 548.55, 485.75, 560.55, 485.75, 562.05, 501.75, 568.05, 501.75, 569.45, 518.65, 571.65, 521.75, 575.45, 519.65, 578.65, 518.05, 578.65, 516.05, 591.65, 514.95, 591.65, 509.95, 650.65, 508.75, 650.65, 509.75, 766.65, 509.75, 771.55, 515.75, 776.55, 515.75, 777.95, 545.75, 790.85, 545.75, 791.65, 536.45, 791.65, 521.65, 795.65, 515.05, 795.65, 509.05, 800.65, 507.05, 800.65, 502.75, 824.45, 502.75, 844.25, 499.45, 851.65, 496.95, 851.65, 503.75, 871.05, 503.75, 883.35, 509.75, 890.35, 509.75, 891.85, 523.75, 898.85, 523.75, 900.15, 535.45, 903.65, 543.65, 903.65, 544.75, 905.25, 544.75, 907.65, 673.75, 905.65, 678.25, 905.65, 683.15, 908.65, 697.05, 908.65, 714.05, 903.65, 719.15, 903.65, 721.15, 898.65, 722.65, 898.65, 725.65, 834.65, 726.75, 834.65, 726.75, 808.35, 723.75, 797.65, 723.75, 794.65, 718.75, 790.55, 718.75, 788.75, 696.35, 787.95, 716.65, 768.65, 718.45, 768.65, 719.45, 761.65, 720.65, 761.65, 727.75, 625.75, 727.75, 582.45, 721.75, 558.65, 721.75, 554.45, 715.65, 551.05, 732.45, 539.65, 734.35, 539.65, 740.35, 514.65, 741.55, 514.65, 764.75, 292.75, 764.75, 283.85, 768.75, 281.85, 768.75, 270.65, 666.75, 199.65, 666.75, 198.45, 653.75, 191.35, 653.75, 189.95)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_5i1tq"]
+polygon = PackedVector2Array(1914.75, 191.25, 1914.75, 193.25, 1878.35, 207.65, 1875.25, 207.65, 1825.25, 231.65, 1823.15, 231.65, 1766.15, 266.65, 1764.05, 266.65, 1735.05, 291.65, 1732.55, 291.65, 1737.85, 356.65, 1738.85, 356.65, 1741.75, 438.75, 1741.75, 482.75, 1748.75, 550.85, 1748.75, 552.45, 1757.75, 561.45, 1757.75, 562.95, 1764.75, 565.85, 1764.75, 567.15, 1802.15, 579.15, 1799.75, 582.65, 1798.45, 582.65, 1797.35, 585.15, 1799.75, 587.45, 1795.75, 593.65, 1793.95, 593.65, 1788.95, 637.65, 1787.75, 637.65, 1786.75, 778.65, 1786.75, 783.55, 1792.75, 788.55, 1792.75, 789.95, 1822.75, 802.85, 1822.75, 803.65, 1813.45, 803.65, 1798.65, 807.65, 1792.05, 807.65, 1786.05, 812.65, 1784.05, 812.65, 1779.75, 836.45, 1779.75, 856.25, 1776.45, 863.65, 1773.95, 863.65, 1780.75, 883.05, 1780.75, 895.35, 1786.75, 902.35, 1786.75, 903.85, 1800.75, 910.85, 1800.75, 912.15, 1812.45, 915.65, 1820.65, 915.65, 1821.75, 917.25, 1821.75, 919.65, 1950.75, 917.65, 1955.25, 917.65, 1960.15, 920.65, 1974.05, 920.65, 1991.05, 915.65, 1996.15, 915.65, 1998.15, 910.65, 1999.65, 910.65, 2002.65, 846.65, 2003.75, 846.65, 2003.75, 820.35, 2000.75, 809.65, 2000.75, 806.65, 1995.75, 802.55, 1995.75, 800.75, 1973.35, 799.95, 1993.65, 780.65, 1995.45, 780.65, 1996.45, 773.65, 1997.65, 773.65, 2004.75, 637.75, 2004.75, 594.45, 1998.75, 570.65, 1998.75, 566.65, 1994.75, 563.65, 1994.75, 562.05, 1986.55, 560.35, 2004.35, 547.65, 2006.85, 547.65, 2012.85, 537.65, 2015.35, 537.65, 2013.75, 531.65, 2013.75, 528.95, 2017.15, 518.65, 2018.55, 518.65, 2021.55, 492.65, 2022.55, 492.65, 2041.75, 296.75, 2041.75, 287.85, 2045.75, 285.85, 2045.75, 274.65, 1943.75, 203.65, 1943.75, 202.45, 1930.75, 195.35, 1930.75, 193.95)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_l5hnt"]
+polygon = PackedVector2Array(3194.75, 192.25, 3194.75, 194.25, 3158.35, 208.65, 3155.25, 208.65, 3105.25, 232.65, 3103.15, 232.65, 3046.15, 267.65, 3044.05, 267.65, 3015.05, 292.65, 3012.55, 292.65, 3017.85, 357.65, 3018.85, 357.65, 3021.75, 439.75, 3021.75, 483.75, 3028.75, 551.85, 3028.75, 553.45, 3037.75, 562.45, 3037.75, 563.95, 3044.75, 566.85, 3044.75, 568.05, 3087.85, 582.45, 3078.45, 586.65, 3076.25, 586.65, 3069.25, 610.65, 3067.95, 610.65, 3062.95, 669.65, 3061.75, 669.65, 3062.75, 785.65, 3062.75, 790.55, 3068.75, 795.55, 3068.75, 796.95, 3098.75, 809.85, 3098.75, 810.65, 3089.45, 810.65, 3074.65, 814.65, 3068.05, 814.65, 3062.05, 819.65, 3060.05, 819.65, 3055.75, 843.45, 3055.75, 863.25, 3052.45, 870.65, 3049.95, 870.65, 3056.75, 890.05, 3056.75, 902.35, 3062.75, 909.35, 3062.75, 910.85, 3076.75, 917.85, 3076.75, 919.15, 3088.45, 922.65, 3096.65, 922.65, 3097.75, 924.25, 3097.75, 926.65, 3226.75, 924.65, 3231.25, 924.65, 3236.15, 927.65, 3250.05, 927.65, 3267.05, 922.65, 3272.15, 922.65, 3274.15, 917.65, 3275.65, 917.65, 3278.65, 853.65, 3279.75, 853.65, 3279.75, 827.35, 3276.75, 816.65, 3276.75, 813.65, 3271.75, 809.55, 3271.75, 807.75, 3249.35, 806.95, 3269.65, 787.65, 3271.45, 787.65, 3272.45, 780.65, 3273.65, 780.65, 3280.75, 644.75, 3280.75, 601.45, 3274.75, 577.65, 3274.75, 573.65, 3270.75, 570.65, 3270.75, 568.95, 3259.65, 567.15, 3284.45, 548.65, 3286.85, 548.65, 3292.85, 538.65, 3295.35, 538.65, 3293.75, 532.65, 3293.75, 529.95, 3297.15, 519.65, 3298.55, 519.65, 3301.55, 493.65, 3302.55, 493.65, 3321.75, 297.75, 3321.75, 288.85, 3325.75, 286.85, 3325.75, 275.65, 3223.75, 204.65, 3223.75, 203.45, 3210.75, 196.35, 3210.75, 194.95)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_th1x2"]
+polygon = PackedVector2Array(4474.75, 194.25, 4474.75, 196.25, 4438.35, 210.65, 4435.25, 210.65, 4385.25, 234.65, 4383.15, 234.65, 4326.15, 269.65, 4324.05, 269.65, 4295.05, 294.65, 4292.55, 294.65, 4297.85, 359.65, 4298.85, 359.65, 4301.75, 441.75, 4301.75, 485.75, 4308.75, 553.85, 4308.75, 555.45, 4317.75, 564.45, 4317.75, 565.95, 4324.75, 568.85, 4324.75, 570.05, 4338.75, 575.05, 4338.75, 576.45, 4355.65, 578.65, 4356.35, 578.65, 4371.65, 585.45, 4367.65, 586.65, 4362.05, 586.65, 4356.95, 590.65, 4355.25, 590.65, 4348.25, 614.65, 4346.95, 614.65, 4341.95, 673.65, 4340.75, 673.65, 4341.75, 789.65, 4341.75, 794.55, 4347.75, 799.55, 4347.75, 800.95, 4377.75, 813.85, 4377.75, 814.65, 4368.45, 814.65, 4353.65, 818.65, 4347.05, 818.65, 4341.05, 823.65, 4339.05, 823.65, 4334.75, 847.45, 4334.75, 867.25, 4331.45, 874.65, 4328.95, 874.65, 4335.75, 894.05, 4335.75, 906.35, 4341.75, 913.35, 4341.75, 914.85, 4355.75, 921.85, 4355.75, 923.15, 4367.45, 926.65, 4375.65, 926.65, 4376.75, 928.25, 4376.75, 930.65, 4505.75, 928.65, 4510.25, 928.65, 4515.15, 931.65, 4529.05, 931.65, 4546.05, 926.65, 4551.15, 926.65, 4553.15, 921.65, 4554.65, 921.65, 4557.65, 857.65, 4558.75, 857.65, 4558.75, 831.35, 4555.75, 820.65, 4555.75, 817.65, 4550.75, 813.55, 4550.75, 811.75, 4528.35, 810.95, 4548.65, 791.65, 4550.45, 791.65, 4551.45, 784.65, 4552.65, 784.65, 4559.75, 648.75, 4559.75, 605.45, 4553.75, 581.65, 4553.75, 577.65, 4549.75, 574.65, 4549.75, 572.95, 4537.65, 571.15, 4564.45, 550.65, 4566.85, 550.65, 4572.85, 540.65, 4575.35, 540.65, 4573.75, 534.65, 4573.75, 531.95, 4577.15, 521.65, 4578.55, 521.65, 4581.55, 495.65, 4582.55, 495.65, 4601.75, 299.75, 4601.75, 290.85, 4605.75, 288.85, 4605.75, 277.65, 4503.75, 206.65, 4503.75, 205.45, 4490.75, 198.35, 4490.75, 196.95)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_cured"]
+polygon = PackedVector2Array(-3144.25, 1431.65, -3144.25, 1432.85, -3197.05, 1440.75, -3203.65, 1436.65, -3211.65, 1436.65, -3231.25, 1445.35, -3262.65, 1451.65, -3270.55, 1451.65, -3386.95, 1490.75, -3388.65, 1489.65, -3391.95, 1489.65, -3397.05, 1493.65, -3399.15, 1493.65, -3400.15, 1515.65, -3401.35, 1515.65, -3395.25, 1655.75, -3395.25, 1675.75, -3388.25, 1754.85, -3388.25, 1767.35, -3381.65, 1775.15, -3383.25, 1776.85, -3383.25, 1783.65, -3378.25, 1787.65, -3378.25, 1788.85, -3335.85, 1811.45, -3340.35, 1812.65, -3344.45, 1812.65, -3348.35, 1819.65, -3350.25, 1819.65, -3351.25, 1877.65, -3351.25, 1879.95, -3346.75, 1895.65, -3346.05, 1895.65, -3342.25, 1941.85, -3342.25, 1972.85, -3337.25, 1994.15, -3337.25, 2029.45, -3335.25, 2031.45, -3335.25, 2036.55, -3329.25, 2041.55, -3329.25, 2043.35, -3270.95, 2054.65, -3287.55, 2054.65, -3300.55, 2058.65, -3308.75, 2058.65, -3323.75, 2066.65, -3326.25, 2066.65, -3333.25, 2076.65, -3334.45, 2076.65, -3337.25, 2082.15, -3337.25, 2085.85, -3332.85, 2107.65, -3332.05, 2107.65, -3329.05, 2143.65, -3330.25, 2147.35, -3330.25, 2151.95, -3327.25, 2160.95, -3327.25, 2165.75, -3318.25, 2171.75, -3318.25, 2173.25, -3311.45, 2174.65, -3294.65, 2174.65, -3281.25, 2180.85, -3281.25, 2182.45, -3259.35, 2184.65, -3241.65, 2184.65, -3190.25, 2195.25, -3190.25, 2196.35, -3110.45, 2208.65, -3104.75, 2208.65, -3080.75, 2194.65, -3078.15, 2194.65, -3069.15, 2180.65, -3066.75, 2180.65, -3083.65, 2104.65, -3082.55, 2097.65, -3079.95, 2097.65, -3083.25, 2091.05, -3083.25, 2087.25, -3093.25, 2083.25, -3093.25, 2082.05, -3117.25, 2077.05, -3109.85, 2075.65, -3104.45, 2075.65, -3099.45, 2070.65, -3095.15, 2070.65, -3090.15, 2062.65, -3087.85, 2062.65, -3092.55, 2034.65, -3093.75, 2034.65, -3089.25, 2011.85, -3089.25, 2010.55, -3100.35, 1864.65, -3101.15, 1864.65, -3099.25, 1837.75, -3099.25, 1832.85, -3106.25, 1824.85, -3106.25, 1822.75, -3138.55, 1820.25, -3114.15, 1813.65, -3110.15, 1813.65, -3088.25, 1779.25, -3088.25, 1736.55, -3094.25, 1661.65, -3094.25, 1638.55, -3100.45, 1591.65, -3101.45, 1591.65, -3104.25, 1560.65, -3104.25, 1526.55, -3109.25, 1487.65, -3109.25, 1436.55, -3114.25, 1433.55, -3114.25, 1431.65)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_g1sk4"]
+polygon = PackedVector2Array(-1857.25, 1439.65, -1857.25, 1440.85, -1910.05, 1448.75, -1916.65, 1444.65, -1924.65, 1444.65, -1944.25, 1453.35, -1975.65, 1459.65, -1983.55, 1459.65, -2099.95, 1498.75, -2101.65, 1497.65, -2104.95, 1497.65, -2110.05, 1501.65, -2112.15, 1501.65, -2113.15, 1523.65, -2114.35, 1523.65, -2108.25, 1663.75, -2108.25, 1683.75, -2101.25, 1762.85, -2101.25, 1775.35, -2094.65, 1783.15, -2096.25, 1784.85, -2096.25, 1791.65, -2091.25, 1795.65, -2091.25, 1796.85, -2055.05, 1815.95, -2056.55, 1816.65, -2060.45, 1816.65, -2064.35, 1823.65, -2066.25, 1823.65, -2066.25, 1879.65, -2067.85, 1879.65, -2062.85, 1899.65, -2062.05, 1899.65, -2058.25, 1945.85, -2058.25, 1976.85, -2053.25, 1998.15, -2053.25, 2033.45, -2051.25, 2035.45, -2051.25, 2040.55, -2045.25, 2045.55, -2045.25, 2047.35, -1986.95, 2058.65, -2003.55, 2058.65, -2016.55, 2062.65, -2024.75, 2062.65, -2039.75, 2070.65, -2042.25, 2070.65, -2049.25, 2080.65, -2050.45, 2080.65, -2053.25, 2086.15, -2053.25, 2089.85, -2048.85, 2111.65, -2048.05, 2111.65, -2045.05, 2147.65, -2046.25, 2151.35, -2046.25, 2155.95, -2043.25, 2164.95, -2043.25, 2169.75, -2034.25, 2175.75, -2034.25, 2177.25, -2027.45, 2178.65, -2010.65, 2178.65, -1997.25, 2184.85, -1997.25, 2186.45, -1975.35, 2188.65, -1957.65, 2188.65, -1906.25, 2199.25, -1906.25, 2200.35, -1826.45, 2212.65, -1820.75, 2212.65, -1796.75, 2198.65, -1794.25, 2198.65, -1783.25, 2183.25, -1783.25, 2181.45, -1799.65, 2108.65, -1798.55, 2101.65, -1795.95, 2101.65, -1799.25, 2095.05, -1799.25, 2091.25, -1809.25, 2087.25, -1809.25, 2086.05, -1833.25, 2081.05, -1825.85, 2079.65, -1820.45, 2079.65, -1815.45, 2074.65, -1811.15, 2074.65, -1806.15, 2066.65, -1803.85, 2066.65, -1808.55, 2038.65, -1809.75, 2038.65, -1805.25, 2015.85, -1805.25, 2014.55, -1816.35, 1868.65, -1817.15, 1868.65, -1815.25, 1841.75, -1815.25, 1836.85, -1822.25, 1828.85, -1822.25, 1826.75, -1841.95, 1825.25, -1827.15, 1821.65, -1823.15, 1821.65, -1801.25, 1787.25, -1801.25, 1744.55, -1807.25, 1669.65, -1807.25, 1646.55, -1813.45, 1599.65, -1814.45, 1599.65, -1817.25, 1568.65, -1817.25, 1534.55, -1822.25, 1495.65, -1822.25, 1444.55, -1827.25, 1441.55, -1827.25, 1439.65)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_oufhn"]
+polygon = PackedVector2Array(-562.25, 1450.65, -562.25, 1451.85, -615.05, 1459.75, -621.65, 1455.65, -629.65, 1455.65, -649.25, 1464.35, -680.65, 1470.65, -688.55, 1470.65, -804.95, 1509.75, -806.65, 1508.65, -809.95, 1508.65, -815.05, 1512.65, -817.15, 1512.65, -818.15, 1534.65, -819.35, 1534.65, -813.25, 1674.75, -813.25, 1694.75, -806.25, 1773.85, -806.25, 1786.35, -799.65, 1794.15, -801.25, 1795.85, -801.25, 1802.65, -796.25, 1806.65, -796.25, 1807.85, -758.95, 1827.85, -770.55, 1829.65, -777.15, 1829.65, -784.15, 1837.65, -786.25, 1837.65, -787.25, 1895.65, -787.25, 1897.95, -782.75, 1913.65, -782.05, 1913.65, -778.25, 1959.85, -778.25, 1990.85, -773.25, 2012.15, -773.25, 2047.45, -771.25, 2049.45, -771.25, 2054.55, -765.25, 2059.55, -765.25, 2061.35, -706.95, 2072.65, -723.55, 2072.65, -736.55, 2076.65, -744.75, 2076.65, -759.75, 2084.65, -762.25, 2084.65, -769.25, 2094.65, -770.45, 2094.65, -773.25, 2100.15, -773.25, 2103.85, -768.85, 2125.65, -768.05, 2125.65, -765.05, 2161.65, -766.25, 2165.35, -766.25, 2169.95, -763.25, 2178.95, -763.25, 2183.75, -754.25, 2189.75, -754.25, 2191.25, -747.45, 2192.65, -730.65, 2192.65, -717.25, 2198.85, -717.25, 2200.45, -695.35, 2202.65, -677.65, 2202.65, -626.25, 2213.25, -626.25, 2214.35, -546.45, 2226.65, -540.75, 2226.65, -516.75, 2212.65, -514.25, 2212.65, -503.25, 2197.25, -503.25, 2195.45, -519.65, 2122.65, -518.55, 2115.65, -515.95, 2115.65, -519.25, 2109.05, -519.25, 2105.25, -529.25, 2101.25, -529.25, 2100.05, -553.25, 2095.05, -545.85, 2093.65, -540.45, 2093.65, -535.45, 2088.65, -531.15, 2088.65, -526.15, 2080.65, -523.85, 2080.65, -528.55, 2052.65, -529.75, 2052.65, -525.25, 2029.85, -525.25, 2028.55, -536.35, 1882.65, -537.15, 1882.65, -535.25, 1855.75, -535.25, 1850.85, -542.25, 1842.85, -542.25, 1840.75, -558.95, 1839.95, -532.15, 1832.65, -528.15, 1832.65, -506.25, 1798.25, -506.25, 1755.55, -512.25, 1680.65, -512.25, 1657.55, -518.45, 1610.65, -519.45, 1610.65, -522.25, 1579.65, -522.25, 1545.55, -527.25, 1506.65, -527.25, 1455.55, -532.25, 1452.55, -532.25, 1450.65)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_exiai"]
+polygon = PackedVector2Array(-4485.25, 1474.25, -4485.25, 1476.25, -4521.65, 1490.65, -4524.75, 1490.65, -4574.75, 1514.65, -4576.85, 1514.65, -4633.85, 1549.65, -4635.95, 1549.65, -4664.95, 1574.65, -4667.45, 1574.65, -4662.15, 1639.65, -4661.15, 1639.65, -4658.25, 1721.75, -4658.25, 1765.75, -4651.25, 1833.85, -4651.25, 1835.45, -4642.25, 1844.45, -4642.25, 1845.95, -4635.25, 1848.85, -4635.25, 1850.05, -4585.45, 1866.65, -4597.75, 1869.65, -4601.45, 1869.65, -4608.45, 1883.65, -4609.95, 1883.65, -4611.95, 1896.65, -4613.05, 1896.65, -4618.05, 1955.65, -4619.25, 1955.65, -4618.25, 2071.65, -4618.25, 2076.55, -4612.25, 2081.55, -4612.25, 2082.95, -4582.25, 2095.85, -4582.25, 2096.65, -4591.55, 2096.65, -4606.35, 2100.65, -4612.95, 2100.65, -4618.95, 2105.65, -4620.95, 2105.65, -4625.25, 2129.45, -4625.25, 2149.25, -4628.55, 2156.65, -4631.05, 2156.65, -4624.25, 2176.05, -4624.25, 2188.35, -4618.25, 2195.35, -4618.25, 2196.85, -4604.25, 2203.85, -4604.25, 2205.15, -4592.55, 2208.65, -4584.35, 2208.65, -4583.25, 2210.25, -4583.25, 2212.65, -4454.25, 2210.65, -4449.75, 2210.65, -4444.85, 2213.65, -4430.95, 2213.65, -4413.95, 2208.65, -4408.85, 2208.65, -4406.85, 2203.65, -4405.35, 2203.65, -4402.35, 2139.65, -4401.25, 2139.65, -4401.25, 2113.35, -4404.25, 2102.65, -4404.25, 2099.65, -4409.25, 2095.55, -4409.25, 2093.75, -4431.65, 2092.95, -4411.35, 2073.65, -4409.55, 2073.65, -4408.55, 2066.65, -4407.35, 2066.65, -4400.25, 1930.75, -4400.25, 1887.45, -4406.25, 1863.65, -4406.25, 1859.65, -4410.25, 1856.65, -4410.25, 1854.85, -4424.35, 1853.05, -4395.55, 1830.65, -4393.15, 1830.65, -4387.15, 1820.65, -4384.65, 1820.65, -4386.25, 1814.65, -4386.25, 1811.95, -4382.85, 1801.65, -4381.45, 1801.65, -4378.45, 1775.65, -4377.45, 1775.65, -4358.25, 1579.75, -4358.25, 1570.85, -4354.25, 1568.85, -4354.25, 1557.65, -4456.25, 1486.65, -4456.25, 1485.45, -4469.25, 1478.35, -4469.25, 1476.95)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_sy1d0"]
+polygon = PackedVector2Array(724.75, 1475.65, 724.75, 1476.85, 671.95, 1484.75, 665.35, 1480.65, 657.35, 1480.65, 637.75, 1489.35, 606.35, 1495.65, 598.45, 1495.65, 482.05, 1534.75, 480.35, 1533.65, 477.05, 1533.65, 471.95, 1537.65, 469.85, 1537.65, 468.85, 1559.65, 467.65, 1559.65, 473.75, 1699.75, 473.75, 1719.75, 478.75, 1773.85, 478.75, 1788.75, 481.75, 1810.95, 481.75, 1815.75, 487.35, 1819.15, 485.75, 1820.85, 485.75, 1827.65, 496.05, 1835.85, 495.35, 1837.65, 493.75, 1837.65, 492.75, 1895.65, 492.75, 1897.95, 497.25, 1913.65, 497.95, 1913.65, 501.75, 1959.85, 501.75, 1990.85, 506.75, 2012.15, 506.75, 2047.45, 508.75, 2049.45, 508.75, 2054.55, 514.75, 2059.55, 514.75, 2061.35, 573.05, 2072.65, 556.45, 2072.65, 543.45, 2076.65, 535.25, 2076.65, 520.25, 2084.65, 517.75, 2084.65, 510.75, 2094.65, 509.55, 2094.65, 506.75, 2100.15, 506.75, 2103.85, 511.15, 2125.65, 511.95, 2125.65, 514.95, 2161.65, 513.75, 2165.35, 513.75, 2169.95, 516.75, 2178.95, 516.75, 2183.75, 525.75, 2189.75, 525.75, 2191.25, 532.55, 2192.65, 549.35, 2192.65, 562.75, 2198.85, 562.75, 2200.45, 584.65, 2202.65, 602.35, 2202.65, 653.75, 2213.25, 653.75, 2214.35, 733.55, 2226.65, 739.25, 2226.65, 763.25, 2212.65, 765.85, 2212.65, 774.85, 2198.65, 777.25, 2198.65, 760.35, 2122.65, 759.75, 2122.65, 759.75, 2116.75, 762.75, 2114.75, 762.75, 2112.05, 757.75, 2103.95, 757.75, 2102.05, 725.05, 2095.45, 734.15, 2093.65, 739.55, 2093.65, 744.55, 2088.65, 748.85, 2088.65, 753.85, 2080.65, 756.15, 2080.65, 751.45, 2052.65, 750.25, 2052.65, 754.75, 2029.85, 754.75, 2028.55, 742.75, 1872.65, 742.75, 1860.25, 755.15, 1857.65, 758.85, 1857.65, 780.75, 1823.25, 780.75, 1780.55, 774.75, 1705.65, 774.75, 1682.55, 768.55, 1635.65, 767.55, 1635.65, 764.75, 1604.65, 764.75, 1570.55, 759.75, 1531.65, 759.75, 1480.55, 754.75, 1477.55, 754.75, 1475.65)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_f6tcy"]
+polygon = PackedVector2Array(2007.75, 1483.65, 2007.75, 1484.85, 1954.95, 1492.75, 1948.35, 1488.65, 1940.35, 1488.65, 1920.75, 1497.35, 1889.35, 1503.65, 1881.45, 1503.65, 1765.05, 1542.75, 1763.35, 1541.65, 1760.05, 1541.65, 1754.95, 1545.65, 1752.85, 1545.65, 1751.85, 1567.65, 1750.65, 1567.65, 1756.75, 1707.75, 1756.75, 1727.75, 1763.75, 1806.85, 1763.75, 1819.35, 1770.35, 1827.15, 1768.75, 1828.85, 1768.75, 1835.65, 1786.05, 1847.85, 1785.35, 1849.65, 1783.75, 1849.65, 1782.75, 1907.65, 1782.75, 1909.95, 1787.25, 1925.65, 1787.95, 1925.65, 1791.75, 1971.85, 1791.75, 2002.85, 1796.75, 2024.15, 1796.75, 2059.45, 1798.75, 2061.45, 1798.75, 2066.55, 1804.75, 2071.55, 1804.75, 2073.35, 1863.05, 2084.65, 1846.45, 2084.65, 1833.45, 2088.65, 1825.25, 2088.65, 1810.25, 2096.65, 1807.75, 2096.65, 1800.75, 2106.65, 1799.55, 2106.65, 1796.75, 2112.15, 1796.75, 2115.85, 1801.15, 2137.65, 1801.95, 2137.65, 1804.95, 2173.65, 1803.75, 2177.35, 1803.75, 2181.95, 1806.75, 2190.95, 1806.75, 2195.75, 1815.75, 2201.75, 1815.75, 2203.25, 1822.55, 2204.65, 1839.35, 2204.65, 1852.75, 2210.85, 1852.75, 2212.45, 1874.65, 2214.65, 1892.35, 2214.65, 1943.75, 2225.25, 1943.75, 2226.35, 2023.55, 2238.65, 2029.25, 2238.65, 2053.25, 2224.65, 2055.85, 2224.65, 2064.85, 2210.65, 2067.25, 2210.65, 2050.35, 2134.65, 2049.75, 2134.65, 2049.75, 2128.75, 2052.75, 2126.75, 2052.75, 2124.05, 2047.75, 2115.95, 2047.75, 2114.05, 2015.05, 2107.45, 2024.15, 2105.65, 2029.55, 2105.65, 2034.55, 2100.65, 2038.85, 2100.65, 2043.85, 2092.65, 2046.15, 2092.65, 2041.45, 2064.65, 2040.25, 2064.65, 2044.75, 2041.85, 2044.75, 2040.55, 2032.75, 1884.65, 2032.75, 1869.85, 2034.75, 1868.85, 2034.75, 1866.65, 2038.45, 1866.65, 2042.45, 1863.65, 2043.85, 1863.65, 2063.75, 1831.25, 2063.75, 1788.55, 2057.75, 1713.65, 2057.75, 1690.55, 2051.55, 1643.65, 2050.55, 1643.65, 2047.75, 1612.65, 2047.75, 1578.55, 2042.75, 1539.65, 2042.75, 1488.55, 2037.75, 1485.55, 2037.75, 1483.65)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_nvrai"]
+polygon = PackedVector2Array(3284.75, 1485.65, 3284.75, 1486.85, 3231.95, 1494.75, 3225.35, 1490.65, 3217.35, 1490.65, 3197.75, 1499.35, 3166.35, 1505.65, 3158.45, 1505.65, 3042.05, 1544.75, 3040.35, 1543.65, 3037.05, 1543.65, 3031.95, 1547.65, 3029.85, 1547.65, 3028.85, 1569.65, 3027.65, 1569.65, 3033.75, 1709.75, 3033.75, 1729.75, 3040.75, 1808.85, 3040.75, 1821.35, 3047.35, 1829.15, 3045.75, 1830.85, 3045.75, 1837.65, 3064.15, 1850.65, 3065.65, 1850.65, 3062.75, 1907.55, 3062.75, 1909.95, 3067.25, 1925.65, 3067.95, 1925.65, 3071.75, 1971.85, 3071.75, 2002.85, 3076.75, 2024.15, 3076.75, 2059.45, 3078.75, 2061.45, 3078.75, 2066.55, 3084.75, 2071.55, 3084.75, 2073.35, 3143.05, 2084.65, 3126.45, 2084.65, 3113.45, 2088.65, 3105.25, 2088.65, 3090.25, 2096.65, 3087.75, 2096.65, 3080.75, 2106.65, 3079.55, 2106.65, 3076.75, 2112.15, 3076.75, 2115.85, 3081.15, 2137.65, 3081.95, 2137.65, 3084.95, 2173.65, 3083.75, 2177.35, 3083.75, 2181.95, 3086.75, 2190.95, 3086.75, 2195.75, 3095.75, 2201.75, 3095.75, 2203.25, 3102.55, 2204.65, 3119.35, 2204.65, 3132.75, 2210.85, 3132.75, 2212.45, 3154.65, 2214.65, 3172.35, 2214.65, 3223.75, 2225.25, 3223.75, 2226.35, 3303.55, 2238.65, 3309.25, 2238.65, 3333.25, 2224.65, 3335.85, 2224.65, 3344.85, 2210.65, 3347.25, 2210.65, 3330.35, 2134.65, 3329.75, 2134.65, 3329.75, 2128.75, 3332.75, 2126.75, 3332.75, 2124.05, 3327.75, 2115.95, 3327.75, 2114.05, 3295.05, 2107.45, 3304.15, 2105.65, 3309.55, 2105.65, 3314.55, 2100.65, 3318.85, 2100.65, 3323.85, 2092.65, 3326.15, 2092.65, 3321.45, 2064.65, 3320.25, 2064.65, 3324.75, 2041.85, 3324.75, 2040.55, 3312.75, 1884.65, 3312.75, 1869.75, 3319.35, 1865.65, 3320.85, 1865.65, 3340.75, 1833.25, 3340.75, 1790.55, 3334.75, 1715.65, 3334.75, 1692.55, 3328.55, 1645.65, 3327.55, 1645.65, 3324.75, 1614.65, 3324.75, 1580.55, 3319.75, 1541.65, 3319.75, 1490.55, 3314.75, 1487.55, 3314.75, 1485.65)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_jipba"]
+polygon = PackedVector2Array(4564.75, 1487.65, 4564.75, 1488.85, 4511.95, 1496.75, 4505.35, 1492.65, 4497.35, 1492.65, 4477.75, 1501.35, 4446.35, 1507.65, 4438.45, 1507.65, 4322.05, 1546.75, 4320.35, 1545.65, 4317.05, 1545.65, 4311.95, 1549.65, 4309.85, 1549.65, 4308.85, 1571.65, 4307.65, 1571.65, 4313.75, 1711.75, 4313.75, 1731.75, 4320.75, 1810.85, 4320.75, 1823.35, 4327.35, 1831.15, 4325.75, 1832.85, 4325.75, 1839.65, 4344.15, 1852.65, 4342.75, 1907.65, 4342.75, 1909.95, 4347.25, 1925.65, 4347.95, 1925.65, 4351.75, 1971.85, 4351.75, 2002.85, 4356.75, 2024.15, 4356.75, 2059.45, 4358.75, 2061.45, 4358.75, 2066.55, 4364.75, 2071.55, 4364.75, 2073.35, 4423.05, 2084.65, 4406.45, 2084.65, 4393.45, 2088.65, 4385.25, 2088.65, 4370.25, 2096.65, 4367.75, 2096.65, 4360.75, 2106.65, 4359.55, 2106.65, 4356.75, 2112.15, 4356.75, 2115.85, 4361.15, 2137.65, 4361.95, 2137.65, 4364.95, 2173.65, 4363.75, 2177.35, 4363.75, 2181.95, 4366.75, 2190.95, 4366.75, 2195.75, 4375.75, 2201.75, 4375.75, 2203.25, 4382.55, 2204.65, 4399.35, 2204.65, 4412.75, 2210.85, 4412.75, 2212.45, 4434.65, 2214.65, 4452.35, 2214.65, 4503.75, 2225.25, 4503.75, 2226.35, 4583.55, 2238.65, 4589.25, 2238.65, 4613.25, 2224.65, 4615.85, 2224.65, 4624.85, 2210.65, 4627.25, 2210.65, 4610.35, 2134.65, 4609.75, 2134.65, 4609.75, 2128.75, 4612.75, 2126.75, 4612.75, 2124.05, 4607.75, 2115.95, 4607.75, 2114.05, 4575.05, 2107.45, 4584.15, 2105.65, 4589.55, 2105.65, 4594.55, 2100.65, 4598.85, 2100.65, 4603.85, 2092.65, 4606.15, 2092.65, 4601.45, 2064.65, 4600.25, 2064.65, 4604.75, 2041.85, 4604.75, 2040.55, 4592.75, 1884.65, 4592.75, 1870.05, 4599.15, 1867.65, 4600.85, 1867.65, 4620.75, 1835.25, 4620.75, 1792.55, 4614.75, 1717.65, 4614.75, 1694.55, 4608.55, 1647.65, 4607.55, 1647.65, 4604.75, 1616.65, 4604.75, 1582.55, 4599.75, 1543.65, 4599.75, 1492.55, 4594.75, 1489.55, 4594.75, 1487.65)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_eilrp"]
+polygon = PackedVector2Array(-3153.25, 2702.65, -3153.25, 2703.95, -3161.65, 2705.65, -3164.65, 2705.65, -3221.25, 2731.35, -3221.25, 2732.25, -3309.25, 2766.25, -3309.25, 2767.15, -3364.55, 2784.65, -3368.75, 2784.65, -3395.75, 2797.65, -3398.25, 2797.65, -3401.25, 2801.65, -3402.55, 2801.65, -3403.65, 2804.15, -3401.25, 2806.45, -3401.25, 2808.95, -3385.95, 2806.65, -3388.25, 2812.15, -3390.35, 2812.65, -3395.25, 2820.05, -3395.25, 2827.05, -3390.65, 2839.65, -3389.95, 2839.65, -3383.25, 2878.95, -3383.25, 2883.35, -3377.15, 2890.65, -3376.35, 2890.65, -3377.25, 2919.65, -3377.25, 2930.85, -3371.25, 2964.05, -3371.25, 2972.95, -3363.25, 3002.65, -3363.25, 3022.25, -3357.25, 3030.65, -3353.65, 3030.65, -3350.65, 3039.65, -3349.95, 3039.65, -3346.15, 3060.65, -3349.25, 3066.15, -3349.25, 3076.95, -3338.25, 3110.85, -3338.25, 3115.95, -3318.25, 3124.85, -3318.25, 3127.25, -3312.15, 3125.65, -3311.05, 3125.65, -3307.25, 3129.45, -3307.25, 3132.25, -3252.05, 3118.35, -3265.75, 3163.65, -3266.95, 3163.65, -3275.25, 3220.55, -3275.25, 3228.65, -3281.75, 3252.65, -3283.25, 3252.65, -3283.25, 3269.25, -3293.25, 3318.45, -3293.25, 3330.45, -3290.25, 3333.45, -3290.25, 3337.15, -3280.75, 3331.65, -3277.55, 3331.65, -3227.55, 3346.65, -3223.85, 3346.65, -3219.25, 3349.25, -3229.55, 3350.65, -3238.45, 3350.65, -3287.75, 3362.65, -3291.25, 3362.65, -3297.25, 3370.65, -3299.05, 3370.65, -3301.25, 3387.55, -3301.25, 3393.15, -3262.25, 3463.25, -3262.25, 3467.65, -3258.25, 3470.65, -3258.25, 3471.75, -3247.85, 3478.65, -3242.45, 3478.65, -3239.25, 3475.45, -3239.25, 3473.35, -3194.95, 3467.65, -3192.15, 3467.65, -3188.15, 3461.65, -3186.65, 3461.65, -3184.55, 3451.65, -3183.45, 3451.65, -3176.25, 3386.75, -3176.25, 3380.15, -3187.25, 3357.15, -3187.25, 3353.45, -3194.25, 3349.45, -3194.25, 3347.65, -3201.45, 3347.65, -3199.45, 3345.65, -3197.95, 3345.65, -3189.95, 3328.65, -3187.85, 3328.65, -3189.25, 3320.35, -3189.25, 3318.05, -3172.85, 3273.65, -3171.65, 3273.65, -3161.25, 3223.85, -3161.25, 3221.25, -3156.15, 3213.65, -3154.85, 3213.65, -3134.25, 3157.05, -3134.25, 3154.75, -3127.25, 3150.85, -3127.25, 3147.75, -3141.25, 3135.75, -3141.25, 3134.25, -3155.25, 3129.15, -3155.25, 3128.05, -3205.25, 3115.95, -3205.25, 3114.75, -3230.95, 3113.05, -3182.15, 3100.65, -3177.85, 3100.65, -3156.25, 3092.05, -3144.55, 3091.65, -3135.55, 3084.65, -3133.15, 3084.65, -3126.15, 3073.65, -3124.15, 3073.65, -3125.25, 3030.65, -3125.25, 3024.95, -3121.25, 2993.75, -3121.25, 2887.55, -3129.25, 2758.55, -3129.25, 2728.45, -3132.25, 2713.25, -3132.25, 2708.55, -3138.25, 2704.55, -3138.25, 2702.65)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_0iub1"]
+polygon = PackedVector2Array(-1873.25, 2702.65, -1873.25, 2703.95, -1881.65, 2705.65, -1884.65, 2705.65, -1941.25, 2731.35, -1941.25, 2732.25, -2029.25, 2766.25, -2029.25, 2767.15, -2084.55, 2784.65, -2088.75, 2784.65, -2115.75, 2797.65, -2118.25, 2797.65, -2121.25, 2801.65, -2122.55, 2801.65, -2123.65, 2804.15, -2121.25, 2806.45, -2121.25, 2808.95, -2105.95, 2806.65, -2108.25, 2812.15, -2110.35, 2812.65, -2115.25, 2820.05, -2115.25, 2827.05, -2110.65, 2839.65, -2109.95, 2839.65, -2103.25, 2878.95, -2103.25, 2883.35, -2097.15, 2890.65, -2096.35, 2890.65, -2097.25, 2919.65, -2097.25, 2930.85, -2091.25, 2964.05, -2091.25, 2972.95, -2083.25, 3002.65, -2083.25, 3022.25, -2077.25, 3030.65, -2073.65, 3030.65, -2070.65, 3039.65, -2069.95, 3039.65, -2066.15, 3060.65, -2069.25, 3066.15, -2069.25, 3076.95, -2058.25, 3110.85, -2058.25, 3115.95, -2038.25, 3124.85, -2038.25, 3127.25, -2032.15, 3125.65, -2031.05, 3125.65, -2027.25, 3129.45, -2027.25, 3132.25, -1972.05, 3118.35, -1985.75, 3163.65, -1986.95, 3163.65, -1995.25, 3220.55, -1995.25, 3228.65, -2001.75, 3252.65, -2003.25, 3252.65, -2003.25, 3269.25, -2013.25, 3318.45, -2013.25, 3330.45, -2010.25, 3333.45, -2010.25, 3337.15, -2000.75, 3331.65, -1997.55, 3331.65, -1947.55, 3346.65, -1943.85, 3346.65, -1939.25, 3349.25, -1949.55, 3350.65, -1958.45, 3350.65, -2007.75, 3362.65, -2011.25, 3362.65, -2017.25, 3370.65, -2019.05, 3370.65, -2021.25, 3387.55, -2021.25, 3393.15, -1982.25, 3463.25, -1982.25, 3467.65, -1978.25, 3470.65, -1978.25, 3471.75, -1967.85, 3478.65, -1962.45, 3478.65, -1959.25, 3475.45, -1959.25, 3473.35, -1914.95, 3467.65, -1912.15, 3467.65, -1908.15, 3461.65, -1906.65, 3461.65, -1904.55, 3451.65, -1903.45, 3451.65, -1896.25, 3386.75, -1896.25, 3380.15, -1907.25, 3357.15, -1907.25, 3353.45, -1914.25, 3349.45, -1914.25, 3347.65, -1921.45, 3347.65, -1919.45, 3345.65, -1917.95, 3345.65, -1909.95, 3328.65, -1907.85, 3328.65, -1909.25, 3320.35, -1909.25, 3318.05, -1892.85, 3273.65, -1891.65, 3273.65, -1881.25, 3223.85, -1881.25, 3221.25, -1876.15, 3213.65, -1874.85, 3213.65, -1854.25, 3157.05, -1854.25, 3154.75, -1847.25, 3150.85, -1847.25, 3147.75, -1861.25, 3135.75, -1861.25, 3134.25, -1875.25, 3129.15, -1875.25, 3128.05, -1925.25, 3115.95, -1925.25, 3114.75, -1950.95, 3113.05, -1902.15, 3100.65, -1897.85, 3100.65, -1876.25, 3092.05, -1864.55, 3091.65, -1855.55, 3084.65, -1853.15, 3084.65, -1846.15, 3073.65, -1844.15, 3073.65, -1845.25, 3030.65, -1845.25, 3024.95, -1841.25, 2993.75, -1841.25, 2887.55, -1849.25, 2758.55, -1849.25, 2728.45, -1852.25, 2713.25, -1852.25, 2708.55, -1858.25, 2704.55, -1858.25, 2702.65)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_mvs1k"]
+polygon = PackedVector2Array(704.75, 2727.65, 704.75, 2728.95, 696.35, 2730.65, 693.35, 2730.65, 636.75, 2756.35, 636.75, 2757.25, 548.75, 2791.25, 548.75, 2792.15, 493.45, 2809.65, 489.25, 2809.65, 462.25, 2822.65, 459.75, 2822.65, 456.75, 2826.65, 455.45, 2826.65, 454.35, 2829.15, 456.75, 2831.45, 456.75, 2833.95, 472.05, 2831.65, 469.75, 2837.15, 467.65, 2837.65, 462.75, 2845.05, 462.75, 2852.05, 467.35, 2864.65, 468.05, 2864.65, 474.75, 2903.95, 474.75, 2908.35, 480.85, 2915.65, 481.65, 2915.65, 480.75, 2944.65, 480.75, 2955.85, 486.75, 2989.05, 486.75, 2997.95, 494.75, 3027.65, 494.75, 3047.25, 500.75, 3055.65, 504.35, 3055.65, 507.35, 3064.65, 508.05, 3064.65, 511.85, 3085.65, 508.75, 3091.15, 508.75, 3101.95, 519.75, 3135.85, 519.75, 3140.95, 539.75, 3149.85, 539.75, 3152.25, 545.85, 3150.65, 546.95, 3150.65, 550.75, 3154.45, 550.75, 3157.25, 604.95, 3143.95, 594.25, 3178.65, 593.05, 3178.65, 584.75, 3235.55, 584.75, 3243.65, 578.25, 3267.65, 576.75, 3267.65, 576.75, 3284.25, 566.75, 3333.45, 566.75, 3345.45, 569.75, 3348.45, 569.75, 3352.15, 579.25, 3346.65, 582.45, 3346.65, 632.45, 3361.65, 636.15, 3361.65, 640.75, 3364.25, 630.45, 3365.65, 621.55, 3365.65, 572.25, 3377.65, 568.75, 3377.65, 562.75, 3385.65, 560.95, 3385.65, 558.75, 3402.55, 558.75, 3408.15, 597.75, 3478.25, 597.75, 3482.65, 601.75, 3485.65, 601.75, 3486.75, 612.15, 3493.65, 617.55, 3493.65, 620.75, 3490.45, 620.75, 3488.35, 665.05, 3482.65, 667.85, 3482.65, 671.85, 3476.65, 673.35, 3476.65, 675.45, 3466.65, 676.55, 3466.65, 683.75, 3401.75, 683.75, 3395.15, 672.75, 3372.15, 672.75, 3368.45, 665.75, 3364.45, 665.75, 3362.65, 658.55, 3362.65, 660.55, 3360.65, 662.05, 3360.65, 670.05, 3343.65, 672.15, 3343.65, 670.75, 3335.35, 670.75, 3333.05, 687.15, 3288.65, 688.35, 3288.65, 698.75, 3238.85, 698.75, 3236.25, 703.85, 3228.65, 705.15, 3228.65, 725.75, 3172.05, 725.75, 3169.75, 730.45, 3166.65, 732.05, 3166.65, 733.15, 3164.25, 724.75, 3154.85, 724.75, 3153.35, 707.75, 3145.35, 707.75, 3144.15, 657.25, 3130.75, 701.75, 3117.15, 713.45, 3116.65, 722.45, 3109.65, 724.85, 3109.65, 731.85, 3098.65, 733.85, 3098.65, 732.75, 3055.65, 732.75, 3049.95, 736.75, 3018.75, 736.75, 2912.55, 728.75, 2783.55, 728.75, 2753.45, 725.75, 2738.25, 725.75, 2733.55, 719.75, 2729.55, 719.75, 2727.65)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_17a5x"]
+polygon = PackedVector2Array(2001.75, 2734.65, 2001.75, 2735.95, 1993.35, 2737.65, 1990.35, 2737.65, 1933.75, 2763.35, 1933.75, 2764.25, 1845.75, 2798.25, 1845.75, 2799.15, 1790.45, 2816.65, 1786.25, 2816.65, 1759.25, 2829.65, 1756.75, 2829.65, 1753.75, 2833.65, 1752.45, 2833.65, 1751.35, 2836.15, 1753.75, 2838.45, 1753.75, 2840.95, 1769.05, 2838.65, 1766.75, 2844.15, 1764.65, 2844.65, 1759.75, 2852.05, 1759.75, 2859.05, 1764.35, 2871.65, 1765.05, 2871.65, 1771.75, 2910.95, 1771.75, 2915.35, 1777.85, 2922.65, 1778.65, 2922.65, 1777.75, 2951.65, 1777.75, 2962.85, 1783.75, 2996.05, 1783.75, 3004.95, 1791.75, 3034.65, 1791.75, 3054.25, 1797.75, 3062.65, 1801.35, 3062.65, 1804.35, 3071.65, 1805.05, 3071.65, 1808.85, 3092.65, 1805.75, 3098.15, 1805.75, 3108.95, 1816.75, 3142.85, 1816.75, 3147.95, 1836.75, 3156.85, 1836.75, 3159.25, 1842.85, 3157.65, 1843.95, 3157.65, 1847.75, 3161.45, 1847.75, 3164.15, 1884.05, 3155.85, 1876.25, 3183.65, 1875.05, 3183.65, 1866.75, 3240.55, 1866.75, 3248.65, 1860.25, 3272.65, 1858.75, 3272.65, 1858.75, 3289.25, 1848.75, 3338.45, 1848.75, 3350.45, 1851.75, 3353.45, 1851.75, 3357.15, 1861.25, 3351.65, 1864.45, 3351.65, 1914.45, 3366.65, 1918.15, 3366.65, 1921.25, 3368.85, 1854.35, 3382.65, 1850.75, 3382.65, 1844.75, 3390.65, 1842.95, 3390.65, 1840.75, 3407.55, 1840.75, 3413.15, 1879.75, 3483.25, 1879.75, 3487.65, 1883.75, 3490.65, 1883.75, 3491.75, 1894.15, 3498.65, 1899.55, 3498.65, 1902.75, 3495.45, 1902.75, 3493.35, 1947.05, 3487.65, 1949.85, 3487.65, 1953.85, 3481.65, 1955.35, 3481.65, 1957.45, 3471.65, 1958.55, 3471.65, 1965.75, 3406.75, 1965.75, 3400.15, 1954.75, 3377.15, 1954.75, 3373.45, 1947.75, 3369.45, 1947.75, 3367.65, 1940.55, 3367.65, 1942.55, 3365.65, 1944.05, 3365.65, 1952.05, 3348.65, 1954.15, 3348.65, 1952.75, 3340.35, 1952.75, 3338.05, 1969.15, 3293.65, 1970.35, 3293.65, 1980.75, 3243.85, 1980.75, 3241.25, 1985.85, 3233.65, 1987.15, 3233.65, 2007.75, 3177.05, 2007.75, 3174.75, 2014.75, 3170.85, 2014.75, 3167.85, 2006.75, 3159.85, 2006.75, 3158.35, 1989.75, 3150.35, 1989.75, 3149.05, 1949.35, 3138.95, 1998.75, 3124.15, 2010.45, 3123.65, 2019.45, 3116.65, 2021.85, 3116.65, 2028.85, 3105.65, 2030.85, 3105.65, 2029.75, 3062.65, 2029.75, 3056.95, 2033.75, 3025.75, 2033.75, 2919.55, 2025.75, 2790.55, 2025.75, 2760.45, 2022.75, 2745.25, 2022.75, 2740.55, 2016.75, 2736.55, 2016.75, 2734.65)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_c27ng"]
+polygon = PackedVector2Array(3281.75, 2734.65, 3281.75, 2735.95, 3273.35, 2737.65, 3270.35, 2737.65, 3213.75, 2763.35, 3213.75, 2764.25, 3125.75, 2798.25, 3125.75, 2799.15, 3070.45, 2816.65, 3066.25, 2816.65, 3039.25, 2829.65, 3036.75, 2829.65, 3033.75, 2833.65, 3032.45, 2833.65, 3031.35, 2836.15, 3033.75, 2838.45, 3033.75, 2840.95, 3049.05, 2838.65, 3046.75, 2844.15, 3044.65, 2844.65, 3039.75, 2852.05, 3039.75, 2859.05, 3044.35, 2871.65, 3045.05, 2871.65, 3051.75, 2910.95, 3051.75, 2915.35, 3057.85, 2922.65, 3058.65, 2922.65, 3057.75, 2951.65, 3057.75, 2962.85, 3063.75, 2996.05, 3063.75, 3004.95, 3071.75, 3034.65, 3071.75, 3054.25, 3077.75, 3062.65, 3081.35, 3062.65, 3084.35, 3071.65, 3085.05, 3071.65, 3088.85, 3092.65, 3085.75, 3098.15, 3085.75, 3108.95, 3096.75, 3142.85, 3096.75, 3147.95, 3116.75, 3156.85, 3116.75, 3159.25, 3122.85, 3157.65, 3123.95, 3157.65, 3127.75, 3161.45, 3127.75, 3164.15, 3164.05, 3155.85, 3156.25, 3183.65, 3155.05, 3183.65, 3146.75, 3240.55, 3146.75, 3248.65, 3140.25, 3272.65, 3138.75, 3272.65, 3138.75, 3289.25, 3128.75, 3338.45, 3128.75, 3350.45, 3131.75, 3353.45, 3131.75, 3357.15, 3141.25, 3351.65, 3144.45, 3351.65, 3194.45, 3366.65, 3198.15, 3366.65, 3201.25, 3368.85, 3134.35, 3382.65, 3130.75, 3382.65, 3124.75, 3390.65, 3122.95, 3390.65, 3120.75, 3407.55, 3120.75, 3413.15, 3159.75, 3483.25, 3159.75, 3487.65, 3163.75, 3490.65, 3163.75, 3491.75, 3174.15, 3498.65, 3179.55, 3498.65, 3182.75, 3495.45, 3182.75, 3493.35, 3227.05, 3487.65, 3229.85, 3487.65, 3233.85, 3481.65, 3235.35, 3481.65, 3237.45, 3471.65, 3238.55, 3471.65, 3245.75, 3406.75, 3245.75, 3400.15, 3234.75, 3377.15, 3234.75, 3373.45, 3227.75, 3369.45, 3227.75, 3367.65, 3220.55, 3367.65, 3222.55, 3365.65, 3224.05, 3365.65, 3232.05, 3348.65, 3234.15, 3348.65, 3232.75, 3340.35, 3232.75, 3338.05, 3249.15, 3293.65, 3250.35, 3293.65, 3260.75, 3243.85, 3260.75, 3241.25, 3265.85, 3233.65, 3267.15, 3233.65, 3287.75, 3177.05, 3287.75, 3174.75, 3294.75, 3170.85, 3294.75, 3167.85, 3286.75, 3159.85, 3286.75, 3158.35, 3269.75, 3150.35, 3269.75, 3149.05, 3229.35, 3138.95, 3278.75, 3124.15, 3290.45, 3123.65, 3299.45, 3116.65, 3301.85, 3116.65, 3308.85, 3105.65, 3310.85, 3105.65, 3309.75, 3062.65, 3309.75, 3056.95, 3313.75, 3025.75, 3313.75, 2919.55, 3305.75, 2790.55, 3305.75, 2760.45, 3302.75, 2745.25, 3302.75, 2740.55, 3296.75, 2736.55, 3296.75, 2734.65)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_g8v21"]
+polygon = PackedVector2Array(4561.75, 2736.65, 4561.75, 2737.95, 4553.35, 2739.65, 4550.35, 2739.65, 4493.75, 2765.35, 4493.75, 2766.25, 4405.75, 2800.25, 4405.75, 2801.15, 4350.45, 2818.65, 4346.25, 2818.65, 4319.25, 2831.65, 4316.75, 2831.65, 4313.75, 2835.65, 4312.45, 2835.65, 4311.35, 2838.15, 4313.75, 2840.45, 4313.75, 2842.95, 4329.05, 2840.65, 4326.75, 2846.15, 4324.65, 2846.65, 4319.75, 2854.05, 4319.75, 2861.05, 4324.35, 2873.65, 4325.05, 2873.65, 4331.75, 2912.95, 4331.75, 2917.35, 4337.85, 2924.65, 4338.65, 2924.65, 4337.75, 2953.65, 4337.75, 2964.85, 4343.75, 2998.05, 4343.75, 3006.95, 4351.75, 3036.65, 4351.75, 3056.25, 4357.75, 3064.65, 4361.35, 3064.65, 4364.35, 3073.65, 4365.05, 3073.65, 4368.85, 3094.65, 4365.75, 3100.15, 4365.75, 3110.95, 4376.75, 3144.85, 4376.75, 3149.95, 4396.75, 3158.85, 4396.75, 3161.25, 4402.85, 3159.65, 4403.95, 3159.65, 4407.75, 3163.45, 4407.75, 3166.15, 4444.05, 3157.85, 4436.25, 3186.65, 4435.05, 3186.65, 4426.75, 3243.55, 4426.75, 3251.65, 4420.25, 3275.65, 4418.75, 3275.65, 4418.75, 3292.25, 4408.75, 3341.45, 4408.75, 3353.45, 4411.75, 3356.45, 4411.75, 3360.15, 4421.25, 3354.65, 4424.45, 3354.65, 4474.45, 3369.65, 4478.15, 3369.65, 4481.15, 3371.85, 4417.35, 3384.65, 4413.95, 3384.65, 4406.05, 3391.65, 4404.15, 3391.65, 4401.25, 3403.65, 4399.25, 3403.65, 4402.75, 3419.15, 4402.75, 3422.15, 4439.75, 3486.05, 4439.75, 3490.75, 4450.05, 3497.65, 4462.75, 3496.55, 4507.05, 3490.65, 4509.85, 3490.65, 4513.85, 3484.65, 4515.45, 3484.65, 4523.45, 3438.65, 4524.65, 3438.65, 4525.75, 3409.65, 4525.75, 3403.15, 4514.75, 3380.15, 4514.75, 3376.45, 4507.75, 3372.45, 4507.75, 3370.65, 4500.55, 3370.65, 4502.55, 3368.65, 4504.05, 3368.65, 4512.05, 3351.65, 4514.15, 3351.65, 4512.75, 3343.35, 4512.75, 3341.05, 4529.15, 3296.65, 4530.35, 3296.65, 4540.75, 3246.85, 4540.75, 3244.25, 4545.85, 3236.65, 4547.15, 3236.65, 4567.75, 3180.05, 4567.75, 3177.75, 4572.45, 3174.65, 4574.05, 3174.65, 4575.15, 3172.25, 4566.75, 3162.85, 4566.75, 3161.35, 4549.75, 3153.35, 4549.75, 3152.05, 4506.15, 3141.15, 4533.25, 3134.65, 4537.15, 3134.65, 4558.75, 3126.05, 4570.45, 3125.65, 4579.45, 3118.65, 4581.85, 3118.65, 4588.85, 3107.65, 4590.85, 3107.65, 4589.75, 3064.65, 4589.75, 3058.95, 4593.75, 3027.75, 4593.75, 2921.55, 4585.75, 2792.55, 4585.75, 2762.45, 4582.75, 2747.25, 4582.75, 2742.55, 4576.75, 2738.55, 4576.75, 2736.65)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_ovrst"]
+polygon = PackedVector2Array(-4524.25, 3107.45, -4442.11, 3082.41, -4428.23, 3080.22, -4413.25, 3068.54, -4410.33, 2999.51, -4409.56, 2896.67, -4414.2, 2768.68, -4420.17, 2703.27, -4432.13, 2698.96, -4484.91, 2721.53, -4562.6, 2753.07, -4641.29, 2780.96, -4654.24, 2781.63, -4675.48, 2816.15, -4657.22, 2899.16, -4654.57, 2958.25, -4645.27, 2991.79, -4643.94, 3017.02, -4635.64, 3022.66, -4624.44, 3058.43, -4628.67, 3059.94, -4629.88, 3068.39, -4618.11, 3107.32, -4603.32, 3113.36, -4593.66, 3115.17, -4587.92, 3121.21, -4529.85, 3113.65, -4531.75, 3113.65, -4545.75, 3159.65, -4546.95, 3159.65, -4555.25, 3216.55, -4555.25, 3224.65, -4561.75, 3248.65, -4563.25, 3248.65, -4563.25, 3265.25, -4573.25, 3314.45, -4573.25, 3326.45, -4570.25, 3329.45, -4570.25, 3333.15, -4560.75, 3327.65, -4557.55, 3327.65, -4507.55, 3342.65, -4503.85, 3342.65, -4499.25, 3345.25, -4509.55, 3346.65, -4518.45, 3346.65, -4567.75, 3358.65, -4571.15, 3358.65, -4576.15, 3364.65, -4577.85, 3364.65, -4580.75, 3376.65, -4582.75, 3376.65, -4579.25, 3392.15, -4579.25, 3395.15, -4542.25, 3459.05, -4542.25, 3463.75, -4529.25, 3472.65, -4529.25, 3475.45, -4519.25, 3472.05, -4519.25, 3469.35, -4474.95, 3463.65, -4472.15, 3463.65, -4468.15, 3457.65, -4466.55, 3457.65, -4458.55, 3411.65, -4457.35, 3411.65, -4456.25, 3382.65, -4456.25, 3376.15, -4467.25, 3353.15, -4467.25, 3349.45, -4474.25, 3345.45, -4474.25, 3343.65, -4481.45, 3343.65, -4479.45, 3341.65, -4477.95, 3341.65, -4469.95, 3324.65, -4467.85, 3324.65, -4469.25, 3316.35, -4469.25, 3314.05, -4452.85, 3269.65, -4451.65, 3269.65, -4441.25, 3219.85, -4441.25, 3217.25, -4436.15, 3209.65, -4434.85, 3209.65, -4414.25, 3153.05, -4414.25, 3150.75, -4409.55, 3147.65, -4407.95, 3147.65, -4406.85, 3145.25, -4415.25, 3135.85, -4415.25, 3134.35, -4435.25, 3125.35, -4435.25, 3124.05, -4485.25, 3111.95, -4485.25, 3110.85)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_bhdfj"]
+polygon = PackedVector2Array(-763.575, 3102.09, -732.844, 3128.16, -679.85, 3123.65, -681.535, 3130.35, -695.75, 3169.65, -696.95, 3169.65, -705.25, 3226.55, -705.25, 3234.65, -711.75, 3258.65, -713.25, 3258.65, -713.25, 3275.25, -723.25, 3324.45, -723.25, 3336.45, -720.25, 3339.45, -720.25, 3343.15, -710.75, 3337.65, -707.55, 3337.65, -657.55, 3352.65, -653.85, 3352.65, -649.25, 3355.25, -659.55, 3356.65, -668.45, 3356.65, -717.75, 3368.65, -721.15, 3368.65, -726.15, 3374.65, -727.85, 3374.65, -730.75, 3386.65, -732.75, 3386.65, -729.25, 3402.15, -729.25, 3405.15, -692.25, 3469.05, -692.25, 3473.75, -679.25, 3482.65, -679.25, 3485.45, -669.25, 3482.05, -669.25, 3479.35, -624.95, 3473.65, -622.15, 3473.65, -618.15, 3467.65, -616.55, 3467.65, -608.55, 3421.65, -607.35, 3421.65, -606.25, 3392.65, -606.25, 3386.15, -617.25, 3363.15, -617.25, 3359.45, -624.25, 3355.45, -624.25, 3353.65, -631.45, 3353.65, -629.45, 3351.65, -627.95, 3351.65, -619.95, 3334.65, -617.85, 3334.65, -619.25, 3326.35, -619.25, 3324.05, -602.85, 3279.65, -601.65, 3279.65, -591.25, 3229.85, -591.25, 3227.25, -560.085, 3148.64, -585.919, 3133.77, -667.335, 3116.55, -559.302, 3078.97, -561.681, 2712.32, -577.385, 2704.91, -803.829, 2789.02, -820.651, 2821.37, -805.788, 2902.6, -800.495, 2961.41, -788.731, 3005.52, -794.025, 3023.76, -772.852, 3041.99, -774.616, 3067.28)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_4ng74"]
+polygon = PackedVector2Array(-4438.25, 3960.55, -4438.25, 3962.15, -4495.65, 3983.65, -4498.65, 3983.65, -4588.25, 4024.35, -4588.25, 4025.15, -4631.55, 4037.65, -4634.85, 4037.65, -4654.75, 4049.65, -4656.45, 4049.65, -4669.55, 4073.65, -4671.25, 4073.65, -4671.25, 4103.75, -4662.25, 4183.85, -4662.25, 4202.85, -4647.95, 4281.65, -4647.05, 4281.65, -4639.25, 4361.35, -4640.25, 4363.05, -4640.25, 4368.95, -4634.25, 4386.05, -4634.25, 4390.45, -4629.25, 4395.45, -4629.25, 4397.05, -4624.45, 4398.85, -4641.65, 4405.65, -4643.55, 4405.65, -4644.65, 4407.95, -4639.55, 4414.35, -4640.25, 4420.55, -4640.25, 4422.05, -4636.65, 4431.65, -4636.25, 4512.95, -4633.65, 4520.65, -4628.25, 4587.75, -4628.25, 4605.95, -4621.25, 4630.65, -4621.25, 4633.65, -4616.25, 4637.65, -4616.25, 4639.15, -4604.25, 4642.35, -4606.75, 4643.65, -4609.05, 4643.65, -4622.05, 4656.65, -4624.15, 4656.65, -4626.15, 4685.65, -4627.35, 4685.65, -4625.25, 4731.75, -4625.25, 4735.65, -4618.25, 4740.65, -4618.25, 4743.95, -4610.65, 4739.95, -4607.45, 4740.65, -4601.65, 4740.65, -4571.25, 4751.05, -4571.25, 4753.25, -4565.15, 4751.65, -4564.25, 4751.65, -4559.25, 4758.65, -4549.05, 4758.65, -4519.85, 4752.65, -4515.95, 4752.65, -4474.95, 4739.65, -4468.85, 4739.65, -4427.65, 4722.65, -4423.45, 4722.65, -4410.45, 4709.65, -4408.25, 4709.65, -4408.25, 4667.25, -4401.25, 4657.25, -4401.25, 4655.35, -4405.45, 4641.85, -4404.25, 4640.25, -4404.25, 4636.75, -4419.25, 4622.65, -4419.25, 4620.95, -4425.85, 4619.85, -4419.85, 4618.65, -4416.55, 4618.65, -4407.55, 4611.65, -4401.25, 4611.65, -4396.25, 4604.65, -4394.25, 4604.65, -4394.25, 4586.95, -4388.85, 4570.65, -4387.25, 4570.65, -4387.25, 4538.05, -4383.55, 4518.65, -4382.25, 4518.65, -4382.25, 4448.05, -4380.85, 4444.65, -4379.35, 4444.65, -4376.25, 4386.75, -4376.25, 4380.45, -4391.75, 4371.65, -4393.05, 4371.65, -4391.05, 4367.65, -4389.35, 4367.65, -4386.35, 4320.65, -4385.15, 4320.65, -4389.25, 4258.55, -4389.25, 4200.95, -4387.25, 4194.95, -4387.25, 4115.05, -4383.25, 4108.15, -4383.25, 4065.55, -4389.25, 4012.65, -4389.25, 3997.95, -4416.25, 3963.95, -4416.25, 3961.75)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_1ra1i"]
+polygon = PackedVector2Array(-3158.25, 3965.55, -3158.25, 3967.15, -3215.65, 3988.65, -3218.65, 3988.65, -3308.25, 4029.35, -3308.25, 4030.15, -3351.55, 4042.65, -3354.85, 4042.65, -3374.75, 4054.65, -3376.45, 4054.65, -3389.55, 4078.65, -3391.25, 4078.65, -3391.25, 4108.75, -3382.25, 4188.85, -3382.25, 4207.85, -3367.95, 4286.65, -3367.05, 4286.65, -3359.25, 4373.85, -3359.25, 4379.05, -3352.25, 4396.15, -3352.25, 4398.75, -3337.25, 4407.75, -3337.25, 4409.95, -3303.55, 4405.45, -3358.25, 4422.15, -3358.25, 4425.45, -3353.55, 4430.15, -3354.25, 4436.55, -3354.25, 4438.05, -3350.65, 4447.65, -3350.25, 4528.95, -3347.65, 4536.65, -3340.25, 4624.85, -3340.25, 4635.05, -3337.25, 4641.95, -3337.25, 4646.45, -3330.25, 4653.45, -3330.25, 4655.15, -3318.25, 4658.35, -3320.75, 4659.65, -3323.05, 4659.65, -3336.05, 4672.65, -3338.15, 4672.65, -3340.25, 4720.65, -3340.25, 4748.25, -3338.25, 4751.25, -3338.25, 4753.85, -3332.25, 4756.85, -3324.65, 4755.95, -3321.45, 4756.65, -3315.65, 4756.65, -3290.05, 4765.45, -3220, 4760, -3124.35, 4725.65, -3122.25, 4725.65, -3122.25, 4683.15, -3117.15, 4674.65, -3114.55, 4674.65, -3119.45, 4657.95, -3118.25, 4656.25, -3118.25, 4652.75, -3133.25, 4638.65, -3133.25, 4636.95, -3139.85, 4635.85, -3133.85, 4634.65, -3130.55, 4634.65, -3121.55, 4627.65, -3115.25, 4627.65, -3110.25, 4620.65, -3108.25, 4620.65, -3108.25, 4602.95, -3102.85, 4586.65, -3101.25, 4586.65, -3101.25, 4554.05, -3097.55, 4534.65, -3096.25, 4534.65, -3096.25, 4464.05, -3094.85, 4460.65, -3093.35, 4460.65, -3091.35, 4404.65, -3089.25, 4404.65, -3093.25, 4395.25, -3093.25, 4393.25, -3112.85, 4385.65, -3115.45, 4385.65, -3119.55, 4381.55, -3111.35, 4372.65, -3109.35, 4372.65, -3106.35, 4325.65, -3105.15, 4325.65, -3109.25, 4263.55, -3109.25, 4205.95, -3107.25, 4199.95, -3107.25, 4120.05, -3103.25, 4113.15, -3103.25, 4070.55, -3109.25, 4017.65, -3109.25, 4002.95, -3136.25, 3968.95, -3136.25, 3966.75)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_1r3g7"]
+polygon = PackedVector2Array(-1875.25, 3970.55, -1875.25, 3972.15, -1932.65, 3993.65, -1935.65, 3993.65, -2025.25, 4034.35, -2025.25, 4035.15, -2068.55, 4047.65, -2071.85, 4047.65, -2091.75, 4059.65, -2093.45, 4059.65, -2106.55, 4083.65, -2108.25, 4083.65, -2108.25, 4113.75, -2099.25, 4193.85, -2099.25, 4212.85, -2084.95, 4291.65, -2084.05, 4291.65, -2076.25, 4371.35, -2077.25, 4373.05, -2077.25, 4379.05, -2069.25, 4401.05, -2069.25, 4403.75, -2054.25, 4412.75, -2054.25, 4414.25, -2075.65, 4421.65, -2077.55, 4421.65, -2078.65, 4423.95, -2073.55, 4430.35, -2074.25, 4436.55, -2074.25, 4438.05, -2070.65, 4447.65, -2070.25, 4528.95, -2067.65, 4536.65, -2060.25, 4624.85, -2060.25, 4635.05, -2057.25, 4641.95, -2057.25, 4646.45, -2050.25, 4653.45, -2050.25, 4655.15, -2038.25, 4658.35, -2040.75, 4659.65, -2043.05, 4659.65, -2056.05, 4672.65, -2058.15, 4672.65, -2060.25, 4720.65, -2060.25, 4748.25, -2058.25, 4751.25, -2058.25, 4753.85, -2052.25, 4756.85, -2052.25, 4759.95, -2044.65, 4755.95, -2041.45, 4756.65, -2035.65, 4756.65, -2000, 4760, -1960, 4760, -1900, 4740, -1844.35, 4725.65, -1842.25, 4725.65, -1842.25, 4683.15, -1837.15, 4674.65, -1834.55, 4674.65, -1839.45, 4657.95, -1838.25, 4656.25, -1838.25, 4652.75, -1853.25, 4638.65, -1853.25, 4636.95, -1859.85, 4635.85, -1853.85, 4634.65, -1850.55, 4634.65, -1841.55, 4627.65, -1835.25, 4627.65, -1830.25, 4620.65, -1828.25, 4620.65, -1828.25, 4602.95, -1822.85, 4586.65, -1821.25, 4586.65, -1821.25, 4554.05, -1817.55, 4534.65, -1816.25, 4534.65, -1816.25, 4464.05, -1814.85, 4460.65, -1813.35, 4460.65, -1811.35, 4404.65, -1809.25, 4404.65, -1813.25, 4395.25, -1813.25, 4393.35, -1834.65, 4384.55, -1828.35, 4377.65, -1826.35, 4377.65, -1823.35, 4330.65, -1822.15, 4330.65, -1826.25, 4268.55, -1826.25, 4210.95, -1824.25, 4204.95, -1824.25, 4125.05, -1820.25, 4118.15, -1820.25, 4075.55, -1826.25, 4022.65, -1826.25, 4007.95, -1853.25, 3973.95, -1853.25, 3971.75)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_g12c8"]
+polygon = PackedVector2Array(-592.25, 3974.55, -592.25, 3976.15, -649.65, 3997.65, -652.65, 3997.65, -742.25, 4038.35, -742.25, 4039.15, -785.55, 4051.65, -788.85, 4051.65, -808.75, 4063.65, -810.45, 4063.65, -823.55, 4087.65, -825.25, 4087.65, -825.25, 4117.75, -816.25, 4197.85, -816.25, 4216.85, -801.95, 4295.65, -801.05, 4295.65, -793.25, 4382.85, -793.25, 4388.05, -788.25, 4400.15, -788.25, 4404.45, -783.25, 4409.45, -783.25, 4410.85, -771.25, 4416.85, -771.25, 4418.35, -789.65, 4424.65, -791.55, 4424.65, -792.65, 4426.95, -787.55, 4433.35, -788.25, 4439.55, -788.25, 4441.05, -784.65, 4450.65, -784.25, 4531.95, -781.65, 4539.65, -774.25, 4627.85, -774.25, 4638.05, -771.25, 4644.95, -771.25, 4649.45, -764.25, 4656.45, -764.25, 4658.15, -752.25, 4661.35, -754.75, 4662.65, -757.05, 4662.65, -770.05, 4675.65, -772.15, 4675.65, -774.25, 4723.65, -774.25, 4751.25, -772.25, 4754.25, -772.25, 4756.85, -766.25, 4759.85, -766.25, 4760.85, -764.05, 4762.05, -759.55, 4758.65, -755.55, 4758.65, -731.15, 4765.85, -640, 4760, -558.35, 4728.65, -556.25, 4728.65, -556.25, 4686.15, -551.15, 4677.65, -548.55, 4677.65, -553.45, 4660.95, -552.25, 4659.25, -552.25, 4655.75, -567.25, 4641.65, -567.25, 4639.95, -573.85, 4638.85, -567.85, 4637.65, -564.55, 4637.65, -555.55, 4630.65, -549.25, 4630.65, -544.25, 4623.65, -542.25, 4623.65, -542.25, 4605.95, -536.85, 4589.65, -535.25, 4589.65, -535.25, 4557.05, -531.55, 4537.65, -530.25, 4537.65, -530.25, 4467.05, -528.85, 4463.65, -527.35, 4463.65, -524.25, 4405.75, -524.25, 4399.35, -549.05, 4387.45, -545.15, 4381.65, -543.35, 4381.65, -540.35, 4334.65, -539.15, 4334.65, -543.25, 4272.55, -543.25, 4214.95, -541.25, 4208.95, -541.25, 4129.05, -537.25, 4122.15, -537.25, 4079.55, -543.25, 4026.65, -543.25, 4011.95, -570.25, 3977.95, -570.25, 3975.75)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_iciud"]
+polygon = PackedVector2Array(696.75, 3982.55, 696.75, 3984.15, 639.35, 4005.65, 636.35, 4005.65, 546.75, 4046.35, 546.75, 4047.15, 503.45, 4059.65, 500.15, 4059.65, 480.25, 4071.65, 478.55, 4071.65, 465.45, 4095.65, 463.75, 4095.65, 463.75, 4125.75, 472.75, 4205.85, 472.75, 4224.85, 487.05, 4303.65, 487.95, 4303.65, 495.75, 4383.35, 494.75, 4385.05, 494.75, 4390.95, 500.75, 4408.05, 500.75, 4412.35, 506.45, 4419.25, 490.45, 4424.65, 488.45, 4424.65, 487.35, 4426.95, 492.45, 4433.35, 491.75, 4439.55, 491.75, 4441.05, 495.35, 4450.65, 495.75, 4531.95, 498.35, 4539.65, 503.75, 4606.75, 503.75, 4624.95, 510.75, 4649.65, 510.75, 4652.65, 515.75, 4656.65, 515.75, 4658.15, 527.75, 4661.35, 525.25, 4662.65, 522.95, 4662.65, 509.95, 4675.65, 507.85, 4675.65, 505.75, 4723.65, 505.75, 4751.25, 507.75, 4754.25, 507.75, 4756.85, 513.75, 4759.85, 513.75, 4760.85, 515.95, 4762.05, 520.45, 4758.65, 524.45, 4758.65, 548.85, 4765.85, 640, 4760, 721.65, 4728.65, 723.75, 4728.65, 723.75, 4686.15, 728.85, 4677.65, 731.45, 4677.65, 726.55, 4660.95, 727.75, 4659.25, 727.75, 4655.75, 712.75, 4641.65, 712.75, 4639.95, 706.15, 4638.85, 712.15, 4637.65, 715.45, 4637.65, 724.45, 4630.65, 730.75, 4630.65, 734.75, 4625.65, 735.95, 4625.65, 737.75, 4622.15, 737.75, 4605.95, 743.15, 4589.65, 744.75, 4589.65, 744.75, 4557.05, 748.45, 4537.65, 749.75, 4537.65, 749.75, 4467.05, 751.15, 4463.65, 752.65, 4463.65, 754.65, 4407.65, 756.75, 4407.65, 752.75, 4398.25, 752.75, 4396.25, 742.65, 4392.25, 743.95, 4389.65, 745.75, 4389.65, 745.75, 4382.65, 746.65, 4382.65, 748.65, 4342.65, 749.85, 4342.65, 745.75, 4280.55, 745.75, 4222.95, 747.75, 4216.95, 747.75, 4137.05, 751.75, 4130.15, 751.75, 4087.55, 745.75, 4034.65, 745.75, 4019.95, 718.75, 3985.95, 718.75, 3983.75)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_dclds"]
+polygon = PackedVector2Array(1985.75, 3992.55, 1985.75, 3994.15, 1928.35, 4015.65, 1925.35, 4015.65, 1835.75, 4056.35, 1835.75, 4057.15, 1792.45, 4069.65, 1789.25, 4069.65, 1773.15, 4078.65, 1770.65, 4078.65, 1755.65, 4102.65, 1754.35, 4102.65, 1752.75, 4107.35, 1752.75, 4135.75, 1761.75, 4215.85, 1761.75, 4234.85, 1776.05, 4313.65, 1776.95, 4313.65, 1784.75, 4393.35, 1783.75, 4395.05, 1783.75, 4400.95, 1791.05, 4424.15, 1790.75, 4425.15, 1774.45, 4430.65, 1772.45, 4430.65, 1771.35, 4432.95, 1776.45, 4439.35, 1775.75, 4445.55, 1775.75, 4447.05, 1779.35, 4456.65, 1779.75, 4537.95, 1782.35, 4545.65, 1787.75, 4612.75, 1787.75, 4630.95, 1794.75, 4655.65, 1794.75, 4658.65, 1799.75, 4662.65, 1799.75, 4664.15, 1811.75, 4667.35, 1809.25, 4668.65, 1806.95, 4668.65, 1793.95, 4681.65, 1791.85, 4681.65, 1789.75, 4729.65, 1789.75, 4757.25, 1794.75, 4764.25, 1794.75, 4766.05, 1799.45, 4767.65, 1801.55, 4767.65, 1804.55, 4764.65, 1808.45, 4764.65, 1824.05, 4769.85, 1940, 4760, 2005.75, 4734.65, 2007.75, 4692.25, 2014.75, 4682.25, 2014.75, 4680.35, 2010.55, 4666.85, 2011.75, 4665.25, 2011.75, 4661.75, 1996.75, 4647.65, 1996.75, 4645.95, 1990.15, 4644.85, 1996.15, 4643.65, 1999.45, 4643.65, 2008.45, 4636.65, 2014.75, 4636.65, 2018.75, 4631.65, 2019.95, 4631.65, 2021.75, 4628.15, 2021.75, 4611.95, 2027.15, 4595.65, 2028.75, 4595.65, 2028.75, 4563.05, 2032.45, 4543.65, 2033.75, 4543.65, 2033.75, 4473.05, 2035.15, 4469.65, 2036.65, 4469.65, 2038.65, 4413.65, 2039.75, 4413.65, 2039.75, 4405.55, 2032.05, 4400.65, 2032.85, 4399.65, 2034.75, 4399.65, 2034.75, 4392.65, 2035.65, 4392.65, 2037.65, 4352.65, 2038.85, 4352.65, 2034.75, 4290.55, 2034.75, 4232.95, 2036.75, 4226.95, 2036.75, 4147.05, 2040.75, 4140.15, 2040.75, 4097.55, 2034.75, 4044.65, 2034.75, 4029.95, 2007.75, 3995.95, 2007.75, 3993.75)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_5xcum"]
+polygon = PackedVector2Array(3270.75, 3995.55, 3270.75, 3997.15, 3213.35, 4018.65, 3210.35, 4018.65, 3120.75, 4059.35, 3120.75, 4060.15, 3077.45, 4072.65, 3074.25, 4072.65, 3058.15, 4081.65, 3055.65, 4081.65, 3040.65, 4105.65, 3039.35, 4105.65, 3037.75, 4110.35, 3037.75, 4138.75, 3046.75, 4218.85, 3046.75, 4237.85, 3061.05, 4316.65, 3061.95, 4316.65, 3069.75, 4396.35, 3068.75, 4398.05, 3068.75, 4403.95, 3074.45, 4423.85, 3054.45, 4432.65, 3052.45, 4432.65, 3051.35, 4434.95, 3056.45, 4441.35, 3055.75, 4447.55, 3055.75, 4449.05, 3059.35, 4458.65, 3059.75, 4539.95, 3062.35, 4547.65, 3067.75, 4614.75, 3067.75, 4632.95, 3074.75, 4657.65, 3074.75, 4660.65, 3079.75, 4664.65, 3079.75, 4666.15, 3091.75, 4669.35, 3089.25, 4670.65, 3086.95, 4670.65, 3073.95, 4683.65, 3071.85, 4683.65, 3069.75, 4731.65, 3069.75, 4759.25, 3071.75, 4762.25, 3071.75, 4764.85, 3077.75, 4767.85, 3077.75, 4768.85, 3079.95, 4770.05, 3084.45, 4766.65, 3088.45, 4766.65, 3103.75, 4771.05, 3103.75, 4771.95, 3220, 4760, 3285.75, 4736.65, 3287.75, 4736.65, 3287.75, 4694.25, 3294.75, 4684.25, 3294.75, 4682.35, 3290.55, 4668.85, 3291.75, 4667.25, 3291.75, 4663.75, 3276.75, 4649.65, 3276.75, 4647.95, 3270.15, 4646.85, 3276.15, 4645.65, 3279.45, 4645.65, 3288.45, 4638.65, 3294.75, 4638.65, 3298.75, 4633.65, 3299.95, 4633.65, 3301.75, 4630.15, 3301.75, 4613.95, 3307.15, 4597.65, 3308.75, 4597.65, 3308.75, 4565.15, 3313.75, 4543.85, 3313.75, 4475.05, 3315.15, 4471.65, 3316.65, 4471.65, 3317.65, 4443.65, 3318.65, 4443.65, 3319.75, 4413.65, 3319.75, 4407.55, 3316.75, 4405.55, 3316.75, 4404.25, 3317.85, 4402.65, 3319.75, 4402.65, 3319.75, 4395.65, 3320.65, 4395.65, 3322.65, 4355.65, 3323.85, 4355.65, 3319.75, 4293.55, 3319.75, 4235.95, 3321.75, 4229.95, 3321.75, 4150.05, 3325.75, 4143.15, 3325.75, 4100.55, 3319.75, 4047.65, 3319.75, 4032.95, 3292.75, 3998.95, 3292.75, 3996.75)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_0wkub"]
+polygon = PackedVector2Array(4552.75, 3999.55, 4552.75, 4001.15, 4495.35, 4022.65, 4492.35, 4022.65, 4402.75, 4063.35, 4402.75, 4064.15, 4359.45, 4076.65, 4356.25, 4076.65, 4340.15, 4085.65, 4337.65, 4085.65, 4322.65, 4109.65, 4321.35, 4109.65, 4319.75, 4114.35, 4319.75, 4142.75, 4328.75, 4222.85, 4328.75, 4241.85, 4343.05, 4320.65, 4343.95, 4320.65, 4351.75, 4400.35, 4350.75, 4402.05, 4350.75, 4407.95, 4355.35, 4423.75, 4334.15, 4432.65, 4332.45, 4432.65, 4331.35, 4434.95, 4336.45, 4441.35, 4335.75, 4447.55, 4335.75, 4449.05, 4339.35, 4458.65, 4339.75, 4539.95, 4342.35, 4547.65, 4347.75, 4614.75, 4347.75, 4632.95, 4354.75, 4657.65, 4354.75, 4660.65, 4359.75, 4664.65, 4359.75, 4666.15, 4371.75, 4669.35, 4369.25, 4670.65, 4366.95, 4670.65, 4353.95, 4683.65, 4351.85, 4683.65, 4349.75, 4731.65, 4349.75, 4759.25, 4351.75, 4762.25, 4351.75, 4764.85, 4357.75, 4767.85, 4357.75, 4768.85, 4359.95, 4770.05, 4364.45, 4766.65, 4368.45, 4766.65, 4383.75, 4771.05, 4470.97, 4762.76, 4500, 4760, 4565.75, 4736.65, 4567.75, 4736.65, 4567.75, 4694.25, 4574.75, 4684.25, 4574.75, 4682.35, 4570.55, 4668.85, 4571.75, 4667.25, 4571.75, 4663.75, 4556.75, 4649.65, 4556.75, 4647.95, 4550.15, 4646.85, 4556.15, 4645.65, 4559.45, 4645.65, 4568.45, 4638.65, 4574.75, 4638.65, 4578.75, 4633.65, 4579.95, 4633.65, 4581.75, 4630.15, 4581.75, 4613.95, 4587.15, 4597.65, 4588.75, 4597.65, 4588.75, 4565.15, 4593.75, 4543.85, 4593.75, 4475.05, 4595.15, 4471.65, 4596.65, 4471.65, 4598.75, 4408.65, 4599.85, 4406.65, 4601.75, 4406.65, 4601.75, 4399.65, 4602.65, 4399.65, 4604.65, 4359.65, 4605.85, 4359.65, 4601.75, 4297.55, 4601.75, 4239.95, 4603.75, 4233.95, 4603.75, 4154.05, 4607.75, 4147.15, 4607.75, 4104.55, 4601.75, 4051.65, 4601.75, 4036.95, 4574.75, 4002.95, 4574.75, 4000.75)
+
+[node name="KylePlayer" type="CharacterBody2D" node_paths=PackedStringArray("ANIMATION_TREE")]
+script = ExtResource("1_0gdhu")
+ANIMATION_TREE = NodePath("AnimationTree")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.05, 0.05)
+texture = ExtResource("2_vtynu")
+hframes = 8
+vframes = 8
+frame = 1
+region_enabled = true
+region_rect = Rect2(-3, 0.771439, 10242.5, 10194.7)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_jnn6o")
+}
+autoplay = "idle_down"
+
+[node name="AnimationTree" type="AnimationTree" parent="."]
+tree_root = SubResource("AnimationNodeStateMachine_ekfra")
+anim_player = NodePath("../AnimationPlayer")
+parameters/Idle/blend_position = Vector2(0.330144, 0.0852017)
+parameters/MousePos/blend_position = Vector2(-0.596939, 0.769231)
+parameters/Walk/blend_position = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, 6)
+shape = SubResource("CapsuleShape2D_vca0p")
+
+[node name="Bone2D2" type="Bone2D" parent="."]
+position = Vector2(1.90735e-06, 0)
+rotation = -3.14159
+script = ExtResource("65_axxhx")
+
+[node name="Hands" type="Sprite2D" parent="Bone2D2"]
+position = Vector2(17, 2.38419e-07)
+rotation = 2.27416
+scale = Vector2(0.01, 0.01)
+texture = ExtResource("66_5yet8")
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="Bone2D2"]
+position = Vector2(17, 2.38419e-07)
+rotation = 2.27416
+scale = Vector2(0.01, 0.01)
+occluder = SubResource("OccluderPolygon2D_flkf7")
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="."]
+position = Vector2(223.353, 222.801)
+scale = Vector2(0.05, 0.05)
+occluder = ExtResource("3_lbtd5")
+
+[node name="LightOccluder2D2" type="LightOccluder2D" parent="."]
+scale = Vector2(0.05, 0.05)
+occluder = SubResource("OccluderPolygon2D_enbwh")
+
+[node name="LightOccluder2D3" type="LightOccluder2D" parent="."]
+scale = Vector2(0.05, 0.05)
+occluder = SubResource("OccluderPolygon2D_f25p5")
+
+[node name="LightOccluder2D4" type="LightOccluder2D" parent="."]
+position = Vector2(0, -5.96046e-08)
+scale = Vector2(0.05, 0.05)
+occluder = SubResource("OccluderPolygon2D_noagd")
+
+[node name="LightOccluder2D5" type="LightOccluder2D" parent="."]
+scale = Vector2(0.05, 0.05)
+occluder = SubResource("OccluderPolygon2D_8lhb0")
+
+[node name="LightOccluder2D6" type="LightOccluder2D" parent="."]
+scale = Vector2(0.05, 0.05)
+occluder = SubResource("OccluderPolygon2D_peifi")
+
+[node name="LightOccluder2D7" type="LightOccluder2D" parent="."]
+scale = Vector2(0.05, 0.05)
+occluder = SubResource("OccluderPolygon2D_wgfgn")
+
+[node name="LightOccluder2D8" type="LightOccluder2D" parent="."]
+scale = Vector2(0.05, 0.05)
+occluder = SubResource("OccluderPolygon2D_o5jol")
+
+[node name="LightOccluder2D9" type="LightOccluder2D" parent="."]
+scale = Vector2(0.05, 0.05)
+occluder = SubResource("OccluderPolygon2D_88qmy")
+
+[node name="LightOccluder2D27" type="LightOccluder2D" parent="."]
+scale = Vector2(0.05, 0.05)
+occluder = SubResource("OccluderPolygon2D_j5845")
+
+[node name="LightOccluder2D28" type="LightOccluder2D" parent="."]
+scale = Vector2(0.05, 0.05)
+occluder = SubResource("OccluderPolygon2D_hqeap")
+
+[node name="LightOccluder2D29" type="LightOccluder2D" parent="."]
+scale = Vector2(0.05, 0.05)
+occluder = SubResource("OccluderPolygon2D_62he6")
+
+[node name="LightOccluder2D30" type="LightOccluder2D" parent="."]
+scale = Vector2(0.05, 0.05)
+occluder = SubResource("OccluderPolygon2D_4v6tj")
+
+[node name="LightOccluder2D31" type="LightOccluder2D" parent="."]
+scale = Vector2(0.05, 0.05)
+occluder = SubResource("OccluderPolygon2D_3wgcx")
+
+[node name="LightOccluder2D32" type="LightOccluder2D" parent="."]
+scale = Vector2(0.05, 0.05)
+occluder = SubResource("OccluderPolygon2D_pvdhh")
+
+[node name="LightOccluder2D33" type="LightOccluder2D" parent="."]
+scale = Vector2(0.05, 0.05)
+occluder = SubResource("OccluderPolygon2D_axgas")
+
+[node name="LightOccluder2D34" type="LightOccluder2D" parent="."]
+scale = Vector2(0.05, 0.05)
+occluder = SubResource("OccluderPolygon2D_wa8xa")
+
+[node name="LightOccluder2D43" type="LightOccluder2D" parent="."]
+scale = Vector2(0.05, 0.05)
+occluder = SubResource("OccluderPolygon2D_caubg")
+
+[node name="LightOccluder2D44" type="LightOccluder2D" parent="."]
+scale = Vector2(0.05, 0.05)
+occluder = SubResource("OccluderPolygon2D_kw03w")
+
+[node name="LightOccluder2D46" type="LightOccluder2D" parent="."]
+scale = Vector2(0.05, 0.05)
+occluder = SubResource("OccluderPolygon2D_xcmio")
+
+[node name="LightOccluder2D47" type="LightOccluder2D" parent="."]
+scale = Vector2(0.05, 0.05)
+occluder = SubResource("OccluderPolygon2D_4k8uv")
+
+[node name="LightOccluder2D48" type="LightOccluder2D" parent="."]
+scale = Vector2(0.05, 0.05)
+occluder = SubResource("OccluderPolygon2D_qhgyh")
+
+[node name="LightOccluder2D49" type="LightOccluder2D" parent="."]
+scale = Vector2(0.05, 0.05)
+occluder = SubResource("OccluderPolygon2D_xsvy8")
+
+[node name="LightOccluder2D50" type="LightOccluder2D" parent="."]
+scale = Vector2(0.05, 0.05)
+occluder = SubResource("OccluderPolygon2D_1qnpr")
+
+[node name="LightOccluder2D51" type="LightOccluder2D" parent="."]
+scale = Vector2(0.05, 0.05)
+occluder = SubResource("OccluderPolygon2D_pd1vb")
+
+[node name="LightOccluder2D58" type="LightOccluder2D" parent="."]
+scale = Vector2(0.05, 0.05)
+occluder = SubResource("OccluderPolygon2D_ywwca")
+
+[node name="LightOccluder2D59" type="LightOccluder2D" parent="."]
+scale = Vector2(0.05, 0.05)
+occluder = SubResource("OccluderPolygon2D_d2fks")
+
+[node name="LightOccluder2D60" type="LightOccluder2D" parent="."]
+scale = Vector2(0.05, 0.05)
+occluder = SubResource("OccluderPolygon2D_0s3ng")
+
+[node name="LightOccluder2D61" type="LightOccluder2D" parent="."]
+scale = Vector2(0.05, 0.05)
+occluder = SubResource("OccluderPolygon2D_fsjtg")
+
+[node name="LightOccluder2D62" type="LightOccluder2D" parent="."]
+scale = Vector2(0.05, 0.05)
+occluder = SubResource("OccluderPolygon2D_nnjox")
+
+[node name="LightOccluder2D63" type="LightOccluder2D" parent="."]
+scale = Vector2(0.05, 0.05)
+occluder = SubResource("OccluderPolygon2D_iamtt")
+
+[node name="LightOccluder2D64" type="LightOccluder2D" parent="."]
+scale = Vector2(0.05, 0.05)
+occluder = SubResource("OccluderPolygon2D_igpak")
+
+[node name="LightOccluder2D65" type="LightOccluder2D" parent="."]
+scale = Vector2(0.05, 0.05)
+occluder = SubResource("OccluderPolygon2D_7bby6")
+
+[node name="LightOccluder2D67" type="LightOccluder2D" parent="."]
+scale = Vector2(0.05, 0.05)
+occluder = SubResource("OccluderPolygon2D_o16lc")
+
+[node name="LightOccluder2D68" type="LightOccluder2D" parent="."]
+scale = Vector2(0.05, 0.05)
+occluder = SubResource("OccluderPolygon2D_pihoe")
+
+[node name="LightOccluder2D69" type="LightOccluder2D" parent="."]
+scale = Vector2(0.05, 0.05)
+occluder = SubResource("OccluderPolygon2D_4ct6d")
+
+[node name="LightOccluder2D70" type="LightOccluder2D" parent="."]
+scale = Vector2(0.05, 0.05)
+occluder = SubResource("OccluderPolygon2D_44125")
+
+[node name="LightOccluder2D71" type="LightOccluder2D" parent="."]
+scale = Vector2(0.05, 0.05)
+occluder = SubResource("OccluderPolygon2D_ihwia")
+
+[node name="LightOccluder2D72" type="LightOccluder2D" parent="."]
+scale = Vector2(0.05, 0.05)
+occluder = SubResource("OccluderPolygon2D_5i1tq")
+
+[node name="LightOccluder2D73" type="LightOccluder2D" parent="."]
+scale = Vector2(0.05, 0.05)
+occluder = SubResource("OccluderPolygon2D_l5hnt")
+
+[node name="LightOccluder2D74" type="LightOccluder2D" parent="."]
+scale = Vector2(0.05, 0.05)
+occluder = SubResource("OccluderPolygon2D_th1x2")
+
+[node name="LightOccluder2D91" type="LightOccluder2D" parent="."]
+scale = Vector2(0.05, 0.05)
+occluder = SubResource("OccluderPolygon2D_cured")
+
+[node name="LightOccluder2D92" type="LightOccluder2D" parent="."]
+scale = Vector2(0.05, 0.05)
+occluder = SubResource("OccluderPolygon2D_g1sk4")
+
+[node name="LightOccluder2D93" type="LightOccluder2D" parent="."]
+scale = Vector2(0.05, 0.05)
+occluder = SubResource("OccluderPolygon2D_oufhn")
+
+[node name="LightOccluder2D94" type="LightOccluder2D" parent="."]
+scale = Vector2(0.05, 0.05)
+occluder = SubResource("OccluderPolygon2D_exiai")
+
+[node name="LightOccluder2D95" type="LightOccluder2D" parent="."]
+scale = Vector2(0.05, 0.05)
+occluder = SubResource("OccluderPolygon2D_sy1d0")
+
+[node name="LightOccluder2D96" type="LightOccluder2D" parent="."]
+scale = Vector2(0.05, 0.05)
+occluder = SubResource("OccluderPolygon2D_f6tcy")
+
+[node name="LightOccluder2D97" type="LightOccluder2D" parent="."]
+position = Vector2(0, 5.96046e-08)
+scale = Vector2(0.05, 0.05)
+occluder = SubResource("OccluderPolygon2D_nvrai")
+
+[node name="LightOccluder2D98" type="LightOccluder2D" parent="."]
+position = Vector2(0, -1)
+scale = Vector2(0.05, 0.05)
+occluder = SubResource("OccluderPolygon2D_jipba")
+
+[node name="LightOccluder2D109" type="LightOccluder2D" parent="."]
+scale = Vector2(0.05, 0.05)
+occluder = SubResource("OccluderPolygon2D_eilrp")
+
+[node name="LightOccluder2D110" type="LightOccluder2D" parent="."]
+scale = Vector2(0.05, 0.05)
+occluder = SubResource("OccluderPolygon2D_0iub1")
+
+[node name="LightOccluder2D112" type="LightOccluder2D" parent="."]
+scale = Vector2(0.05, 0.05)
+occluder = SubResource("OccluderPolygon2D_mvs1k")
+
+[node name="LightOccluder2D113" type="LightOccluder2D" parent="."]
+position = Vector2(0, -1)
+scale = Vector2(0.05, 0.05)
+occluder = SubResource("OccluderPolygon2D_17a5x")
+
+[node name="LightOccluder2D114" type="LightOccluder2D" parent="."]
+scale = Vector2(0.05, 0.05)
+occluder = SubResource("OccluderPolygon2D_c27ng")
+
+[node name="LightOccluder2D115" type="LightOccluder2D" parent="."]
+scale = Vector2(0.05, 0.05)
+occluder = SubResource("OccluderPolygon2D_g8v21")
+
+[node name="LightOccluder2D116" type="LightOccluder2D" parent="."]
+scale = Vector2(0.05, 0.05)
+occluder = SubResource("OccluderPolygon2D_ovrst")
+
+[node name="LightOccluder2D117" type="LightOccluder2D" parent="."]
+scale = Vector2(0.05, 0.05)
+occluder = SubResource("OccluderPolygon2D_bhdfj")
+
+[node name="LightOccluder2D125" type="LightOccluder2D" parent="."]
+scale = Vector2(0.05, 0.05)
+occluder = SubResource("OccluderPolygon2D_4ng74")
+
+[node name="LightOccluder2D126" type="LightOccluder2D" parent="."]
+scale = Vector2(0.05, 0.05)
+occluder = SubResource("OccluderPolygon2D_1ra1i")
+
+[node name="LightOccluder2D127" type="LightOccluder2D" parent="."]
+scale = Vector2(0.05, 0.05)
+occluder = SubResource("OccluderPolygon2D_1r3g7")
+
+[node name="LightOccluder2D128" type="LightOccluder2D" parent="."]
+scale = Vector2(0.05, 0.05)
+occluder = SubResource("OccluderPolygon2D_g12c8")
+
+[node name="LightOccluder2D129" type="LightOccluder2D" parent="."]
+scale = Vector2(0.05, 0.05)
+occluder = SubResource("OccluderPolygon2D_iciud")
+
+[node name="LightOccluder2D130" type="LightOccluder2D" parent="."]
+scale = Vector2(0.05, 0.05)
+occluder = SubResource("OccluderPolygon2D_dclds")
+
+[node name="LightOccluder2D131" type="LightOccluder2D" parent="."]
+scale = Vector2(0.05, 0.05)
+occluder = SubResource("OccluderPolygon2D_5xcum")
+
+[node name="LightOccluder2D132" type="LightOccluder2D" parent="."]
+scale = Vector2(0.05, 0.05)
+occluder = SubResource("OccluderPolygon2D_0wkub")

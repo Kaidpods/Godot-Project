@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://bt8gggvnfx3ns"]
+
+[ext_resource type="Script" uid="uid://24okhg31kx78" path="res://node_2d.gd" id="1_sdrtc"]
+[ext_resource type="Texture2D" uid="uid://bmdnwtbt0c6hy" path="res://Assets/Spritesheet/Untitled.png" id="2_3npi3"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_sdrtc")
+sprite_sheet = ExtResource("2_3npi3")
+
+[node name="Load_button" type="Button" parent="."]
+unique_name_in_owner = true
+offset_left = 18.0
+offset_top = 9.0
+offset_right = 77.0
+offset_bottom = 17.0
+text = "Start"
+
+[node name="FileDialog" type="FileDialog" parent="."]
+visible = true

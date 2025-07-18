@@ -1,0 +1,77 @@
+[gd_scene load_steps=6 format=3 uid="uid://big48iovqx0rs"]
+
+[ext_resource type="Script" uid="uid://dajgbkc3hc8qg" path="res://Scripts/knife.gd" id="1_6w6ta"]
+[ext_resource type="Texture2D" uid="uid://d4gj1v6ehcb2i" path="res://Assets/PNG/nief._donepng_nief.png" id="1_n625q"]
+[ext_resource type="Script" uid="uid://c1isyjitf5ch5" path="res://Knife_Collision.gd" id="2_6w6ta"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_oyxfa"]
+radius = 3.0
+height = 22.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_6w6ta"]
+radius = 1.48188
+height = 14.5549
+
+[node name="Knife" type="CharacterBody2D"]
+script = ExtResource("1_6w6ta")
+DAMAGE = 10.0
+MELEE = true
+KNOCKBACK = 10.0
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-3.8147e-06, 9.53674e-07)
+scale = Vector2(0.01, 0.01)
+texture = ExtResource("1_n625q")
+region_enabled = true
+region_rect = Rect2(672, 104, 616, 1983)
+
+[node name="Hold_Point" type="Node2D" parent="."]
+position = Vector2(0.5, -6)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2(-3.8147e-06, 9.53674e-07)
+scale = Vector2(0.01, 0.01)
+polygon = PackedVector2Array(161, -971.5, 144, -960.5, 142, -960.5, 131, -949.5, 130, -949.5, 49, -856.5, 48, -856.5, 22, -813.5, 21, -813.5, 5, -779.5, 4, -779.5, -19, -719.5, -20, -719.5, -49, -627.5, -50, -627.5, -85, -461.5, -86, -461.5, -86, -403.5, -86, -393.5, -91, -336.5, -92, -336.5, -99, -198.5, -99, -197.5, -117, 12.5, -117, 37.5, -122, 40.5, -122, 44.5, -77, 91.5, -77, 92.5, -59, 105.5, -57, 105.5, -45, 119.5, -44, 119.5, -42, 124.5, -42, 129.5, -46, 152.5, -46, 158.5, -61, 159.5, -65, 159.5, -104, 152.5, -133, 152.5, -135, 157.5, -136, 157.5, -133, 180.5, -133, 182.5, -194, 176.5, -194, 175.5, -219, 176.5, -226, 176.5, -257, 187.5, -259, 187.5, -262, 204.5, -263, 204.5, -263, 209.5, -255, 222.5, -254, 222.5, -254, 229.5, -254, 233.5, -244, 254.5, -244, 256.5, -233, 267.5, -233, 268.5, -223, 273.5, -223, 274.5, -220, 271.5, -218, 271.5, -212, 274.5, -212, 275.5, -194, 277.5, -189, 277.5, -145, 288.5, -141, 288.5, -122, 296.5, -118, 296.5, -109, 345.5, -108, 345.5, -109, 353.5, -109, 354.5, -103, 367.5, -102, 367.5, -94, 396.5, -94, 400.5, -82, 430.5, -81, 430.5, -81, 454.5, -81, 460.5, -119, 544.5, -120, 544.5, -131, 588.5, -131, 589.5, -127, 589.5, -126, 589.5, -122, 610.5, -122, 615.5, -107, 666.5, -106, 666.5, -94, 726.5, -94, 731.5, -77, 787.5, -77, 796.5, -83, 812.5, -83, 816.5, -103, 840.5, -104, 840.5, -137, 888.5, -138, 888.5, -164, 937.5, -164, 942.5, -148, 952.5, -148, 953.5, -144, 954.5, -139, 954.5, -132, 959.5, -130, 959.5, -107, 980.5, -107, 981.5, -56, 991.5, -54, 991.5, 3, 965.5, 3, 964.5, 57, 945.5, 57, 944.5, 61, 943.5, 63, 943.5, 61, 959.5, 60, 959.5, 62, 962.5, 63, 962.5, 76, 939.5, 77, 939.5, 98, 880.5, 99, 880.5, 111, 840.5, 112, 840.5, 113, 822.5, 113, 821.5, 110, 815.5, 109, 815.5, 104, 791.5, 103, 791.5, 96, 701.5, 96, 675.5, 122, 368.5, 122, 356.5, 127, 349.5, 128, 349.5, 126, 347.5, 126, 341.5, 131, 304.5, 131, 298.5, 190, 291.5, 190, 290.5, 192, 292.5, 202, 292.5, 215, 286.5, 216, 286.5, 217, 283.5, 217, 281.5, 239, 279.5, 245, 279.5, 255, 265.5, 256, 265.5, 267, 216.5, 268, 216.5, 266, 213.5, 266, 212.5, 245, 203.5, 245, 202.5, 221, 196.5, 221, 195.5, 169, 190.5, 169, 189.5, 136, 191.5, 133, 191.5, 136, 184.5, 137, 184.5, 134, 180.5, 134, 173.5, 139, 83.5, 139, 80.5, 107, 63.5, 102, 63.5, 106, 35.5, 106, 34.5, 134, 39.5, 134, 40.5, 141, 35.5, 142, 35.5, 148, -1.5, 149, -1.5, 144, -7.5, 144, -8.5, 120, -26.5, 120, -52.5, 141, -52.5, 145, -52.5, 147, -55.5, 148, -55.5, 151, -90.5, 151, -101.5, 120, -110.5, 115, -110.5, 113, -134.5, 113, -144.5, 141, -141.5, 142, -141.5, 146, -148.5, 147, -148.5, 153, -181.5, 153, -188.5, 150, -190.5, 150, -191.5, 117, -194.5, 117, -201.5, 122, -224.5, 122, -225.5, 145, -232.5, 150, -232.5, 156, -239.5, 157, -239.5, 162, -270.5, 163, -270.5, 161, -278.5, 161, -279.5, 129, -290.5, 128, -290.5, 129, -296.5, 129, -324.5, 130, -323.5, 132, -323.5, 150, -333.5, 153, -333.5, 164, -342.5, 165, -342.5, 164, -344.5, 164, -970.5, 161, -972.5)
+disabled = true
+
+[node name="Area2D" type="Area2D" parent="." node_paths=PackedStringArray("prompt_ui") groups=["Hand_Binding"]]
+script = ExtResource("2_6w6ta")
+prompt_ui = NodePath("../CanvasLayer")
+
+[node name="Clickable_Area" type="CollisionShape2D" parent="Area2D" groups=["Clickable_Area", "Hand_Binding"]]
+position = Vector2(-0.5, 0)
+shape = SubResource("CapsuleShape2D_oyxfa")
+debug_color = Color(4.76494e-06, 0.639182, 0.36831, 0.42)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" groups=["Damage"]]
+position = Vector2(0, -5)
+scale = Vector2(1.34964, 0.961875)
+shape = SubResource("CapsuleShape2D_6w6ta")
+disabled = true
+debug_color = Color(0.888247, 0.289193, 0.407737, 0.42)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = 100
+
+[node name="Panel" type="Panel" parent="CanvasLayer"]
+offset_right = 112.0
+offset_bottom = 48.0
+
+[node name="Label" type="Label" parent="CanvasLayer/Panel"]
+layout_mode = 0
+offset_left = 3.0
+offset_top = 2.0
+offset_right = 388.0
+offset_bottom = 162.0
+scale = Vector2(0.275, 0.275)
+theme_override_colors/font_color = Color(0.863, 0.078, 0.235, 1)
+theme_override_font_sizes/font_size = 53
+text = "Press F to pick up"
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[connection signal="area_entered" from="Area2D" to="Area2D" method="_on_area_entered"]
+[connection signal="area_exited" from="Area2D" to="Area2D" method="_on_area_exited"]
+[connection signal="input_event" from="Area2D" to="Area2D" method="_on_input_event"]
+[connection signal="mouse_entered" from="Area2D" to="Area2D" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Area2D" to="Area2D" method="_on_mouse_exited"]
