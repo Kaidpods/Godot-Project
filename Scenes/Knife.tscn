@@ -18,7 +18,7 @@ DAMAGE = 10.0
 MELEE = true
 KNOCKBACK = 10.0
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="Weapon_Sprite" type="Sprite2D" parent="."]
 position = Vector2(-3.8147e-06, 9.53674e-07)
 scale = Vector2(0.01, 0.01)
 texture = ExtResource("1_n625q")

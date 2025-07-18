@@ -9,6 +9,7 @@ class_name Player extends CharacterBody2D
 @export var ACCELERATION := 400
 @export var FRICTION := 600
 @export var THROW_SPEED:= 300
+@onready var weapon_sprite : Sprite2D = $"Bone2D2/Hands/Weapon Sprite"
 
 #For weapons assignment
 var weapon_in_hand : Node2D = null
@@ -27,8 +28,8 @@ func _physics_process(delta: float) -> void:
 	
 	player_movement(delta)
 	
-	if has_weapon():
-		flip_weapon()
+	#if has_weapon():
+		#flip_weapon()
 	select_animation()
 	update_animation_params()
 
@@ -50,19 +51,19 @@ func player_movement(delta):
 		velocity.y = move_toward(velocity.y, target_velocity.y, ACCELERATION * delta)
 	move_and_slide()
 
-func flip_weapon():
-	var sprite: Sprite2D = weapon_in_hand.get_node("Sprite2D")
-	var mouse_pos = get_global_mouse_position()
-	var to_mouse = mouse_pos - global_position
-	var target_angle = to_mouse.angle()
-	if target_angle > -1.57 and target_angle < 1.4 and flipped_weapon == false:
-		weapon_rotation(weapon_in_hand, 3.14159)
-		flipped_weapon = true
-		print("test")
-	elif target_angle < -1.57 and flipped_weapon == true or target_angle > 1.4 and flipped_weapon == true:
-		weapon_rotation(weapon_in_hand, -3.14159)
-		flipped_weapon = false
-		print("test2")
+#func flip_weapon():
+	#var sprite: Sprite2D = weapon_in_hand.get_node("Sprite2D")
+	#var mouse_pos = get_global_mouse_position()
+	#var to_mouse = mouse_pos - global_position
+	#var target_angle = to_mouse.angle()
+	#if target_angle > -1.57 and target_angle < 1.4 and flipped_weapon == false:
+		#weapon_rotation(weapon_in_hand, 3.14159)
+		#flipped_weapon = true
+		#print("test")
+	#elif target_angle < -1.57 and flipped_weapon == true or target_angle > 1.4 and flipped_weapon == true:
+		#weapon_rotation(weapon_in_hand, -3.14159)
+		#flipped_weapon = false
+		#print("test2")
 
 func select_animation():
 	if velocity == Vector2.ZERO:
@@ -86,6 +87,8 @@ func has_weapon():
 func pickup_weapon(weapon, excess_rotation):
 	weapon_in_hand = weapon
 	attack.weapon = weapon_in_hand
+	weapon_sprite.texture = weapon.get_sprite().texture
+	weapon.visible = false
 	weapon.get_node("Area2D").held = true
 	weapon.get_node("Area2D/Clickable_Area").disabled = true
 	
@@ -144,6 +147,8 @@ func weapon_rotation(weapon, rotation):
 func drop_weapon():
 	if weapon_in_hand:
 		var weapon = weapon_in_hand
+		weapon_in_hand.visible = true
+		weapon_sprite.texture = null
 		weapon_holder.remove_child(weapon)
 		get_parent().add_child(weapon) # Drop back to scene root or parent
 		weapon.global_position = weapon_holder.global_position

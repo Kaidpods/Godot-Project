@@ -14,6 +14,9 @@ func throw_weapon():
 	collision_layer = 2
 	collision_mask = 2
 
+func get_sprite():
+	return $Weapon_Sprite
+
 func _physics_process(delta):
 	if is_thrown:
 		var collision = move_and_collide(throw_velocity * delta)

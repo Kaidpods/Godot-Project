@@ -1,4 +1,4 @@
-[gd_scene load_steps=114 format=3 uid="uid://b2hh3f5lh1u2v"]
+[gd_scene load_steps=113 format=3 uid="uid://b2hh3f5lh1u2v"]
 
 [ext_resource type="Texture2D" uid="uid://7aohv5a6xlgf" path="res://Assets/Spritesheet/Untitled (3).png" id="1_kedlk"]
 [ext_resource type="Script" uid="uid://vrdnxyynwtgi" path="res://Scripts/playercharacter.gd" id="2_h04rr"]
@@ -70,6 +70,7 @@
 [ext_resource type="Script" uid="uid://c3mub5rua4k8f" path="res://Characters/collision_checker.gd" id="65_o1dgi"]
 [ext_resource type="Script" uid="uid://branp2ycnwkhy" path="res://Scripts/copySprite.gd" id="68_ux5nj"]
 [ext_resource type="PackedScene" uid="uid://c0i55roq71p6m" path="res://Components/health_component.tscn" id="71_gc7k3"]
+[ext_resource type="Texture2D" uid="uid://d4gj1v6ehcb2i" path="res://Assets/PNG/nief._donepng_nief.png" id="71_tp4nq"]
 [ext_resource type="Script" uid="uid://c41dm8pu05sdv" path="res://Scripts/attack.gd" id="72_gc7k3"]
 [ext_resource type="PackedScene" uid="uid://brd04r8rtrkcu" path="res://Components/hitbox_component.tscn" id="72_tp4nq"]
 
@@ -352,62 +353,6 @@ tracks/1/keys = {
 "values": [ExtResource("27_twd0t"), ExtResource("28_jcmjl"), ExtResource("29_yp5o6"), ExtResource("30_13ef1"), ExtResource("31_8ujxx"), ExtResource("32_i033p"), ExtResource("33_nbudc"), ExtResource("34_bpupo"), ExtResource("33_nbudc"), ExtResource("32_i033p"), ExtResource("31_8ujxx"), ExtResource("30_13ef1"), ExtResource("29_yp5o6"), ExtResource("28_jcmjl"), ExtResource("27_twd0t")]
 }
 
-[sub_resource type="Animation" id="Animation_gc7k3"]
-resource_name = "prepare_throw"
-length = 0.3
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Bone2D2:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.2),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 1,
-"values": [Vector2(1.90735e-06, 0), Vector2(0, -1.39), Vector2(0, -1.435)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("Bone2D2:rotation")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.2),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 0,
-"values": [-3.14159, -2.92343, -2.5604]
-}
-
-[sub_resource type="Animation" id="Animation_tp4nq"]
-resource_name = "throw"
-length = 0.8
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Bone2D2:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.2),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Vector2(0, -1.435), Vector2(0, 0)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("Bone2D2:rotation")
-tracks/1/interp = 2
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.0333333, 0.2),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 0,
-"values": [-2.5604, -3.14159, -3.14159]
-}
-
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_jnn6o"]
 _data = {
 &"RESET": SubResource("Animation_4ttxe"),
@@ -418,9 +363,7 @@ _data = {
 &"idle_right": SubResource("Animation_0qjct"),
 &"idle_up": SubResource("Animation_xrour"),
 &"idle_up_left": SubResource("Animation_5j7b6"),
-&"idle_up_right": SubResource("Animation_flkf7"),
-&"prepare_throw": SubResource("Animation_gc7k3"),
-&"throw": SubResource("Animation_tp4nq")
+&"idle_up_right": SubResource("Animation_flkf7")
 }
 
 [sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_ys7yh"]
@@ -605,8 +548,8 @@ shape = SubResource("CapsuleShape2D_vca0p")
 
 [node name="Bone2D2" type="Bone2D" parent="."]
 visibility_layer = 2
-position = Vector2(1.90735e-06, 0)
-rotation = -3.14159
+position = Vector2(0, -1.435)
+rotation = -2.5604
 script = ExtResource("3_hd01w")
 
 [node name="LightOccluder2D" type="LightOccluder2D" parent="Bone2D2"]
@@ -622,8 +565,16 @@ position = Vector2(17, -4.30979e-05)
 rotation = -4.03256
 scale = Vector2(0.01, 0.01)
 texture = ExtResource("4_flkf7")
-flip_h = true
 script = ExtResource("68_ux5nj")
+
+[node name="Weapon Sprite" type="Sprite2D" parent="Bone2D2/Hands" groups=["Weapon_Sprite"]]
+visible = false
+position = Vector2(465.088, -400.449)
+rotation = -2.30008
+scale = Vector2(1.03582, 1.03582)
+texture = ExtResource("71_tp4nq")
+flip_h = true
+flip_v = true
 
 [node name="Silhouette" type="Sprite2D" parent="Bone2D2/Hands"]
 z_index = 100
