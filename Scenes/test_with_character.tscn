@@ -11,7 +11,7 @@ viewport_path = NodePath("Sprite3D/SubViewport")
 [node name="Test_with_character" type="Node3D"]
 
 [node name="Sprite3D" type="Sprite3D" parent="."]
-transform = Transform3D(-1, -6.66746e-08, -5.65442e-08, 0, 0.64679, -0.762668, 8.74228e-08, -0.762668, -0.64679, 0, 11.9569, 0)
+transform = Transform3D(-1, -6.66746e-08, -5.65442e-08, 0, 0.64679, -0.762668, 8.74228e-08, -0.762668, -0.64679, -4.905, 11.957, 0)
 texture = SubResource("ViewportTexture_pf0bo")
 
 [node name="SubViewport" type="SubViewport" parent="Sprite3D"]
