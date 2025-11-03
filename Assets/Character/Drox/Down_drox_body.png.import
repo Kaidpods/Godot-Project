@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://7aohv5a6xlgf"
-path.s3tc="res://.godot/imported/Untitled (3).png-ed9179176d1d4a8899157eaa96fb5717.s3tc.ctex"
+uid="uid://dvb3na1kr0ib3"
+path.s3tc="res://.godot/imported/Down_drox_body.png-cd36c280931da990d0c1eadf97d8032b.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Assets/Spritesheet/Untitled (3).png"
-dest_files=["res://.godot/imported/Untitled (3).png-ed9179176d1d4a8899157eaa96fb5717.s3tc.ctex"]
+source_file="res://Assets/Character/Drox/Down_drox_body.png"
+dest_files=["res://.godot/imported/Down_drox_body.png-cd36c280931da990d0c1eadf97d8032b.s3tc.ctex"]
 
 [params]
 

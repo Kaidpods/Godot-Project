@@ -1,0 +1,42 @@
+[gd_scene load_steps=5 format=3 uid="uid://birwo8yhi0dv6"]
+
+[ext_resource type="PackedScene" uid="uid://4x7kybg3upn5" path="res://Scenes/Test_environment.tscn" id="1_xka25"]
+[ext_resource type="PackedScene" uid="uid://jmu4mxsqmmg7" path="res://node_2d.tscn" id="2_f4p3s"]
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_pf0bo"]
+viewport_path = NodePath("Sprite3D/SubViewport")
+
+[sub_resource type="QuadMesh" id="QuadMesh_xka25"]
+
+[node name="Test_with_character" type="Node3D"]
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+transform = Transform3D(-1, -6.66746e-08, -5.65442e-08, 0, 0.64679, -0.762668, 8.74228e-08, -0.762668, -0.64679, 0, 11.9569, 0)
+texture = SubResource("ViewportTexture_pf0bo")
+
+[node name="SubViewport" type="SubViewport" parent="Sprite3D"]
+transparent_bg = true
+canvas_item_default_texture_filter = 0
+canvas_item_default_texture_repeat = 1
+size = Vector2i(802, 1157)
+size_2d_override_stretch = true
+render_target_update_mode = 4
+
+[node name="Node2D" parent="Sprite3D/SubViewport" instance=ExtResource("2_f4p3s")]
+position = Vector2(364.77, 278.625)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Sprite3D/SubViewport/Node2D"]
+transform = Transform3D(7, 0, 0, 0, 11.3, 0, 0, 0, 1, 0.328726, 0.327014, -0.228477)
+mesh = SubResource("QuadMesh_xka25")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.529919, 0.848048, 0, -0.848048, 0.529919, 0, 39.1329, 17.021)
+current = true
+near = 0.027
+far = 4001.2
+
+[node name="test_one" parent="." instance=ExtResource("1_xka25")]
+transform = Transform3D(-3.93402e-06, 0, -90, 0, 90, 0, 90, 0, -3.93402e-06, 0, 14, 0)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.996378, 0, -0.0850344, 0.0464872, -0.837337, 0.544707, -0.0712025, -0.546687, -0.834305, 31.1843, 65.5587, 0)
