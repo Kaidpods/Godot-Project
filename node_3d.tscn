@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://dpy3my2jemup7"]
+
+[ext_resource type="PackedScene" uid="uid://blcu064ary1lq" path="res://Assets/Environment/3D_maps/test_one.fbx" id="1_a202f"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+
+[node name="test_one" parent="Sprite2D" instance=ExtResource("1_a202f")]

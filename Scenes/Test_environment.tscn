@@ -1,0 +1,40 @@
+[gd_scene load_steps=7 format=3 uid="uid://4x7kybg3upn5"]
+
+[ext_resource type="PackedScene" uid="uid://blcu064ary1lq" path="res://Assets/Environment/3D_maps/test_one.fbx" id="1_23sjy"]
+[ext_resource type="PackedScene" uid="uid://bdp70ju54m64i" path="res://Assets/Environment/3D_maps/more_balls.fbx" id="2_f2e6l"]
+[ext_resource type="Texture2D" uid="uid://c3x4ckf66aju7" path="res://Assets/Environment/3D_maps/more_balls_0.png" id="3_1la5o"]
+[ext_resource type="Texture2D" uid="uid://b4upeutlxuer4" path="res://Assets/Environment/3D_maps/bolls_1_standardSurface1_Metallic.png" id="4_yqhxh"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mifhv"]
+resource_name = "boll_1"
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("3_1la5o")
+metallic = 1.0
+metallic_texture = ExtResource("4_yqhxh")
+roughness = 0.0
+emission_enabled = true
+emission = Color(1, 1, 1, 1)
+emission_energy_multiplier = 0.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yqhxh"]
+resource_name = "boll_1"
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("3_1la5o")
+emission_enabled = true
+emission = Color(1, 1, 1, 1)
+emission_energy_multiplier = 0.0
+
+[node name="test_one" instance=ExtResource("1_23sjy")]
+
+[node name="more_balls" parent="." index="14" instance=ExtResource("2_f2e6l")]
+
+[node name="pSphere2" parent="more_balls/group1" index="0"]
+surface_material_override/0 = SubResource("StandardMaterial3D_mifhv")
+
+[node name="pSphere3" parent="more_balls/group1" index="1"]
+surface_material_override/0 = SubResource("StandardMaterial3D_yqhxh")
+
+[node name="pCube20" parent="." index="20"]
+transform = Transform3D(3.13338, 0, -0.405293, 0, 3.15948, 0, 0.405293, 0, 3.13338, -0.659828, 0.016644, -0.35872)
+
+[editable path="more_balls"]

@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://7aohv5a6xlgf"
-path.s3tc="res://.godot/imported/Untitled (3).png-ed9179176d1d4a8899157eaa96fb5717.s3tc.ctex"
+uid="uid://cj357vnkel126"
+path.s3tc="res://.godot/imported/bolls_1_standardSurface1_Roughness.png-3043713886e0ac8f801b93be8d00b726.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Assets/Spritesheet/Untitled (3).png"
-dest_files=["res://.godot/imported/Untitled (3).png-ed9179176d1d4a8899157eaa96fb5717.s3tc.ctex"]
+source_file="res://Assets/Environment/3D_maps/bolls_1_standardSurface1_Roughness.png"
+dest_files=["res://.godot/imported/bolls_1_standardSurface1_Roughness.png-3043713886e0ac8f801b93be8d00b726.s3tc.ctex"]
 
 [params]
 

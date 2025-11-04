@@ -1,0 +1,71 @@
+[gd_scene load_steps=9 format=3 uid="uid://birwo8yhi0dv6"]
+
+[ext_resource type="Script" uid="uid://nwy8utwudk13" path="res://Scripts/test_script.gd" id="1_f4p3s"]
+[ext_resource type="PackedScene" uid="uid://4x7kybg3upn5" path="res://Scenes/Test_environment.tscn" id="1_xka25"]
+[ext_resource type="PackedScene" uid="uid://jmu4mxsqmmg7" path="res://node_2d.tscn" id="2_f4p3s"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_f4p3s"]
+sky_top_color = Color(0.388919, 0.444295, 0.593239, 1)
+sky_horizon_color = Color(0.626941, 0.670288, 0.716938, 1)
+ground_bottom_color = Color(0.0744612, 0.192471, 0.230128, 1)
+ground_horizon_color = Color(0.626941, 0.670288, 0.716938, 1)
+energy_multiplier = 0.85
+
+[sub_resource type="Sky" id="Sky_pf0bo"]
+sky_material = SubResource("ProceduralSkyMaterial_f4p3s")
+
+[sub_resource type="Environment" id="Environment_tefjj"]
+background_mode = 2
+sky = SubResource("Sky_pf0bo")
+ambient_light_color = Color(0.15703, 0.354659, 0.395337, 1)
+ambient_light_sky_contribution = 0.2
+tonemap_mode = 2
+sdfgi_enabled = true
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_pf0bo"]
+viewport_path = NodePath("Sprite3D/SubViewport")
+
+[sub_resource type="QuadMesh" id="QuadMesh_xka25"]
+
+[node name="Test_with_character" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_tefjj")
+
+[node name="Sprite3D" type="Sprite3D" parent="." node_paths=PackedStringArray("gameCamera")]
+transform = Transform3D(-1, -8.42023e-08, 2.35097e-08, 0, 0.26892, 0.963163, -8.74228e-08, 0.963163, -0.26892, -4.905, 11.957, 0)
+texture = SubResource("ViewportTexture_pf0bo")
+script = ExtResource("1_f4p3s")
+gameCamera = NodePath("../Camera3D")
+
+[node name="SubViewport" type="SubViewport" parent="Sprite3D"]
+transparent_bg = true
+canvas_item_default_texture_filter = 0
+canvas_item_default_texture_repeat = 1
+size = Vector2i(802, 1157)
+size_2d_override_stretch = true
+render_target_update_mode = 4
+
+[node name="Node2D" parent="Sprite3D/SubViewport" instance=ExtResource("2_f4p3s")]
+position = Vector2(364.77, 278.625)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Sprite3D/SubViewport/Node2D"]
+transform = Transform3D(7, 0, 0, 0, 11.3, 0, 0, 0, 1, 0.328726, 0.327014, -0.228477)
+mesh = SubResource("QuadMesh_xka25")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.529919, 0.848048, 0, -0.848048, 0.529919, 74.371, 29.7946, -60.8151)
+current = true
+near = 0.027
+far = 4001.2
+
+[node name="test_one" parent="." instance=ExtResource("1_xka25")]
+transform = Transform3D(-3.93402e-06, 0, -90, 0, 90, 0, 90, 0, -3.93402e-06, 0, 14, 0)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 79.5894, 17.7961, -79.8983)
+light_energy = 10.715
+light_size = 0.96
+shadow_enabled = true
+omni_range = 62.175
+omni_attenuation = 2.0

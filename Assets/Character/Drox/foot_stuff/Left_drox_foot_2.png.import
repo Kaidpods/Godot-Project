@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://7aohv5a6xlgf"
-path.s3tc="res://.godot/imported/Untitled (3).png-ed9179176d1d4a8899157eaa96fb5717.s3tc.ctex"
+uid="uid://qrwln2dtdo6e"
+path.s3tc="res://.godot/imported/Left_drox_foot_2.png-246b586172908bea356489771b866fb9.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Assets/Spritesheet/Untitled (3).png"
-dest_files=["res://.godot/imported/Untitled (3).png-ed9179176d1d4a8899157eaa96fb5717.s3tc.ctex"]
+source_file="res://Assets/Character/Drox/foot_stuff/Left_drox_foot_2.png"
+dest_files=["res://.godot/imported/Left_drox_foot_2.png-246b586172908bea356489771b866fb9.s3tc.ctex"]
 
 [params]
 

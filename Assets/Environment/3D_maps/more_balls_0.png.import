@@ -2,17 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://7aohv5a6xlgf"
-path.s3tc="res://.godot/imported/Untitled (3).png-ed9179176d1d4a8899157eaa96fb5717.s3tc.ctex"
+uid="uid://c3x4ckf66aju7"
+path.s3tc="res://.godot/imported/more_balls_0.png-a153112ed30e6941c085f1beffca197a.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
+generator_parameters={
+"md5": "b9f215753e8d2b63f9fdbab5730ba2c9"
+}
 
 [deps]
 
-source_file="res://Assets/Spritesheet/Untitled (3).png"
-dest_files=["res://.godot/imported/Untitled (3).png-ed9179176d1d4a8899157eaa96fb5717.s3tc.ctex"]
+source_file="res://Assets/Environment/3D_maps/more_balls_0.png"
+dest_files=["res://.godot/imported/more_balls_0.png-a153112ed30e6941c085f1beffca197a.s3tc.ctex"]
 
 [params]
 
