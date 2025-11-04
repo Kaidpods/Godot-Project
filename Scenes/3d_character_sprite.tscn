@@ -1,0 +1,36 @@
+[gd_scene load_steps=5 format=3 uid="uid://2vnmofnr7ppn"]
+
+[ext_resource type="Script" uid="uid://co44dv2wy5er" path="res://Scenes/3d_topdown_movement.gd" id="1_1os3v"]
+[ext_resource type="PackedScene" uid="uid://jmu4mxsqmmg7" path="res://node_2d.tscn" id="2_44hvj"]
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_pf0bo"]
+viewport_path = NodePath("Sprite3D/SubViewport")
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_1os3v"]
+radius = 2.549
+height = 9.192
+
+[node name="Player" type="CharacterBody3D"]
+transform = Transform3D(1, 0, 0, -1.06581e-14, 1, 0, 2.84217e-14, 0, 1, 0, 0, 0)
+script = ExtResource("1_1os3v")
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+transform = Transform3D(-1, -5.38229e-08, 6.88901e-08, 0, 0.788011, 0.615662, -8.74228e-08, 0.615662, -0.788011, 0.43428, 4.6286e-15, -1.2343e-14)
+texture = SubResource("ViewportTexture_pf0bo")
+
+[node name="SubViewport" type="SubViewport" parent="Sprite3D"]
+transparent_bg = true
+canvas_item_default_texture_filter = 0
+canvas_item_default_texture_repeat = 1
+size = Vector2i(1072, 1157)
+size_2d_override_stretch = true
+render_target_update_mode = 4
+
+[node name="Node2D" parent="Sprite3D/SubViewport" instance=ExtResource("2_44hvj")]
+position = Vector2(577.16, 278.625)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1.37661, 1.03477, -0.255855, -0.724157)
+shape = SubResource("CapsuleShape3D_1os3v")
+
+[editable path="Sprite3D/SubViewport/Node2D"]

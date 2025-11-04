@@ -20,6 +20,6 @@ void fragment(){
 		//This means the character is behind and object
 		COLOR = vec4(silhouette_color.rgb, silhouette_color.a * sprite_color.a);
 	}
-	
-	
+
+
 }

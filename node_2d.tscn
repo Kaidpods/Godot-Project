@@ -1,4 +1,4 @@
-[gd_scene load_steps=45 format=3 uid="uid://jmu4mxsqmmg7"]
+[gd_scene load_steps=55 format=3 uid="uid://jmu4mxsqmmg7"]
 
 [ext_resource type="Texture2D" uid="uid://cxis22yv36dej" path="res://Assets/Character/Drox/foot_stuff/Left_drox_foot_1.png" id="1_x0ka3"]
 [ext_resource type="Texture2D" uid="uid://qrwln2dtdo6e" path="res://Assets/Character/Drox/foot_stuff/Left_drox_foot_2.png" id="2_0h7mo"]
@@ -34,7 +34,56 @@
 [ext_resource type="Texture2D" uid="uid://v7l5ilagk14s" path="res://Assets/Character/Drox/foot_stuff/up_drox_foot_1(movingup1)_.revstpng.png" id="31_kq1c5"]
 [ext_resource type="Texture2D" uid="uid://cbxbhpsyovpgy" path="res://Assets/Character/Drox/foot_stuff/up_drox_foot_1(movingup3)revst.png" id="32_ornx7"]
 
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_kq1c5"]
+animation = &"dwon_IDE_3"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_ornx7"]
+animation = &"up_IDE_2"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_cnnru"]
+animation = &"right_IDE_2"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_540hr"]
+animation = &"Left_IDE"
+
+[sub_resource type="AnimationNodeBlendSpace2D" id="AnimationNodeBlendSpace2D_kq1c5"]
+blend_point_0/node = SubResource("AnimationNodeAnimation_kq1c5")
+blend_point_0/pos = Vector2(0, 1)
+blend_point_1/node = SubResource("AnimationNodeAnimation_ornx7")
+blend_point_1/pos = Vector2(0, -1)
+blend_point_2/node = SubResource("AnimationNodeAnimation_cnnru")
+blend_point_2/pos = Vector2(1, 0)
+blend_point_3/node = SubResource("AnimationNodeAnimation_540hr")
+blend_point_3/pos = Vector2(-1, 0)
+blend_mode = 1
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_6ip5v"]
+animation = &"dwon_Walking"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_q5dlx"]
+animation = &"up_walking"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_c4wnb"]
+animation = &"left_walking_2"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_7plk7"]
+animation = &"right_walking"
+
+[sub_resource type="AnimationNodeBlendSpace2D" id="AnimationNodeBlendSpace2D_ornx7"]
+blend_point_0/node = SubResource("AnimationNodeAnimation_6ip5v")
+blend_point_0/pos = Vector2(0, 1)
+blend_point_1/node = SubResource("AnimationNodeAnimation_q5dlx")
+blend_point_1/pos = Vector2(0, -1)
+blend_point_2/node = SubResource("AnimationNodeAnimation_c4wnb")
+blend_point_2/pos = Vector2(-1, 0)
+blend_point_3/node = SubResource("AnimationNodeAnimation_7plk7")
+blend_point_3/pos = Vector2(1, 0)
+
 [sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_2nhjh"]
+states/Idle/node = SubResource("AnimationNodeBlendSpace2D_kq1c5")
+states/Idle/position = Vector2(301, 45)
+states/Walk/node = SubResource("AnimationNodeBlendSpace2D_ornx7")
+states/Walk/position = Vector2(411, 45)
 
 [sub_resource type="Animation" id="Animation_bjha6"]
 resource_name = "Left_IDE"
@@ -151,27 +200,27 @@ tracks/8/keys = {
 }
 tracks/9/type = "value"
 tracks/9/imported = false
-tracks/9/enabled = true
+tracks/9/enabled = false
 tracks/9/path = NodePath("Foot_back:position")
 tracks/9/interp = 1
 tracks/9/loop_wrap = true
 tracks/9/keys = {
-"times": PackedFloat32Array(),
-"transitions": PackedFloat32Array(),
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
 "update": 0,
-"values": []
+"values": [Vector2(5, 74)]
 }
 tracks/10/type = "value"
 tracks/10/imported = false
-tracks/10/enabled = true
+tracks/10/enabled = false
 tracks/10/path = NodePath("Foot_back:rotation")
 tracks/10/interp = 1
 tracks/10/loop_wrap = true
 tracks/10/keys = {
-"times": PackedFloat32Array(),
-"transitions": PackedFloat32Array(),
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
 "update": 0,
-"values": []
+"values": [0.0]
 }
 tracks/11/type = "value"
 tracks/11/imported = false
@@ -187,27 +236,27 @@ tracks/11/keys = {
 }
 tracks/12/type = "value"
 tracks/12/imported = false
-tracks/12/enabled = true
+tracks/12/enabled = false
 tracks/12/path = NodePath("Foot_back:scale")
 tracks/12/interp = 1
 tracks/12/loop_wrap = true
 tracks/12/keys = {
-"times": PackedFloat32Array(),
-"transitions": PackedFloat32Array(),
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
 "update": 0,
-"values": []
+"values": [Vector2(0.05, 0.05)]
 }
 tracks/13/type = "value"
 tracks/13/imported = false
-tracks/13/enabled = true
+tracks/13/enabled = false
 tracks/13/path = NodePath("Foot_funt:scale")
 tracks/13/interp = 1
 tracks/13/loop_wrap = true
 tracks/13/keys = {
-"times": PackedFloat32Array(),
-"transitions": PackedFloat32Array(),
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
 "update": 0,
-"values": []
+"values": [Vector2(0.05, 0.05)]
 }
 
 [sub_resource type="Animation" id="Animation_gt76g"]
@@ -556,27 +605,27 @@ tracks/11/keys = {
 }
 tracks/12/type = "value"
 tracks/12/imported = false
-tracks/12/enabled = true
+tracks/12/enabled = false
 tracks/12/path = NodePath("Foot_funt:z_index")
 tracks/12/interp = 1
 tracks/12/loop_wrap = true
 tracks/12/keys = {
-"times": PackedFloat32Array(),
-"transitions": PackedFloat32Array(),
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
 "update": 1,
-"values": []
+"values": [0]
 }
 tracks/13/type = "value"
 tracks/13/imported = false
-tracks/13/enabled = true
+tracks/13/enabled = false
 tracks/13/path = NodePath("Foot_back:z_index")
 tracks/13/interp = 1
 tracks/13/loop_wrap = true
 tracks/13/keys = {
-"times": PackedFloat32Array(),
-"transitions": PackedFloat32Array(),
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
 "update": 1,
-"values": []
+"values": [0]
 }
 
 [sub_resource type="Animation" id="Animation_k73cj"]
@@ -1662,6 +1711,8 @@ texture = ExtResource("4_d2bti")
 [node name="AnimationTree" type="AnimationTree" parent="."]
 tree_root = SubResource("AnimationNodeStateMachine_2nhjh")
 anim_player = NodePath("../AnimationPlayer")
+parameters/Idle/blend_position = Vector2(-0.00310236, 1)
+parameters/Walk/blend_position = Vector2(-0.274043, 0.538462)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
