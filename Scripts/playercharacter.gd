@@ -88,6 +88,7 @@ func pickup_weapon(weapon, excess_rotation):
 	weapon_in_hand = weapon
 	attack.weapon = weapon_in_hand
 	weapon_sprite.texture = weapon.get_sprite().texture
+	weapon_sprite.visible = true
 	weapon.visible = false
 	weapon.get_node("Area2D").held = true
 	weapon.get_node("Area2D/Clickable_Area").disabled = true

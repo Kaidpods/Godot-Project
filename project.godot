@@ -21,7 +21,7 @@ project/assembly_name="Prototype CastleCrashers Perspective"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/bone_ik/plugin.cfg")
+enabled=PackedStringArray("res://addons/AutoKey_SpriteFrames/plugin.cfg", "res://addons/bone_ik/plugin.cfg", "res://addons/nklbdev.importality/plugin.cfg")
 
 [global_group]
 
