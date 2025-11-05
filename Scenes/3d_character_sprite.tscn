@@ -13,6 +13,8 @@ height = 9.192
 [node name="Player" type="CharacterBody3D"]
 transform = Transform3D(1, 0, 0, -1.06581e-14, 1, 0, 2.84217e-14, 0, 1, 0, 0, 0)
 script = ExtResource("1_1os3v")
+GRAVITY = 14.0
+ANIMATION_SPEED = 1.0
 
 [node name="Sprite3D" type="Sprite3D" parent="."]
 transform = Transform3D(-1, -5.38229e-08, 6.88901e-08, 0, 0.788011, 0.615662, -8.74228e-08, 0.615662, -0.788011, 0.43428, 4.6286e-15, -1.2343e-14)
@@ -29,8 +31,11 @@ render_target_update_mode = 4
 [node name="Node2D" parent="Sprite3D/SubViewport" instance=ExtResource("2_44hvj")]
 position = Vector2(577.16, 278.625)
 
+[node name="AnimationTree" parent="Sprite3D/SubViewport/Node2D" index="4"]
+parameters/Walk/blend_position = Vector2(0.315408, -0.241758)
+
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1.37661, 1.03477, -0.255855, -0.724157)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.555192, -0.255855, -0.724157)
 shape = SubResource("CapsuleShape3D_1os3v")
 
 [editable path="Sprite3D/SubViewport/Node2D"]

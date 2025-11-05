@@ -1,0 +1,26 @@
+[gd_scene load_steps=2 format=3 uid="uid://u8dcvxoy25l5"]
+
+[sub_resource type="GDScript" id="GDScript_mds5d"]
+script/source = "@tool
+extends Camera3D
+
+
+@export var post_processing := true:
+	set(p):
+		if p:
+			$Postprocess.show()
+			post_processing = p
+			var a = Vector3(-1, 1, 0).normalized()
+			var b = Vector3(1, 0, 0).normalized()
+			print(\"dot: \", a.dot(b))
+		else:
+			$Postprocess.hide()
+			post_processing = p
+"
+
+[node name="Camera" type="Camera3D"]
+projection = 1
+current = true
+size = 4.68493
+near = 0.001
+script = SubResource("GDScript_mds5d")

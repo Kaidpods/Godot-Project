@@ -5,14 +5,17 @@ extends CharacterBody3D
 @export var FRICTION := 600
 @export var GRAVITY : float = 4.6
 @export var JUMP_FORCE : float = 6
+@export var ANIMATION_SPEED : float = 2
 
 @onready var ANIMATION_TREE := $Sprite3D/SubViewport/Node2D/AnimationTree
 var input
 var playback: AnimationNodeStateMachinePlayback
+@onready var ANIMATION_PLAYER := $Sprite3D/SubViewport/Node2D/AnimationPlayer
 
 
 func _ready():
 	playback = ANIMATION_TREE["parameters/playback"]
+	
 	
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -64,7 +67,8 @@ func player_movement(delta: float) -> void:
 	if not is_on_floor():
 		velocity.y -= GRAVITY * delta
 	else:
-		if Input.is_action_just_pressed("jump"):
+		if Input.is_action_pressed("jump"):
+			print("Jumped")
 			velocity.y = JUMP_FORCE
 		else:
 			# ensure small downward/zero when grounded
@@ -72,6 +76,7 @@ func player_movement(delta: float) -> void:
 
 	# Finally, move. Do NOT assign the result to velocity.
 	move_and_slide()
+	
 
 func get_mouse_world_position() -> Vector3:
 	var camera = get_viewport().get_camera_3d()
