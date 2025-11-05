@@ -79,34 +79,20 @@ func player_movement(delta: float) -> void:
 	
 
 func get_mouse_world_position() -> Vector3:
-	var camera = get_viewport().get_camera_3d()
-	if not camera:
-		return global_position
-
+	var camera = $PlayerCamera
 	var mouse_pos = get_viewport().get_mouse_position()
 	var from = camera.project_ray_origin(mouse_pos)
 	var to = from + camera.project_ray_normal(mouse_pos) * 1000.0
+	var plane = Plane(Vector3.UP, global_position.y)
+	var intersection = plane.intersects_ray(from, to)
+	return intersection if intersection else global_position
 
-	var space_state = get_world_3d().direct_space_state
-	var query = PhysicsRayQueryParameters3D.create(from, to)
-	var result = space_state.intersect_ray(query)
-
-	if result:
-		return result.position
-	else:
-		return global_position
 
 func get_mouse_direction_relative_to_player() -> Vector2:
 	var mouse_world_pos = get_mouse_world_position()
 	var to_mouse = mouse_world_pos - global_position
-	to_mouse.y = 0  # ignore vertical difference
-
-	# Convert to local space (relative to player's facing)
 	var local_dir = global_transform.basis.inverse() * to_mouse.normalized()
-	
-	# Return 2D vector (x = left/right, y = forward/back)
-	return Vector2(local_dir.x, -local_dir.z)  # negative Z = forward
-
+	return Vector2(local_dir.x, -local_dir.z)
 
 
 func select_animation():
